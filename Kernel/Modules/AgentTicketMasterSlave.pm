@@ -988,7 +988,7 @@ sub Run {
 # ---
 
             if ( $DynamicFieldConfig->{Name} eq $Self->{MasterSlaveDynamicField} ) {
-                $DynamicFieldPossibleValues{ 'DynamicField_' . $Self->{MasterSlaveDynamicField} } = $Self->_GetMasterSlaveData(
+                $PossibleValuesFilter = $Self->_GetMasterSlaveData(
                     Ticket                  => \%Ticket,
                     MasterSlaveDynamicField => $Self->{MasterSlaveDynamicField},
                 );
