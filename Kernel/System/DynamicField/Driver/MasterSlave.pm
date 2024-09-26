@@ -361,7 +361,7 @@ sub PossibleValuesGet {
 
     # If config UnsetMasterSlave is enabled and we are requesting values from AdminGenericAgent,
     #   add UnsetMaster and UnsetSlave possible values. See bug#14778 (https://bugs.otobo.org/show_bug.cgi?id=14778).
-    if ( $ConfigObject->Get('MasterSlave::UnsetMasterSlave') && $Param{LayoutObject}->{Action} eq 'AdminGenericAgent' )
+    if ( $ConfigObject->Get('MasterSlave::UnsetMasterSlave') && $LayoutObject->{Action} eq 'AdminGenericAgent' )
     {
         $PossibleValues{UnsetMaster} = $LayoutObject->{LanguageObject}->Translate('Unset Master Ticket');
         $PossibleValues{UnsetSlave}  = $LayoutObject->{LanguageObject}->Translate('Unset Slave Ticket');
