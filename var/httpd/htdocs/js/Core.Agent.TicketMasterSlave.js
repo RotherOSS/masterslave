@@ -2,7 +2,7 @@
 // OTOBO is a web-based ticketing system for service organisations.
 // --
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-// Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.io/
+// Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -19,9 +19,7 @@
 var Core = Core || {};
 Core.Agent = Core.Agent || {};
 
-// ---
-// MasterSlave
-// ---
+// Rother OSS / MasterSlave
 ///**
 // * @namespace Core.Agent.TicketActionCommon
 // * @memberof Core.Agent
@@ -38,7 +36,7 @@ Core.Agent = Core.Agent || {};
  *      This namespace contains special module functions for TicketMasterSlave.
  */
 Core.Agent.TicketMasterSlave = (function (TargetNS) {
-// ---
+// EO MasterSlave
 
     /**
      * @name Init
@@ -86,9 +84,7 @@ Core.Agent.TicketMasterSlave = (function (TargetNS) {
     Core.Init.RegisterNamespace(TargetNS, 'APP_MODULE');
 
     return TargetNS;
-// ---
-// MasterSlave
-// ---
+// Rother OSS / MasterSlave
 //}(Core.Agent.TicketActionCommon || {}));
 }(Core.Agent.TicketMasterSlave || {}));
-// ---
+// EO MasterSlave
