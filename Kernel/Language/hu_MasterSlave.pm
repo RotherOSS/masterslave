@@ -25,7 +25,7 @@ sub Data {
 
     # Template: AgentTicketMasterSlave
     $Self->{Translation}->{'Manage Master/Slave status for %s%s%s'} = '%s%s%s mester/alárendelt állapotának kezelése';
-    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = '';
+    $Self->{Translation}->{'All fields marked with an asterisk (*) are mandatory.'} = 'A csillaggal (*) megjelölt összes mező kötelező.';
 
     # Perl Module: Kernel/Modules/AgentTicketMasterSlave.pm
     $Self->{Translation}->{'New Master Ticket'} = 'Új mesterjegy';
@@ -118,7 +118,7 @@ sub Data {
     $Self->{Translation}->{'This module activates Master/Slave field in new email and phone ticket screens.'} =
         'Ez a modul bekapcsolja a mester/alárendelt mezőt az új e-mail és telefonos jegy képernyőkön.';
     $Self->{Translation}->{'This setting is deprecated and will be removed in further versions of MasterSlave.'} =
-        'Ez a beállítás elavult, és el lesz távolítva az MasterSlave későbbi verzióiból.';
+        'Ez a beállítás elavult, és el lesz távolítva a MasterSlave csomag későbbi verzióiból.';
     $Self->{Translation}->{'Ticket MasterSlave.'} = 'Jegy mester-alárendelt.';
 
 
