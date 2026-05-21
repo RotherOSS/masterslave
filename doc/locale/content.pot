@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
-# This file is distributed under the same license as the OTOBO Installation Guide package.
+# Copyright (C) 2019–2026 Rother OSS GmbH, https://otobo.io
+# This file is distributed under the same license as the OTOBO Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
+"Project-Id-Version: OTOBO Documentation dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-22 05:59+0200\n"
+"POT-Creation-Date: 2026-05-21 08:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,527 +16,526 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../content/index.rst:20
-msgid "Sacrifice to Sphinx"
+#: ../content/index.rst:5
+msgid "Contents"
 msgstr ""
 
-#: ../../content/index.rst:23
+#: ../content/index.rst:10
 msgid "Description"
 msgstr ""
 
-#: ../../content/index.rst:24
+#: ../content/index.rst:11
 msgid "Includes \"Ticket Master/Slave\" feature."
 msgstr ""
 
-#: ../../content/index.rst:27
+#: ../content/index.rst:14
 msgid "System requirements"
 msgstr ""
 
-#: ../../content/index.rst:30
+#: ../content/index.rst:17
 msgid "Framework"
 msgstr ""
 
-#: ../../content/index.rst:31
+#: ../content/index.rst:18
 msgid "OTOBO 11.0.x"
 msgstr ""
 
-#: ../../content/index.rst:34
+#: ../content/index.rst:21
 msgid "Packages"
 msgstr ""
 
-#: ../../content/index.rst:35
-#: ../../content/index.rst:39
+#: ../content/index.rst:22
+#: ../content/index.rst:26
 msgid "\\-"
 msgstr ""
 
-#: ../../content/index.rst:38
+#: ../content/index.rst:25
 msgid "Third-party software"
 msgstr ""
 
-#: ../../content/index.rst:42
+#: ../content/index.rst:29
 msgid "Usage"
 msgstr ""
 
-#: ../../content/index.rst:45
+#: ../content/index.rst:32
 msgid "Setup"
 msgstr ""
 
-#: ../../content/index.rst:48
+#: ../content/index.rst:35
 msgid "Configuration Reference"
 msgstr ""
 
-#: ../../content/index.rst:51
+#: ../content/index.rst:38
 msgid "Core::DynamicFields::DriverRegistration"
 msgstr ""
 
-#: ../../content/index.rst:54
+#: ../content/index.rst:41
 msgid "DynamicFields::Driver###MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:55
+#: ../content/index.rst:42
 msgid "DynamicField backend registration."
 msgstr ""
 
-#: ../../content/index.rst:58
+#: ../content/index.rst:45
 msgid "Core::Event::MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:61
+#: ../content/index.rst:48
 msgid "Ticket::EventModulePost###MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:62
+#: ../content/index.rst:49
 msgid "Registration of the ticket event module."
 msgstr ""
 
-#: ../../content/index.rst:65
+#: ../content/index.rst:52
 msgid "Core::MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:68
+#: ../content/index.rst:55
 msgid "PreApplicationModule###AgentPreMasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:69
+#: ../content/index.rst:56
 msgid "This module activates Master/Slave field in new email and phone ticket screens."
 msgstr ""
 
-#: ../../content/index.rst:72
+#: ../content/index.rst:59
 msgid "MasterSlave::AdvancedEnabled"
 msgstr ""
 
-#: ../../content/index.rst:73
+#: ../content/index.rst:60
 msgid "Enables the advanced MasterSlave part of the feature."
 msgstr ""
 
-#: ../../content/index.rst:76
+#: ../content/index.rst:63
 msgid "MasterSlave::KeepParentChildAfterUnset"
 msgstr ""
 
-#: ../../content/index.rst:77
+#: ../content/index.rst:64
 msgid "Enables the feature to keep parent-child link after unset of the MasterSlave state in the advanced MasterSlave mode."
 msgstr ""
 
-#: ../../content/index.rst:80
+#: ../content/index.rst:67
 msgid "MasterSlave::DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:81
+#: ../content/index.rst:68
 msgid "Defines dynamic field name for master ticket feature."
 msgstr ""
 
-#: ../../content/index.rst:84
+#: ../content/index.rst:71
 msgid "MasterSlave::ForwardSlaves"
 msgstr ""
 
-#: ../../content/index.rst:85
+#: ../content/index.rst:72
 msgid "Enables the feature to forward articles from type 'forward' of a master ticket to the customers of the slave tickets. By default (disabled) it will not forward articles from type 'forward' to the slave tickets."
 msgstr ""
 
-#: ../../content/index.rst:88
+#: ../content/index.rst:75
 msgid "MasterSlave::FollowUpdatedMaster"
 msgstr ""
 
-#: ../../content/index.rst:89
+#: ../content/index.rst:76
 msgid "Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode."
 msgstr ""
 
-#: ../../content/index.rst:92
+#: ../content/index.rst:79
 msgid "MasterSlave::UpdateMasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:93
+#: ../content/index.rst:80
 msgid "Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode."
 msgstr ""
 
-#: ../../content/index.rst:96
+#: ../content/index.rst:83
 msgid "MasterSlave::UnsetMasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:97
+#: ../content/index.rst:84
 msgid "Enables the feature to unset the MasterSlave state of a ticket in the advanced MasterSlave mode."
 msgstr ""
 
-#: ../../content/index.rst:100
+#: ../content/index.rst:87
 msgid "MasterSlave::KeepParentChildAfterUpdate"
 msgstr ""
 
-#: ../../content/index.rst:101
+#: ../content/index.rst:88
 msgid "Enables the feature to keep parent-child link after change of the MasterSlave state in the advanced MasterSlave mode."
 msgstr ""
 
-#: ../../content/index.rst:104
+#: ../content/index.rst:91
 msgid "Core::Ticket::ACL"
 msgstr ""
 
-#: ../../content/index.rst:107
+#: ../content/index.rst:94
 msgid "ACLKeysLevel3::Actions###888-MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:108
+#: ../content/index.rst:95
 msgid "Defines which items are available for 'Action' in third level of the ACL structure."
 msgstr ""
 
-#: ../../content/index.rst:111
+#: ../content/index.rst:98
 msgid "Frontend::Admin::ModuleRegistration"
 msgstr ""
 
-#: ../../content/index.rst:114
+#: ../content/index.rst:101
 msgid "Frontend::Module###AdminDynamicFieldMasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:115
-#: ../../content/index.rst:136
+#: ../content/index.rst:102
+#: ../content/index.rst:123
 msgid "Frontend module registration for the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:118
+#: ../content/index.rst:105
 msgid "Frontend::Admin::ModuleRegistration::Loader"
 msgstr ""
 
-#: ../../content/index.rst:121
+#: ../content/index.rst:108
 msgid "Loader::Module::AdminDynamicFieldMasterSlave###004-MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:122
-#: ../../content/index.rst:143
+#: ../content/index.rst:109
+#: ../content/index.rst:130
 msgid "Loader module registration for the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:125
+#: ../content/index.rst:112
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
 msgstr ""
 
-#: ../../content/index.rst:128
+#: ../content/index.rst:115
 msgid "Frontend::Navigation###AdminDynamicFieldMasterSlave###004-MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:129
-#: ../../content/index.rst:150
+#: ../content/index.rst:116
+#: ../content/index.rst:137
 msgid "Main menu item registration."
 msgstr ""
 
-#: ../../content/index.rst:132
+#: ../content/index.rst:119
 msgid "Frontend::Agent::ModuleRegistration"
 msgstr ""
 
-#: ../../content/index.rst:135
+#: ../content/index.rst:122
 msgid "Frontend::Module###AgentTicketMasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:139
+#: ../content/index.rst:126
 msgid "Frontend::Agent::ModuleRegistration::Loader"
 msgstr ""
 
-#: ../../content/index.rst:142
+#: ../content/index.rst:129
 msgid "Loader::Module::AgentTicketMasterSlave###004-MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:146
+#: ../content/index.rst:133
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
 msgstr ""
 
-#: ../../content/index.rst:149
+#: ../content/index.rst:136
 msgid "Frontend::Navigation###AgentTicketMasterSlave###004-MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:153
+#: ../content/index.rst:140
 msgid "Frontend::Agent::View::Dashboard"
 msgstr ""
 
-#: ../../content/index.rst:156
+#: ../content/index.rst:143
 msgid "DashboardBackend###0900-TicketMaster"
 msgstr ""
 
-#: ../../content/index.rst:157
+#: ../content/index.rst:144
 msgid "Parameters for the dashboard backend of the master tickets overview of the agent interface. \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin."
 msgstr ""
 
-#: ../../content/index.rst:160
+#: ../content/index.rst:147
 msgid "DashboardBackend###0910-TicketSlave"
 msgstr ""
 
-#: ../../content/index.rst:161
+#: ../content/index.rst:148
 msgid "Parameters for the dashboard backend of the slave tickets overview of the agent interface. \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin."
 msgstr ""
 
-#: ../../content/index.rst:164
+#: ../content/index.rst:151
 msgid "Frontend::Agent::View::TicketBulk::Module"
 msgstr ""
 
-#: ../../content/index.rst:167
+#: ../content/index.rst:154
 msgid "Ticket::Frontend::BulkModule###010-MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:168
+#: ../content/index.rst:155
 msgid "MasterSlave module for Ticket Bulk feature."
 msgstr ""
 
-#: ../../content/index.rst:171
+#: ../content/index.rst:158
 msgid "Frontend::Agent::View::TicketMasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:174
+#: ../content/index.rst:161
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Permission"
 msgstr ""
 
-#: ../../content/index.rst:175
+#: ../content/index.rst:162
 msgid "Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:178
+#: ../content/index.rst:165
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RequiredLock"
 msgstr ""
 
-#: ../../content/index.rst:179
+#: ../content/index.rst:166
 msgid "Defines if a ticket lock is required in the ticket MasterSlave screen of a zoomed ticket in the agent interface (if the ticket isn't locked yet, the ticket gets locked and the current agent will be set automatically as its owner)."
 msgstr ""
 
-#: ../../content/index.rst:182
+#: ../content/index.rst:169
 msgid "Ticket::Frontend::AgentTicketMasterSlave###TicketType"
 msgstr ""
 
-#: ../../content/index.rst:183
+#: ../content/index.rst:170
 msgid "Sets the ticket type in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Type needs to be activated)."
 msgstr ""
 
-#: ../../content/index.rst:186
+#: ../content/index.rst:173
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Service"
 msgstr ""
 
-#: ../../content/index.rst:187
+#: ../content/index.rst:174
 msgid "Sets the service in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Service needs to be activated)."
 msgstr ""
 
-#: ../../content/index.rst:190
+#: ../content/index.rst:177
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Owner"
 msgstr ""
 
-#: ../../content/index.rst:191
+#: ../content/index.rst:178
 msgid "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:194
+#: ../content/index.rst:181
 msgid "Ticket::Frontend::AgentTicketMasterSlave###OwnerMandatory"
 msgstr ""
 
-#: ../../content/index.rst:195
+#: ../content/index.rst:182
 msgid "Sets if ticket owner must be selected by the agent."
 msgstr ""
 
-#: ../../content/index.rst:198
+#: ../content/index.rst:185
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Responsible"
 msgstr ""
 
-#: ../../content/index.rst:199
+#: ../content/index.rst:186
 msgid "Sets the responsible agent of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:202
+#: ../content/index.rst:189
 msgid "Ticket::Frontend::AgentTicketMasterSlave###ResponsibleMandatory"
 msgstr ""
 
-#: ../../content/index.rst:203
+#: ../content/index.rst:190
 msgid "Sets if ticket responsible must be selected by the agent."
 msgstr ""
 
-#: ../../content/index.rst:206
+#: ../content/index.rst:193
 msgid "Ticket::Frontend::AgentTicketMasterSlave###State"
 msgstr ""
 
-#: ../../content/index.rst:207
+#: ../content/index.rst:194
 msgid "If a note is added by an agent, sets the state of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:210
+#: ../content/index.rst:197
 msgid "Ticket::Frontend::AgentTicketMasterSlave###StateType"
 msgstr ""
 
-#: ../../content/index.rst:211
+#: ../content/index.rst:198
 msgid "Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:214
+#: ../content/index.rst:201
 msgid "Ticket::Frontend::AgentTicketMasterSlave###StateDefault"
 msgstr ""
 
-#: ../../content/index.rst:215
+#: ../content/index.rst:202
 msgid "Defines the default next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:218
+#: ../content/index.rst:205
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Note"
 msgstr ""
 
-#: ../../content/index.rst:219
+#: ../content/index.rst:206
 msgid "Allows adding notes in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:222
+#: ../content/index.rst:209
 msgid "Ticket::Frontend::AgentTicketMasterSlave###NoteMandatory"
 msgstr ""
 
-#: ../../content/index.rst:223
+#: ../content/index.rst:210
 msgid "Sets if note must be filled in by the agent. Can be overwritten by Ticket::Frontend::NeedAccountedTime."
 msgstr ""
 
-#: ../../content/index.rst:226
+#: ../content/index.rst:213
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Subject"
 msgstr ""
 
-#: ../../content/index.rst:227
+#: ../content/index.rst:214
 msgid "Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:230
+#: ../content/index.rst:217
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Body"
 msgstr ""
 
-#: ../../content/index.rst:231
+#: ../content/index.rst:218
 msgid "Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:234
+#: ../content/index.rst:221
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextWidth"
 msgstr ""
 
-#: ../../content/index.rst:235
+#: ../content/index.rst:222
 msgid "Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr ""
 
-#: ../../content/index.rst:238
+#: ../content/index.rst:225
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextHeight"
 msgstr ""
 
-#: ../../content/index.rst:239
+#: ../content/index.rst:226
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
 msgstr ""
 
-#: ../../content/index.rst:242
+#: ../content/index.rst:229
 msgid "Ticket::Frontend::AgentTicketMasterSlave###InvolvedAgent"
 msgstr ""
 
-#: ../../content/index.rst:243
+#: ../content/index.rst:230
 msgid "Shows a list of all the involved agents on this ticket, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:246
+#: ../content/index.rst:233
 msgid "Ticket::Frontend::AgentTicketMasterSlave###InformAgent"
 msgstr ""
 
-#: ../../content/index.rst:247
+#: ../content/index.rst:234
 msgid "Shows a list of all the possible agents (all agents with note permissions on the queue/ticket) to determine who should be informed about this note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:250
+#: ../content/index.rst:237
 msgid "Ticket::Frontend::AgentTicketMasterSlave###IsVisibleForCustomerDefault"
 msgstr ""
 
-#: ../../content/index.rst:251
+#: ../content/index.rst:238
 msgid "Defines if the MasterSlave note is visible for the customer by default."
 msgstr ""
 
-#: ../../content/index.rst:254
+#: ../content/index.rst:241
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Priority"
 msgstr ""
 
-#: ../../content/index.rst:255
+#: ../content/index.rst:242
 msgid "Shows the ticket priority options in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:258
+#: ../content/index.rst:245
 msgid "Ticket::Frontend::AgentTicketMasterSlave###PriorityDefault"
 msgstr ""
 
-#: ../../content/index.rst:259
+#: ../content/index.rst:246
 msgid "Defines the default ticket priority in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:262
+#: ../content/index.rst:249
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Title"
 msgstr ""
 
-#: ../../content/index.rst:263
+#: ../content/index.rst:250
 msgid "Shows the title field in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:266
+#: ../content/index.rst:253
 msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryType"
 msgstr ""
 
-#: ../../content/index.rst:267
+#: ../content/index.rst:254
 msgid "Defines the history type for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:270
+#: ../content/index.rst:257
 msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryComment"
 msgstr ""
 
-#: ../../content/index.rst:271
+#: ../content/index.rst:258
 msgid "Defines the history comment for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:274
+#: ../content/index.rst:261
 msgid "Ticket::Frontend::AgentTicketMasterSlave###MasterSlaveMandatory"
 msgstr ""
 
-#: ../../content/index.rst:275
+#: ../content/index.rst:262
 msgid "Sets if Master / Slave field must be selected by the agent."
 msgstr ""
 
-#: ../../content/index.rst:278
+#: ../content/index.rst:265
 msgid "ReplaceCustomerRealNameOnSlaveArticleTypes"
 msgstr ""
 
-#: ../../content/index.rst:279
+#: ../content/index.rst:266
 msgid "This setting is deprecated and will be removed in further versions of MasterSlave."
 msgstr ""
 
-#: ../../content/index.rst:282
+#: ../content/index.rst:269
 msgid "ReplaceCustomerRealNameOnSlaveArticleCommunicationChannels"
 msgstr ""
 
-#: ../../content/index.rst:283
+#: ../content/index.rst:270
 msgid "Specifies the different article communication channels where the real name from Master ticket will be replaced with the one in the Slave ticket."
 msgstr ""
 
-#: ../../content/index.rst:286
+#: ../content/index.rst:273
 msgid "Frontend::Agent::View::TicketZoom::MenuModule"
 msgstr ""
 
-#: ../../content/index.rst:289
+#: ../content/index.rst:276
 msgid "Ticket::Frontend::MenuModule###480-MasterSlave"
 msgstr ""
 
-#: ../../content/index.rst:290
+#: ../content/index.rst:277
 msgid "Shows a link in the menu to change the MasterSlave status of a ticket in the ticket zoom view of the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:293
+#: ../content/index.rst:280
 msgid "About"
 msgstr ""
 
-#: ../../content/index.rst:296
+#: ../content/index.rst:283
 msgid "Contact"
 msgstr ""
 
-#: ../../content/index.rst:297
+#: ../content/index.rst:284
 msgid "Rother OSS GmbH"
 msgstr ""
 
-#: ../../content/index.rst:298
+#: ../content/index.rst:285
 msgid "Email: hello@otobo.de"
 msgstr ""
 
-#: ../../content/index.rst:299
+#: ../content/index.rst:286
 msgid "Web: https://otobo.de"
 msgstr ""
 
-#: ../../content/index.rst:302
+#: ../content/index.rst:289
 msgid "Version"
 msgstr ""
 
-#: ../../content/index.rst:303
+#: ../content/index.rst:290
 msgid "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-datestamp|"
 msgstr ""
-
