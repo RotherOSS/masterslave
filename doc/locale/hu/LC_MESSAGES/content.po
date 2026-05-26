@@ -4,135 +4,142 @@
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 14:50+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-05-26 08:00+0000\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
+"Language-Team: Hungarian <http://translate.otobo.org/projects/manual-"
+"masterslave/master/hu/>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/index.rst:16
 msgid "Sacrifice to Sphinx"
-msgstr ""
+msgstr "Áldozat a Szfinxnek"
 
 #: ../../content/index.rst:19
 msgid "Description"
-msgstr ""
+msgstr "Leírás"
 
 #: ../../content/index.rst:20
 msgid "Includes \"Ticket Master/Slave\" feature."
-msgstr ""
+msgstr "A „mester/alárendelt jegy” funkciót tartalmazza."
 
 #: ../../content/index.rst:23
 msgid "System requirements"
-msgstr ""
+msgstr "Rendszerkövetelmények"
 
 #: ../../content/index.rst:26
 msgid "Framework"
-msgstr ""
+msgstr "Keretrendszer"
 
 #: ../../content/index.rst:27
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 11.0.x"
 
 #: ../../content/index.rst:30
 msgid "Packages"
-msgstr ""
+msgstr "Csomagok"
 
 #: ../../content/index.rst:31 ../../content/index.rst:35
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../../content/index.rst:34
 msgid "Third-party software"
-msgstr ""
+msgstr "Harmadik féltől származó szoftverek"
 
 #: ../../content/index.rst:38
 msgid "Usage"
-msgstr ""
+msgstr "Használat"
 
 #: ../../content/index.rst:41
 msgid "Setup"
-msgstr ""
+msgstr "Beállítás"
 
 #: ../../content/index.rst:44
 msgid "Configuration Reference"
-msgstr ""
+msgstr "Beállítások hivatkozása"
 
 #: ../../content/index.rst:47
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../../content/index.rst:50
 msgid "DynamicFields::Driver###MasterSlave"
-msgstr ""
+msgstr "DynamicFields::Driver###MasterSlave"
 
 #: ../../content/index.rst:51
 msgid "DynamicField backend registration."
-msgstr ""
+msgstr "Dinamikus mező háttérprogram regisztráció."
 
 #: ../../content/index.rst:54
 msgid "Core::Event::MasterSlave"
-msgstr ""
+msgstr "Core::Event::MasterSlave"
 
 #: ../../content/index.rst:57
 msgid "Ticket::EventModulePost###MasterSlave"
-msgstr ""
+msgstr "Ticket::EventModulePost###MasterSlave"
 
 #: ../../content/index.rst:58
 msgid "Registration of the ticket event module."
-msgstr ""
+msgstr "A jegy esemény modul regisztrációja."
 
 #: ../../content/index.rst:61
 msgid "Core::MasterSlave"
-msgstr ""
+msgstr "Core::MasterSlave"
 
 #: ../../content/index.rst:64
 msgid "PreApplicationModule###AgentPreMasterSlave"
-msgstr ""
+msgstr "PreApplicationModule###AgentPreMasterSlave"
 
 #: ../../content/index.rst:65
 msgid ""
 "This module activates Master/Slave field in new email and phone ticket "
 "screens."
 msgstr ""
+"Ez a modul bekapcsolja a mester/alárendelt mezőt az új e-mail és telefonos "
+"jegy képernyőkön."
 
 #: ../../content/index.rst:68
 msgid "MasterSlave::AdvancedEnabled"
-msgstr ""
+msgstr "MasterSlave::AdvancedEnabled"
 
 #: ../../content/index.rst:69
 msgid "Enables the advanced MasterSlave part of the feature."
-msgstr ""
+msgstr "Engedélyezi a funkció speciális mester-alárendelt részét."
 
 #: ../../content/index.rst:72
 msgid "MasterSlave::KeepParentChildAfterUnset"
-msgstr ""
+msgstr "MasterSlave::KeepParentChildAfterUnset"
 
 #: ../../content/index.rst:73
 msgid ""
 "Enables the feature to keep parent-child link after unset of the "
 "MasterSlave state in the advanced MasterSlave mode."
 msgstr ""
+"Engedélyezi a funkciót a szülő-gyermek kapcsolat megtartásához a mester-"
+"alárendelt állapot törlése után a speciális mester-alárendelt módban."
 
 #: ../../content/index.rst:76
 msgid "MasterSlave::DynamicField"
-msgstr ""
+msgstr "MasterSlave::DynamicField"
 
 #: ../../content/index.rst:77
 msgid "Defines dynamic field name for master ticket feature."
-msgstr ""
+msgstr "Meghatározza a dinamikus mező nevét a mesterjegy funkciónál."
 
 #: ../../content/index.rst:80
 msgid "MasterSlave::ForwardSlaves"
-msgstr ""
+msgstr "MasterSlave::ForwardSlaves"
 
 #: ../../content/index.rst:81
 msgid ""
@@ -140,128 +147,142 @@ msgid ""
 "ticket to the customers of the slave tickets. By default (disabled) it "
 "will not forward articles from type 'forward' to the slave tickets."
 msgstr ""
+"Engedélyezi a funkciót a bejegyzések továbbításához egy mesterjegy „"
+"továbbítás” típusából az alárendelt jegyek ügyfeleihez. Alapértelmezetten "
+"(letiltva) nem fog bejegyzéseket továbbítani a „továbbítás” típusból az "
+"alárendelt jegyekhez."
 
 #: ../../content/index.rst:84
 msgid "MasterSlave::FollowUpdatedMaster"
-msgstr ""
+msgstr "MasterSlave::FollowUpdatedMaster"
 
 #: ../../content/index.rst:85
 msgid ""
 "Enables the feature that slave tickets follow the master ticket to a new "
 "master in the advanced MasterSlave mode."
 msgstr ""
+"Engedélyezi azt a funkciót, hogy az alárendelt jegyek a mesterjegyet "
+"kövessék egy új mesterhez a speciális mester-alárendelt módban."
 
 #: ../../content/index.rst:88
 msgid "MasterSlave::UpdateMasterSlave"
-msgstr ""
+msgstr "MasterSlave::UpdateMasterSlave"
 
 #: ../../content/index.rst:89
 msgid ""
 "Enables the feature to change the MasterSlave state of a ticket in the "
 "advanced MasterSlave mode."
 msgstr ""
+"Engedélyezi a funkciót egy jegy mester-alárendelt állapotának "
+"megváltoztatásához a speciális mester-alárendelt módban."
 
 #: ../../content/index.rst:92
 msgid "MasterSlave::UnsetMasterSlave"
-msgstr ""
+msgstr "MasterSlave::UnsetMasterSlave"
 
 #: ../../content/index.rst:93
 msgid ""
 "Enables the feature to unset the MasterSlave state of a ticket in the "
 "advanced MasterSlave mode."
 msgstr ""
+"Engedélyezi a funkciót egy jegy mester-alárendelt állapotának törléséhez a "
+"speciális mester-alárendelt módban."
 
 #: ../../content/index.rst:96
 msgid "MasterSlave::KeepParentChildAfterUpdate"
-msgstr ""
+msgstr "MasterSlave::KeepParentChildAfterUpdate"
 
 #: ../../content/index.rst:97
 msgid ""
 "Enables the feature to keep parent-child link after change of the "
 "MasterSlave state in the advanced MasterSlave mode."
 msgstr ""
+"Engedélyezi a funkciót a szülő-gyermek kapcsolat megtartásához a mester-"
+"alárendelt állapot megváltoztatása után a speciális mester-alárendelt módban."
 
 #: ../../content/index.rst:100
 msgid "Core::Ticket::ACL"
-msgstr ""
+msgstr "Core::Ticket::ACL"
 
 #: ../../content/index.rst:103
 msgid "ACLKeysLevel3::Actions###888-MasterSlave"
-msgstr ""
+msgstr "ACLKeysLevel3::Actions###888-MasterSlave"
 
 #: ../../content/index.rst:104
 msgid ""
 "Defines which items are available for 'Action' in third level of the ACL "
 "structure."
 msgstr ""
+"Meghatározza, hogy mely elemek érhetők el az „Action” szakasznál az ACL "
+"szerkezet harmadik szintjén."
 
 #: ../../content/index.rst:107
 msgid "Frontend::Admin::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration"
 
 #: ../../content/index.rst:110
 msgid "Frontend::Module###AdminDynamicFieldMasterSlave"
-msgstr ""
+msgstr "Frontend::Module###AdminDynamicFieldMasterSlave"
 
 #: ../../content/index.rst:111 ../../content/index.rst:132
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "Előtétprogram-modul regisztráció az ügyintézői felülethez."
 
 #: ../../content/index.rst:114
 msgid "Frontend::Admin::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::Loader"
 
 #: ../../content/index.rst:117
 msgid "Loader::Module::AdminDynamicFieldMasterSlave###004-MasterSlave"
-msgstr ""
+msgstr "Loader::Module::AdminDynamicFieldMasterSlave###004-MasterSlave"
 
 #: ../../content/index.rst:118 ../../content/index.rst:139
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "Betöltőmodul regisztráció az ügyintézői felülethez."
 
 #: ../../content/index.rst:121
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::MainMenu"
 
 #: ../../content/index.rst:124
 msgid "Frontend::Navigation###AdminDynamicFieldMasterSlave###004-MasterSlave"
-msgstr ""
+msgstr "Frontend::Navigation###AdminDynamicFieldMasterSlave###004-MasterSlave"
 
 #: ../../content/index.rst:125 ../../content/index.rst:146
 msgid "Main menu item registration."
-msgstr ""
+msgstr "Főmenü elem regisztráció."
 
 #: ../../content/index.rst:128
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/index.rst:131
 msgid "Frontend::Module###AgentTicketMasterSlave"
-msgstr ""
+msgstr "Frontend::Module###AgentTicketMasterSlave"
 
 #: ../../content/index.rst:135
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/index.rst:138
 msgid "Loader::Module::AgentTicketMasterSlave###004-MasterSlave"
-msgstr ""
+msgstr "Loader::Module::AgentTicketMasterSlave###004-MasterSlave"
 
 #: ../../content/index.rst:142
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../../content/index.rst:145
 msgid "Frontend::Navigation###AgentTicketMasterSlave###004-MasterSlave"
-msgstr ""
+msgstr "Frontend::Navigation###AgentTicketMasterSlave###004-MasterSlave"
 
 #: ../../content/index.rst:149
 msgid "Frontend::Agent::View::Dashboard"
-msgstr ""
+msgstr "Frontend::Agent::View::Dashboard"
 
 #: ../../content/index.rst:152
 msgid "DashboardBackend###0900-TicketMaster"
-msgstr ""
+msgstr "DashboardBackend###0900-TicketMaster"
 
 #: ../../content/index.rst:153
 msgid ""
@@ -272,10 +293,17 @@ msgid ""
 " default or if the user needs to enable it manually. \"CacheTTLLocal\" is"
 " the cache time in minutes for the plugin."
 msgstr ""
+"Paraméterek az ügyintézői felület mesterjegyei áttekintőjének vezérlőpult "
+"háttérprogramjához. A „Limit” az alapértelmezetten megjelenített bejegyzések "
+"száma. A „Group” használható a hozzáférés korlátozásához a bővítményre "
+"(például Group: admin;csoport1;csoport2;). A „Default” jelzi, hogy a "
+"bővítmény alapértelmezetten engedélyezve van, vagy hogy a felhasználónak "
+"kézzel kell engedélyeznie azt. A „CacheTTLLocal” a bővítmény gyorsítótár "
+"ideje percben."
 
 #: ../../content/index.rst:156
 msgid "DashboardBackend###0910-TicketSlave"
-msgstr ""
+msgstr "DashboardBackend###0910-TicketSlave"
 
 #: ../../content/index.rst:157
 msgid ""
@@ -286,36 +314,45 @@ msgid ""
 " default or if the user needs to enable it manually. \"CacheTTLLocal\" is"
 " the cache time in minutes for the plugin."
 msgstr ""
+"Paraméterek az ügyintézői felület alárendelt jegyei áttekintőjének "
+"vezérlőpult háttérprogramjához. A „Limit” az alapértelmezetten megjelenített "
+"bejegyzések száma. A „Group” használható a hozzáférés korlátozásához a "
+"bővítményre (például Group: admin;csoport1;csoport2;). A „Default” jelzi, "
+"hogy a bővítmény alapértelmezetten engedélyezve van, vagy hogy a "
+"felhasználónak kézzel kell engedélyeznie azt. A „CacheTTLLocal” a bővítmény "
+"gyorsítótár ideje percben."
 
 #: ../../content/index.rst:160
 msgid "Frontend::Agent::View::TicketBulk::Module"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketBulk::Module"
 
 #: ../../content/index.rst:163
 msgid "Ticket::Frontend::BulkModule###010-MasterSlave"
-msgstr ""
+msgstr "Ticket::Frontend::BulkModule###010-MasterSlave"
 
 #: ../../content/index.rst:164
 msgid "MasterSlave module for Ticket Bulk feature."
-msgstr ""
+msgstr "Mester-alárendelt modul a jegy tömeges funkciójához."
 
 #: ../../content/index.rst:167
 msgid "Frontend::Agent::View::TicketMasterSlave"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketMasterSlave"
 
 #: ../../content/index.rst:170
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Permission"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Permission"
 
 #: ../../content/index.rst:171
 msgid ""
 "Required permissions to use the ticket MasterSlave screen of a zoomed "
 "ticket in the agent interface."
 msgstr ""
+"A szükséges jogosultságok egy nagyított jegynek a jegy mester-alárendelt "
+"képernyőjének használatához az ügyintézői felületen."
 
 #: ../../content/index.rst:174
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RequiredLock"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###RequiredLock"
 
 #: ../../content/index.rst:175
 msgid ""
@@ -324,166 +361,205 @@ msgid ""
 "the ticket gets locked and the current agent will be set automatically as"
 " its owner)."
 msgstr ""
+"Meghatározza, hogy szükséges-e jegyzárolás egy nagyított jegynek a jegy "
+"mester-alárendelt képernyőjén az ügyintézői felületen (ha a jegy még nincs "
+"zárolva, akkor a jegy zárolva lesz, és az aktuális ügyintéző automatikusan "
+"annak tulajdonosaként lesz beállítva)."
 
 #: ../../content/index.rst:178
 msgid "Ticket::Frontend::AgentTicketMasterSlave###TicketType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###TicketType"
 
 #: ../../content/index.rst:179
 msgid ""
 "Sets the ticket type in the ticket MasterSlave screen of a zoomed ticket "
 "in the agent interface (Ticket::Type needs to be activated)."
 msgstr ""
+"Beállítja a jegy típusát egy nagyított jegynek a jegy mester-alárendelt "
+"képernyőjén az ügyintézői felületen (a Ticket::Type lehetőségnek aktiválva "
+"kell lennie)."
 
 #: ../../content/index.rst:182
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Service"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Service"
 
 #: ../../content/index.rst:183
 msgid ""
 "Sets the service in the ticket MasterSlave screen of a zoomed ticket in "
 "the agent interface (Ticket::Service needs to be activated)."
 msgstr ""
+"Beállítja a szolgáltatást egy nagyított jegynek a jegy mester-alárendelt "
+"képernyőjén az ügyintézői felületen (a Ticket::Service lehetőségnek "
+"aktiválva kell lennie)."
 
 #: ../../content/index.rst:186
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Owner"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Owner"
 
 #: ../../content/index.rst:187
 msgid ""
 "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket"
 " in the agent interface."
 msgstr ""
+"Beállítja a jegy tulajdonosát egy nagyított jegynek a jegy mester-alárendelt "
+"képernyőjén az ügyintézői felületen."
 
 #: ../../content/index.rst:190
 msgid "Ticket::Frontend::AgentTicketMasterSlave###OwnerMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###OwnerMandatory"
 
 #: ../../content/index.rst:191
 msgid "Sets if ticket owner must be selected by the agent."
 msgstr ""
+"Beállítja, hogy az ügyintézőnek ki kell választania a jegy tulajdonosát."
 
 #: ../../content/index.rst:194
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Responsible"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Responsible"
 
 #: ../../content/index.rst:195
 msgid ""
 "Sets the responsible agent of the ticket in the ticket MasterSlave screen"
 " of a zoomed ticket in the agent interface."
 msgstr ""
+"Beállítja a jegy felelős ügyintézőjét egy nagyított jegynek a jegy mester-"
+"alárendelt képernyőjén az ügyintézői felületen."
 
 #: ../../content/index.rst:198
 msgid "Ticket::Frontend::AgentTicketMasterSlave###ResponsibleMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###ResponsibleMandatory"
 
 #: ../../content/index.rst:199
 msgid "Sets if ticket responsible must be selected by the agent."
-msgstr ""
+msgstr "Beállítja, hogy az ügyintézőnek ki kell választania a jegy felelősét."
 
 #: ../../content/index.rst:202
 msgid "Ticket::Frontend::AgentTicketMasterSlave###State"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###State"
 
 #: ../../content/index.rst:203
 msgid ""
 "If a note is added by an agent, sets the state of the ticket in the "
 "ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
+"Ha egy ügyintéző hozzáadott egy megjegyzést, akkor beállítja a jegy "
+"állapotát egy nagyított jegynek a jegy mester-alárendelt képernyőjén az "
+"ügyintézői felületen."
 
 #: ../../content/index.rst:206
 msgid "Ticket::Frontend::AgentTicketMasterSlave###StateType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###StateType"
 
 #: ../../content/index.rst:207
 msgid ""
 "Defines the next state of a ticket after adding a note, in the ticket "
 "MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
+"Meghatározza egy jegy következő állapotát egy jegyzet hozzáadása után egy "
+"nagyított jegynek a jegy mester-alárendelt képernyőjén az ügyintézői "
+"felületen."
 
 #: ../../content/index.rst:210
 msgid "Ticket::Frontend::AgentTicketMasterSlave###StateDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###StateDefault"
 
 #: ../../content/index.rst:211
 msgid ""
 "Defines the default next state of a ticket after adding a note, in the "
 "ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
+"Meghatározza egy jegy alapértelmezett következő állapotát egy jegyzet "
+"hozzáadása után egy nagyított jegynek a jegy mester-alárendelt képernyőjén "
+"az ügyintézői felületen."
 
 #: ../../content/index.rst:214
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Note"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Note"
 
 #: ../../content/index.rst:215
 msgid ""
 "Allows adding notes in the ticket MasterSlave screen of a zoomed ticket "
 "in the agent interface."
 msgstr ""
+"Lehetővé teszi jegyzetek hozzáadását egy nagyított jegynek a jegy mester-"
+"alárendelt képernyőjén az ügyintézői felületen."
 
 #: ../../content/index.rst:218
 msgid "Ticket::Frontend::AgentTicketMasterSlave###NoteMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###NoteMandatory"
 
 #: ../../content/index.rst:219
 msgid ""
 "Sets if note must be filled in by the agent. Can be overwritten by "
 "Ticket::Frontend::NeedAccountedTime."
 msgstr ""
+"Beállítja, hogy a jegyzetet ki kell-e töltenie az ügyintézőnek. Felülírható "
+"a Ticket::Frontend::NeedAccountedTime használatával."
 
 #: ../../content/index.rst:222
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Subject"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Subject"
 
 #: ../../content/index.rst:223
 msgid ""
 "Sets the default subject for notes added in the ticket MasterSlave screen"
 " of a zoomed ticket in the agent interface."
 msgstr ""
+"Beállítja az alapértelmezett tárgyat egy nagyított jegynek a jegy mester-"
+"alárendelt képernyőjén hozzáadott jegyzeteknél az ügyintézői felületen."
 
 #: ../../content/index.rst:226
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Body"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Body"
 
 #: ../../content/index.rst:227
 msgid ""
 "Sets the default body text for notes added in the ticket MasterSlave "
 "screen of a zoomed ticket in the agent interface."
 msgstr ""
+"Beállítja az alapértelmezett törzsszöveget egy nagyított jegynek a jegy "
+"mester-alárendelt képernyőjén hozzáadott jegyzeteknél az ügyintézői "
+"felületen."
 
 #: ../../content/index.rst:230
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextWidth"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###RichTextWidth"
 
 #: ../../content/index.rst:231
 msgid ""
 "Defines the width for the rich text editor component for this screen. "
 "Enter number (pixels) or percent value (relative)."
 msgstr ""
+"Meghatározza a Rich Text szerkesztő-összetevő szélességét ennél a "
+"képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
 
 #: ../../content/index.rst:234
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextHeight"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###RichTextHeight"
 
 #: ../../content/index.rst:235
 msgid ""
 "Defines the height for the rich text editor component for this screen. "
 "Enter number (pixels) or percent value (relative)."
 msgstr ""
+"Meghatározza a Rich Text szerkesztő-összetevő magasságát ennél a "
+"képernyőnél. Szám (képpont) vagy százalék (relatív) értéket adjon meg."
 
 #: ../../content/index.rst:238
 msgid "Ticket::Frontend::AgentTicketMasterSlave###InvolvedAgent"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###InvolvedAgent"
 
 #: ../../content/index.rst:239
 msgid ""
 "Shows a list of all the involved agents on this ticket, in the ticket "
 "MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
+"Megjeleníti a jegyen részt vevő összes ügyintéző listáját egy nagyított "
+"jegynek a jegy mester-alárendelt képernyőjén az ügyintézői felületen."
 
 #: ../../content/index.rst:242
 msgid "Ticket::Frontend::AgentTicketMasterSlave###InformAgent"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###InformAgent"
 
 #: ../../content/index.rst:243
 msgid ""
@@ -492,86 +568,108 @@ msgid ""
 "note, in the ticket MasterSlave screen of a zoomed ticket in the agent "
 "interface."
 msgstr ""
+"Megjeleníti az összes lehetséges ügyintéző (a várólistán vagy jegyen jegyzet "
+"jogosultsággal rendelkező összes ügyintéző) listáját egy nagyított jegynek a "
+"jegy mester-alárendelt képernyőjén az ügyintézői felületen annak "
+"meghatározásához, hogy kit kell tájékoztatni erről a jegyzetről."
 
 #: ../../content/index.rst:246
 msgid "Ticket::Frontend::AgentTicketMasterSlave###IsVisibleForCustomerDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###IsVisibleForCustomerDefault"
 
 #: ../../content/index.rst:247
 msgid "Defines if the MasterSlave note is visible for the customer by default."
 msgstr ""
+"Meghatározza, hogy a mester-alárendelt jegyzet alapértelmezetten látható "
+"legyen az ügyfélnek."
 
 #: ../../content/index.rst:250
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Priority"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Priority"
 
 #: ../../content/index.rst:251
 msgid ""
 "Shows the ticket priority options in the ticket MasterSlave screen of a "
 "zoomed ticket in the agent interface."
 msgstr ""
+"Megjeleníti a jegy prioritási lehetőségeket egy nagyított jegynek a jegy "
+"mester-alárendelt képernyőjén az ügyintézői felületen."
 
 #: ../../content/index.rst:254
 msgid "Ticket::Frontend::AgentTicketMasterSlave###PriorityDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###PriorityDefault"
 
 #: ../../content/index.rst:255
 msgid ""
 "Defines the default ticket priority in the ticket MasterSlave screen of a"
 " zoomed ticket in the agent interface."
 msgstr ""
+"Meghatározza az alapértelmezett jegyprioritást egy nagyított jegynek a jegy "
+"mester-alárendelt képernyőjén az ügyintézői felületen."
 
 #: ../../content/index.rst:258
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Title"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Title"
 
 #: ../../content/index.rst:259
 msgid ""
 "Shows the title field in the ticket MasterSlave screen of a zoomed ticket"
 " in the agent interface."
 msgstr ""
+"Megjeleníti a címmezőt egy nagyított jegynek a jegy mester-alárendelt "
+"képernyőjén az ügyintézői felületen."
 
 #: ../../content/index.rst:262
 msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###HistoryType"
 
 #: ../../content/index.rst:263
 msgid ""
 "Defines the history type for the ticket MasterSlave screen action, which "
 "gets used for ticket history in the agent interface."
 msgstr ""
+"Azt az előzmény típust határozza meg a jegy mester-alárendelt képernyő "
+"műveleténél, amelyet a jegy előzményeinél szoktak használni az ügyintézői "
+"felületen."
 
 #: ../../content/index.rst:266
 msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryComment"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###HistoryComment"
 
 #: ../../content/index.rst:267
 msgid ""
 "Defines the history comment for the ticket MasterSlave screen action, "
 "which gets used for ticket history in the agent interface."
 msgstr ""
+"Azt az előzmény megjegyzést határozza meg a jegy mester-alárendelt képernyő "
+"műveleténél, amelyet a jegy előzményeinél szoktak használni az ügyintézői "
+"felületen."
 
 #: ../../content/index.rst:270
 msgid "Ticket::Frontend::AgentTicketMasterSlave###MasterSlaveMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###MasterSlaveMandatory"
 
 #: ../../content/index.rst:271
 msgid "Sets if Master / Slave field must be selected by the agent."
 msgstr ""
+"Beállítja, hogy az ügyintézőnek ki kell választania a mester/alárendelt "
+"mezőt."
 
 #: ../../content/index.rst:274
 msgid "ReplaceCustomerRealNameOnSlaveArticleTypes"
-msgstr ""
+msgstr "ReplaceCustomerRealNameOnSlaveArticleTypes"
 
 #: ../../content/index.rst:275
 msgid ""
 "This setting is deprecated and will be removed in further versions of "
 "MasterSlave."
 msgstr ""
+"Ez a beállítás elavult, és el lesz távolítva a MasterSlave csomag későbbi "
+"verzióiból."
 
 #: ../../content/index.rst:278
 msgid "ReplaceCustomerRealNameOnSlaveArticleCommunicationChannels"
-msgstr ""
+msgstr "ReplaceCustomerRealNameOnSlaveArticleCommunicationChannels"
 
 #: ../../content/index.rst:279
 msgid ""
@@ -579,48 +677,52 @@ msgid ""
 "name from Master ticket will be replaced with the one in the Slave "
 "ticket."
 msgstr ""
+"Megadja a különböző bejegyzés kommunikációs csatornákat, ahol a "
+"mesterjegyben lévő valódi név ki lesz cserélve az alárendelt jegyben lévővel."
 
 #: ../../content/index.rst:282
 msgid "Frontend::Agent::View::TicketZoom::MenuModule"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketZoom::MenuModule"
 
 #: ../../content/index.rst:285
 msgid "Ticket::Frontend::MenuModule###480-MasterSlave"
-msgstr ""
+msgstr "Ticket::Frontend::MenuModule###480-MasterSlave"
 
 #: ../../content/index.rst:286
 msgid ""
 "Shows a link in the menu to change the MasterSlave status of a ticket in "
 "the ticket zoom view of the agent interface."
 msgstr ""
+"Egy hivatkozást jelenít meg a menüben egy jegy mester-alárendelt állapotának "
+"megváltoztatásához az ügyintézői felület jegynagyítás nézetében."
 
 #: ../../content/index.rst:289
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 #: ../../content/index.rst:292
 msgid "Contact"
-msgstr ""
+msgstr "Kapcsolat"
 
 #: ../../content/index.rst:293
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../../content/index.rst:294
 msgid "Email: hello@otobo.de"
-msgstr ""
+msgstr "E-mail: hello@otobo.de"
 
 #: ../../content/index.rst:295
 msgid "Web: https://otobo.de"
-msgstr ""
+msgstr "Web: https://otobo.de"
 
 #: ../../content/index.rst:298
 msgid "Version"
-msgstr ""
+msgstr "Verzió"
 
 #: ../../content/index.rst:299
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
-
+"Szerző: |doc-vendor| / Verzió: |doc-version| / Kiadás dátuma: |doc-datestamp|"
