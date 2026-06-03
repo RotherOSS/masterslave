@@ -59,8 +59,12 @@ msgid "All slave tickets"
 msgstr "Всички подчинени билети"
 
 #. SysConfig
-msgid "Allows adding notes in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Позволява добавяне на бележки в екрана MasterSlave на билет за увеличен билет в интерфейса на агента."
+msgid ""
+"Allows adding notes in the ticket MasterSlave screen of a zoomed ticket in "
+"the agent interface."
+msgstr ""
+"Позволява добавяне на бележки в екрана MasterSlave на билет за увеличен "
+"билет в интерфейса на агента."
 
 #. SysConfig
 msgid "Change the MasterSlave state of the ticket."
@@ -71,68 +75,130 @@ msgid "Defines dynamic field name for master ticket feature."
 msgstr "Дефинира име на динамично поле за функцията на главния билет."
 
 #. SysConfig
-msgid "Defines if a ticket lock is required in the ticket MasterSlave screen of a zoomed ticket in the agent interface (if the ticket isn't locked yet, the ticket gets locked and the current agent will be set automatically as its owner)."
-msgstr "Определя дали е необходимо заключване на билет в екрана MasterSlave на билет, ескалиран билет в интерфейса на агента (ако билетът все още не е заключен, билетът се заключва и текущият агент ще бъде зададен автоматично като негов собственик)."
+msgid ""
+"Defines if a ticket lock is required in the ticket MasterSlave screen of a "
+"zoomed ticket in the agent interface (if the ticket isn't locked yet, the "
+"ticket gets locked and the current agent will be set automatically as its "
+"owner)."
+msgstr ""
+"Определя дали е необходимо заключване на билет в екрана MasterSlave на "
+"билет, ескалиран билет в интерфейса на агента (ако билетът все още не е "
+"заключен, билетът се заключва и текущият агент ще бъде зададен автоматично "
+"като негов собственик)."
 
 #. SysConfig
 msgid "Defines if the MasterSlave note is visible for the customer by default."
-msgstr "Определя дали бележката MasterSlave е видима за клиента по подразбиране."
+msgstr ""
+"Определя дали бележката MasterSlave е видима за клиента по подразбиране."
 
 #. SysConfig
-msgid "Defines the default next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Дефинира следващото състояние по подразбиране на билет след добавяне на бележка в екрана MasterSlave на билета, ескалиран билет в интерфейса на агента."
+msgid ""
+"Defines the default next state of a ticket after adding a note, in the "
+"ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+"Дефинира следващото състояние по подразбиране на билет след добавяне на "
+"бележка в екрана MasterSlave на билета, ескалиран билет в интерфейса на "
+"агента."
 
 #. SysConfig
-msgid "Defines the default ticket priority in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Определя приоритета на билета по подразбиране в екрана MasterSlave на билета, за ескалирания билет в интерфейса на агента."
+msgid ""
+"Defines the default ticket priority in the ticket MasterSlave screen of a "
+"zoomed ticket in the agent interface."
+msgstr ""
+"Определя приоритета на билета по подразбиране в екрана MasterSlave на "
+"билета, за ескалирания билет в интерфейса на агента."
 
 #. SysConfig
-msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
+msgid ""
+"Defines the height for the rich text editor component for this screen. Enter "
+"number (pixels) or percent value (relative)."
 msgstr ""
 
 #. SysConfig
-msgid "Defines the history comment for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface."
-msgstr "Дефинира коментара на историята за действието на екрана MasterSlave на билет, който се използва за хронология на билет в интерфейса на агента."
+msgid ""
+"Defines the history comment for the ticket MasterSlave screen action, which "
+"gets used for ticket history in the agent interface."
+msgstr ""
+"Дефинира коментара на историята за действието на екрана MasterSlave на "
+"билет, който се използва за хронология на билет в интерфейса на агента."
 
 #. SysConfig
-msgid "Defines the history type for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface."
-msgstr "Дефинира типа история за действието на екрана MasterSlave на билета, което се използва за хронология на билети в интерфейса на агента."
+msgid ""
+"Defines the history type for the ticket MasterSlave screen action, which "
+"gets used for ticket history in the agent interface."
+msgstr ""
+"Дефинира типа история за действието на екрана MasterSlave на билета, което "
+"се използва за хронология на билети в интерфейса на агента."
 
 #. SysConfig
-msgid "Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Дефинира следващото състояние на билет след добавяне на бележка в екрана MasterSlave на билета за ескалиран билет в интерфейса на агента."
+msgid ""
+"Defines the next state of a ticket after adding a note, in the ticket "
+"MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+"Дефинира следващото състояние на билет след добавяне на бележка в екрана "
+"MasterSlave на билета за ескалиран билет в интерфейса на агента."
 
 #. SysConfig
 msgid "Enables the advanced MasterSlave part of the feature."
 msgstr "Активира разширената MasterSlave част от функцията."
 
 #. SysConfig
-msgid "Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode."
-msgstr "Активира функцията, че подчинените билети следват главния билет към нов главен в разширен режим MasterSlave."
+msgid ""
+"Enables the feature that slave tickets follow the master ticket to a new "
+"master in the advanced MasterSlave mode."
+msgstr ""
+"Активира функцията, че подчинените билети следват главния билет към нов "
+"главен в разширен режим MasterSlave."
 
 #. SysConfig
-msgid "Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode."
-msgstr "Активира функцията за промяна на състоянието на Master Slave на билет в разширен режим Master Slave."
+msgid ""
+"Enables the feature to change the MasterSlave state of a ticket in the "
+"advanced MasterSlave mode."
+msgstr ""
+"Активира функцията за промяна на състоянието на Master Slave на билет в "
+"разширен режим Master Slave."
 
 #. SysConfig
-msgid "Enables the feature to forward articles from type 'forward' of a master ticket to the customers of the slave tickets. By default (disabled) it will not forward articles from type 'forward' to the slave tickets."
-msgstr "Активира функцията за препращане на статии от тип „напред“ на главния билет към клиентите на подчинените билети. По подразбиране (забранено) няма да препраща статии от тип „напред“ към подчинените билети."
+msgid ""
+"Enables the feature to forward articles from type 'forward' of a master "
+"ticket to the customers of the slave tickets. By default (disabled) it will "
+"not forward articles from type 'forward' to the slave tickets."
+msgstr ""
+"Активира функцията за препращане на статии от тип „напред“ на главния билет "
+"към клиентите на подчинените билети. По подразбиране (забранено) няма да "
+"препраща статии от тип „напред“ към подчинените билети."
 
 #. SysConfig
-msgid "Enables the feature to keep parent-child link after change of the MasterSlave state in the advanced MasterSlave mode."
-msgstr "Активира функцията за запазване на връзката родител-дете след промяна на състоянието на MasterSlave в разширен режим MasterSlave."
+msgid ""
+"Enables the feature to keep parent-child link after change of the "
+"MasterSlave state in the advanced MasterSlave mode."
+msgstr ""
+"Активира функцията за запазване на връзката родител-дете след промяна на "
+"състоянието на MasterSlave в разширен режим MasterSlave."
 
 #. SysConfig
-msgid "Enables the feature to keep parent-child link after unset of the MasterSlave state in the advanced MasterSlave mode."
-msgstr "Активира функцията за запазване на връзката родител-дете след отмяна на състоянието MasterSlave в разширения режим MasterSlave."
+msgid ""
+"Enables the feature to keep parent-child link after unset of the MasterSlave "
+"state in the advanced MasterSlave mode."
+msgstr ""
+"Активира функцията за запазване на връзката родител-дете след отмяна на "
+"състоянието MasterSlave в разширения режим MasterSlave."
 
 #. SysConfig
-msgid "Enables the feature to unset the MasterSlave state of a ticket in the advanced MasterSlave mode."
-msgstr "Активира функцията за премахване на състоянието MasterSlave на билет в разширения режим MasterSlave."
+msgid ""
+"Enables the feature to unset the MasterSlave state of a ticket in the "
+"advanced MasterSlave mode."
+msgstr ""
+"Активира функцията за премахване на състоянието MasterSlave на билет в "
+"разширения режим MasterSlave."
 
 #. SysConfig
-msgid "If a note is added by an agent, sets the state of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Ако бележка е добавена от агент, задава състоянието на билета в екрана MasterSlave на билета за ескалиран билет в интерфейса на агента."
+msgid ""
+"If a note is added by an agent, sets the state of the ticket in the ticket "
+"MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+"Ако бележка е добавена от агент, задава състоянието на билета в екрана "
+"MasterSlave на билета за ескалиран билет в интерфейса на агента."
 
 #. SysConfig
 msgid "Master / Slave"
@@ -151,86 +217,172 @@ msgid "MasterSlave module for Ticket Bulk feature."
 msgstr "Модул MasterSlave за функцията Групово действие."
 
 #. SysConfig
-msgid "Parameters for the dashboard backend of the master tickets overview of the agent interface. \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin."
-msgstr "Параметри на таблото за управление на главния преглед на билетите в интерфейса на агента. „Ограничение“ е броят на записите, показан по подразбиране. „Група“ се използва за ограничаване на достъпа до плъгина (напр. Група: admin;group1;group2;). „По подразбиране“ определя дали приставката е активирана по подразбиране или потребителят трябва да я активира ръчно. „CacheTTLLocal“ е времето за кеширане в минути за плъгина."
+msgid ""
+"Parameters for the dashboard backend of the master tickets overview of the "
+"agent interface. \"Limit\" is the number of entries shown by default. "
+"\"Group\" is used to restrict the access to the plugin (e. g. Group: "
+"admin;group1;group2;). \"Default\" determines if the plugin is enabled by "
+"default or if the user needs to enable it manually. \"CacheTTLLocal\" is the "
+"cache time in minutes for the plugin."
+msgstr ""
+"Параметри на таблото за управление на главния преглед на билетите в "
+"интерфейса на агента. „Ограничение“ е броят на записите, показан по "
+"подразбиране. „Група“ се използва за ограничаване на достъпа до плъгина "
+"(напр. Група: admin;group1;group2;). „По подразбиране“ определя дали "
+"приставката е активирана по подразбиране или потребителят трябва да я "
+"активира ръчно. „CacheTTLLocal“ е времето за кеширане в минути за плъгина."
 
 #. SysConfig
-msgid "Parameters for the dashboard backend of the slave tickets overview of the agent interface. \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin."
-msgstr "Параметри на таблото за управление на прегледа на подчинените билети на интерфейса на агента. „Ограничение“ е броят на записите, показан по подразбиране. „Група“ се използва за ограничаване на достъпа до плъгина (напр. Група: admin;group1;group2;). „По подразбиране“ определя дали приставката е активирана по подразбиране или потребителят трябва да я активира ръчно. „CacheTTLLocal“ е времето за кеширане в минути за плъгина."
+msgid ""
+"Parameters for the dashboard backend of the slave tickets overview of the "
+"agent interface. \"Limit\" is the number of entries shown by default. "
+"\"Group\" is used to restrict the access to the plugin (e. g. Group: "
+"admin;group1;group2;). \"Default\" determines if the plugin is enabled by "
+"default or if the user needs to enable it manually. \"CacheTTLLocal\" is the "
+"cache time in minutes for the plugin."
+msgstr ""
+"Параметри на таблото за управление на прегледа на подчинените билети на "
+"интерфейса на агента. „Ограничение“ е броят на записите, показан по "
+"подразбиране. „Група“ се използва за ограничаване на достъпа до плъгина "
+"(напр. Група: admin;group1;group2;). „По подразбиране“ определя дали "
+"приставката е активирана по подразбиране или потребителят трябва да я "
+"активира ръчно. „CacheTTLLocal“ е времето за кеширане в минути за плъгина."
 
 #. SysConfig
 msgid "Registration of the ticket event module."
 msgstr "Регистрация на модул за събитие с билети."
 
 #. SysConfig
-msgid "Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Необходими права за използване на екрана MasterSlave билет, на ескалиран билет в интерфейса на агента."
+msgid ""
+"Required permissions to use the ticket MasterSlave screen of a zoomed ticket "
+"in the agent interface."
+msgstr ""
+"Необходими права за използване на екрана MasterSlave билет, на ескалиран "
+"билет в интерфейса на агента."
 
 #. SysConfig
 msgid "Sets if Master / Slave field must be selected by the agent."
 msgstr "Задава дали полето Master/Slave трябва да бъде избрано от агента."
 
 #. SysConfig
-msgid "Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Задава основния текст по подразбиране за бележки, добавени в екрана MasterSlave на билета, за ескалиран билет в интерфейса на агента."
+msgid ""
+"Sets the default body text for notes added in the ticket MasterSlave screen "
+"of a zoomed ticket in the agent interface."
+msgstr ""
+"Задава основния текст по подразбиране за бележки, добавени в екрана "
+"MasterSlave на билета, за ескалиран билет в интерфейса на агента."
 
 #. SysConfig
-msgid "Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Задава темата по подразбиране за бележки, добавени в екрана MasterSlave на билета за ескалиран билет в интерфейса на агента."
+msgid ""
+"Sets the default subject for notes added in the ticket MasterSlave screen of "
+"a zoomed ticket in the agent interface."
+msgstr ""
+"Задава темата по подразбиране за бележки, добавени в екрана MasterSlave на "
+"билета за ескалиран билет в интерфейса на агента."
 
 #. SysConfig
-msgid "Sets the responsible agent of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Задава отговорния агент за билета в екрана MasterSlave на билета за ескалиран билет в интерфейса на агента."
+msgid ""
+"Sets the responsible agent of the ticket in the ticket MasterSlave screen of "
+"a zoomed ticket in the agent interface."
+msgstr ""
+"Задава отговорния агент за билета в екрана MasterSlave на билета за "
+"ескалиран билет в интерфейса на агента."
 
 #. SysConfig
-msgid "Sets the service in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Service needs to be activated)."
-msgstr "Задава услугата в екрана MasterSlave на билета за ескалиран билет в интерфейса на агента (Ticket::Service трябва да бъде активиран)."
+msgid ""
+"Sets the service in the ticket MasterSlave screen of a zoomed ticket in the "
+"agent interface (Ticket::Service needs to be activated)."
+msgstr ""
+"Задава услугата в екрана MasterSlave на билета за ескалиран билет в "
+"интерфейса на агента (Ticket::Service трябва да бъде активиран)."
 
 #. SysConfig
-msgid "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Задава собственика на билета в екрана MasterSlave на билета за ескалиран билет в интерфейса на агента."
+msgid ""
+"Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket in "
+"the agent interface."
+msgstr ""
+"Задава собственика на билета в екрана MasterSlave на билета за ескалиран "
+"билет в интерфейса на агента."
 
 #. SysConfig
-msgid "Sets the ticket type in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Type needs to be activated)."
-msgstr "Задава типа билет в екрана MasterSlave на билета за увеличен билет в интерфейса на агента (Ticket::Type трябва да бъде активиран)."
+msgid ""
+"Sets the ticket type in the ticket MasterSlave screen of a zoomed ticket in "
+"the agent interface (Ticket::Type needs to be activated)."
+msgstr ""
+"Задава типа билет в екрана MasterSlave на билета за увеличен билет в "
+"интерфейса на агента (Ticket::Type трябва да бъде активиран)."
 
 #. SysConfig
-msgid "Shows a link in the menu to change the MasterSlave status of a ticket in the ticket zoom view of the agent interface."
-msgstr "Показва връзка в менюто за промяна състоянието на MasterSlave билет в изгледа за увеличение на билета в интерфейса на агента."
+msgid ""
+"Shows a link in the menu to change the MasterSlave status of a ticket in the "
+"ticket zoom view of the agent interface."
+msgstr ""
+"Показва връзка в менюто за промяна състоянието на MasterSlave билет в "
+"изгледа за увеличение на билета в интерфейса на агента."
 
 #. SysConfig
-msgid "Shows a list of all the involved agents on this ticket, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Показва списък на всички включени агенти в този билет от екрана MasterSlave на билета, за увеличен билет в интерфейса на агента."
+msgid ""
+"Shows a list of all the involved agents on this ticket, in the ticket "
+"MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+"Показва списък на всички включени агенти в този билет от екрана MasterSlave "
+"на билета, за увеличен билет в интерфейса на агента."
 
 #. SysConfig
-msgid "Shows a list of all the possible agents (all agents with note permissions on the queue/ticket) to determine who should be informed about this note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Показва списък с всички възможни агенти (всички агенти с разрешения за бележка в опашката/билета), за да определи кой трябва да бъде информиран за тази бележка, в екрана MasterSlave за билет на увеличен билет в интерфейса на агента."
+msgid ""
+"Shows a list of all the possible agents (all agents with note permissions on "
+"the queue/ticket) to determine who should be informed about this note, in "
+"the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+"Показва списък с всички възможни агенти (всички агенти с разрешения за "
+"бележка в опашката/билета), за да определи кой трябва да бъде информиран за "
+"тази бележка, в екрана MasterSlave за билет на увеличен билет в интерфейса "
+"на агента."
 
 #. SysConfig
-msgid "Shows the ticket priority options in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Показва опциите за приоритет на билета в екрана MasterSlave на билета за увеличен билет в интерфейса на агента."
+msgid ""
+"Shows the ticket priority options in the ticket MasterSlave screen of a "
+"zoomed ticket in the agent interface."
+msgstr ""
+"Показва опциите за приоритет на билета в екрана MasterSlave на билета за "
+"увеличен билет в интерфейса на агента."
 
 #. SysConfig
-msgid "Shows the title field in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr "Показва полето за заглавие в екрана MasterSlave на билета за увеличен билет в интерфейса на агента."
+msgid ""
+"Shows the title field in the ticket MasterSlave screen of a zoomed ticket in "
+"the agent interface."
+msgstr ""
+"Показва полето за заглавие в екрана MasterSlave на билета за увеличен билет "
+"в интерфейса на агента."
 
 #. SysConfig
 msgid "Slave Tickets"
 msgstr "Подчинени билети"
 
 #. SysConfig
-msgid "Specifies the different article communication channels where the real name from Master ticket will be replaced with the one in the Slave ticket."
-msgstr "Указва различните канали за комуникация на статията, където истинското име от главния билет ще бъде заменено с това в подчинения билет."
+msgid ""
+"Specifies the different article communication channels where the real name "
+"from Master ticket will be replaced with the one in the Slave ticket."
+msgstr ""
+"Указва различните канали за комуникация на статията, където истинското име "
+"от главния билет ще бъде заменено с това в подчинения билет."
 
 #. SysConfig
-msgid "This module activates Master/Slave field in new email and phone ticket screens."
-msgstr "Този модул активира полето Master/Slave в нови екрани за имейл и телефонни билети."
+msgid ""
+"This module activates Master/Slave field in new email and phone ticket "
+"screens."
+msgstr ""
+"Този модул активира полето Master/Slave в нови екрани за имейл и телефонни "
+"билети."
 
 #. SysConfig
-msgid "This setting is deprecated and will be removed in further versions of MasterSlave."
-msgstr "Тази настройка е остаряла и ще бъде премахната в следващите версии на MasterSlave."
+msgid ""
+"This setting is deprecated and will be removed in further versions of "
+"MasterSlave."
+msgstr ""
+"Тази настройка е остаряла и ще бъде премахната в следващите версии на "
+"MasterSlave."
 
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "Билет MasterSlave."
-
