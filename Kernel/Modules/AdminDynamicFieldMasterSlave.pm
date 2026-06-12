@@ -101,7 +101,7 @@ sub _Add {
     my %GetParam;
 
     # check if we clone from an existing field
-    my $CloneFieldID = $ParamObject->GetParam( Param => "ID" );
+    my $CloneFieldID = $ParamObject->GetParam( Param => "CloneFieldID" );
     if ($CloneFieldID) {
         my $FieldConfig = $Kernel::OM->Get('Kernel::System::DynamicField')->DynamicFieldGet(
             ID => $CloneFieldID,
@@ -136,7 +136,7 @@ sub _Add {
     }
 
     for my $Needed (qw(ObjectType FieldType FieldOrder)) {
-        $GetParam{$Needed} //= $ParamObject->GetParam( Param => $Needed );
+        $GetParam{$Needed} //= $Kernel::OM->Get('Kernel::System::Web::Request')->GetParam( Param => $Needed );
         if ( !$GetParam{$Needed} ) {
             return $LayoutObject->ErrorScreen(
                 Message => $LayoutObject->{LanguageObject}->Translate( 'Need %s', $Needed ),
@@ -150,10 +150,12 @@ sub _Add {
     my $FieldTypeName  = $ConfigObject->Get('DynamicFields::Driver')->{ $GetParam{FieldType} }->{DisplayName}      || '';
 
     # check namespace validity
-    my $Namespaces = $ConfigObject->Get('DynamicField::Namespaces');
-    my $Namespace  = '';
-    if ( IsArrayRefWithData($Namespaces) && $GetParam{NamespaceFilter} ) {
-        $Namespace = ( grep { $_ eq $GetParam{NamespaceFilter} } $Namespaces->@* ) ? $GetParam{NamespaceFilter} : '';
+    my @DFNamespaces = $Kernel::OM->Get('Kernel::System::Namespace')->NamespacesList(
+        Scope => 'DynamicField',
+    );
+    my $Namespace = '';
+    if ( @DFNamespaces && $GetParam{NamespaceFilter} ) {
+        $Namespace = ( grep { $_ eq $GetParam{NamespaceFilter} } @DFNamespaces ) ? $GetParam{NamespaceFilter} : '';
     }
 
     return $Self->_ShowScreen(
@@ -163,7 +165,6 @@ sub _Add {
         BreadcrumbText => $LayoutObject->{LanguageObject}->Translate( 'Add %s field', $LayoutObject->{LanguageObject}->Translate($FieldTypeName) ),
         ObjectTypeName => $ObjectTypeName,
         FieldTypeName  => $FieldTypeName,
-        Namespace      => $Namespace,
     );
 }
 
@@ -383,6 +384,13 @@ sub _ChangeAction {
     my $ParamObject  = $Kernel::OM->Get('Kernel::System::Web::Request');
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 
+    my $FieldID = $ParamObject->GetParam( Param => 'ID' );
+    if ( !$FieldID ) {
+        return $LayoutObject->ErrorScreen(
+            Message => Translatable('Need ID'),
+        );
+    }
+
     my %Errors;
     my %GetParam;
     for my $Needed (qw(Name Label FieldOrder)) {
@@ -393,17 +401,9 @@ sub _ChangeAction {
         }
     }
 
-    my $FieldID = $ParamObject->GetParam( Param => 'ID' );
-    if ( !$FieldID ) {
-        return $LayoutObject->ErrorScreen(
-            Message => Translatable('Need ID'),
-        );
-    }
-
-    my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
-
     # get dynamic field data
-    my $DynamicFieldData = $DynamicFieldObject->DynamicFieldGet(
+    my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
+    my $DynamicFieldData   = $DynamicFieldObject->DynamicFieldGet(
         ID => $FieldID,
     );
 
@@ -578,29 +578,25 @@ sub _ChangeAction {
 sub _ShowScreen {
     my ( $Self, %Param ) = @_;
 
+    my $Namespace = $Param{Namespace};
     $Param{DisplayFieldName} = 'New';
 
-    my $Namespace = $Param{Namespace};
-    if ( $Param{Mode} eq 'Change' || ( $Param{Name} && !$Param{CloneFieldID} ) ) {
-        $Param{ShowWarning}      = 'ShowWarning';
-        $Param{DisplayFieldName} = $Param{Name};
+    if ( $Param{Mode} eq 'Change' || $Param{Name} ) {
+
+        if ( !$Param{CloneFieldID} ) {
+            $Param{ShowWarning}      = 'ShowWarning';
+            $Param{DisplayFieldName} = $Param{Name};
+        }
 
         # check for namespace
         if ( $Param{Name} =~ /(.*)-(.*)/ ) {
             $Namespace = $1;
-            $Param{PlainFieldName} = $2;
+            $Param{PlainFieldName} = $2 unless $Param{CloneFieldID};
         }
         else {
             $Param{PlainFieldName} = $Param{Name};
         }
     }
-
-    my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
-
-    # header
-    my $Output = join '',
-        $LayoutObject->Header,
-        $LayoutObject->NavigationBar;
 
     my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
 
@@ -629,6 +625,7 @@ sub _ShowScreen {
     }
 
     # show the names of the other fields to ease ordering
+    my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
     my %OrderNamesList;
     my $CurrentlyText = $LayoutObject->{LanguageObject}->Translate('Currently') . ': ';
     for my $OrderNumber ( sort @DynamicfieldOrderList ) {
@@ -650,16 +647,18 @@ sub _ShowScreen {
         Class         => 'Modernize W75pc Validate_Number',
     );
 
-    my $NamespaceList = $Kernel::OM->Get('Kernel::Config')->Get('DynamicField::Namespaces');
-    if ( IsArrayRefWithData($NamespaceList) ) {
+    my @DFNamespaces = $Kernel::OM->Get('Kernel::System::Namespace')->NamespacesList(
+        Scope => 'DynamicField',
+    );
+    if (@DFNamespaces) {
         my $NamespaceStrg = $LayoutObject->BuildSelection(
-            Data          => $NamespaceList,
+            Data          => \@DFNamespaces,
             Name          => 'Namespace',
             SelectedValue => $Namespace || '',
             PossibleNone  => 1,
             Translation   => 0,
             Sort          => 'AlphanumericValue',
-            Class         => 'Modernize W75pc',
+            Class         => 'Modernize W50pc',
         );
 
         $LayoutObject->Block(
@@ -679,7 +678,7 @@ sub _ShowScreen {
         SelectedID   => $Param{ValidID} || 1,
         PossibleNone => 0,
         Translation  => 1,
-        Class        => 'Modernize W50pc',
+        Class        => 'Modernize W50pc Validate_Required',
     );
 
     # create the possible values template
@@ -690,8 +689,9 @@ sub _ShowScreen {
         },
     );
 
-    # Internal fields can not be deleted and name should not change.
     my $ReadonlyInternalField = '';
+
+    # Internal fields can not be deleted and name should not change.
     if ( $Param{InternalField} ) {
         $LayoutObject->Block(
             Name => 'InternalField',
@@ -710,7 +710,7 @@ sub _ShowScreen {
         );
     }
 
-    if ( IsArrayRefWithData($NamespaceList) ) {
+    if (@DFNamespaces) {
         if ( IsStringWithData( $Param{NamespaceFilter} ) ) {
             $FilterStrg .= ";NamespaceFilter=" . $LayoutObject->Output(
                 Template => '[% Data.Filter | uri %]',
@@ -723,7 +723,8 @@ sub _ShowScreen {
 
     # generate output
     return join '',
-        $Output,
+        $LayoutObject->Header,
+        $LayoutObject->NavigationBar,
         $LayoutObject->Output(
             TemplateFile => $Self->{TemplateFile},
             Data         => {
