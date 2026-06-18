@@ -112,17 +112,6 @@ sub new {
     # frontend specific config
     my $Config = $Kernel::OM->Get('Kernel::Config')->Get("Ticket::Frontend::$Self->{Action}");
 
-# Rother OSS / MasterSlave
-    # get master/slave dynamic field
-    $Self->{MasterSlaveDynamicField}    = $Kernel::OM->Get('Kernel::Config')->Get('MasterSlave::DynamicField')    || '';
-    $Self->{MasterSlaveAdvancedEnabled} = $Kernel::OM->Get('Kernel::Config')->Get('MasterSlave::AdvancedEnabled') || 0;
-
-    if ( $Self->{MasterSlaveAdvancedEnabled} ) {
-        my $Display = $Config->{MasterSlaveMandatory} ? 2 : 1;
-        $Config->{DynamicField}->{ $Self->{MasterSlaveDynamicField} } = $Display;
-    }
-
-# EO MasterSlave
     my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
 
     # get the dynamic fields for this screen
@@ -260,6 +249,11 @@ sub new {
             NewResponsibleID => 1,
         },
     };
+
+# Rother OSS / MasterSlave
+    # fetch MasterSlave dynamic field name
+    $Self->{MasterSlaveDynamicField} = $Kernel::OM->Get('Kernel::Config')->Get('MasterSlaveDynamicField') || '';
+# EO MasterSlave
 
     return $Self;
 }
@@ -942,16 +936,6 @@ sub Run {
         for my $DynamicFieldConfig ( values $Self->{DynamicField}->%* ) {
             next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
 
-# Rother OSS / MasterSlave
-            if (
-                !$Self->{MasterSlaveAdvancedEnabled}
-                && $DynamicFieldConfig->{Name} eq $Self->{MasterSlaveDynamicField}
-                )
-            {
-                next DYNAMICFIELD;
-            }
-
-# EO MasterSlave
             my $PossibleValuesFilter;
 
             my $IsACLReducible = $DynamicFieldBackendObject->HasBehavior(
@@ -996,16 +980,16 @@ sub Run {
             }
 
             $DynamicFieldPossibleValues{ 'DynamicField_' . $DynamicFieldConfig->{Name} } = $PossibleValuesFilter;
-# Rother OSS / MasterSlave
 
+# Rother OSS / MasterSlave
             if ( $DynamicFieldConfig->{Name} eq $Self->{MasterSlaveDynamicField} ) {
                 $PossibleValuesFilter = $Self->_GetMasterSlaveData(
                     Ticket                  => \%Ticket,
                     MasterSlaveDynamicField => $Self->{MasterSlaveDynamicField},
                 );
             }
-
 # EO MasterSlave
+
             # Do not validate only if object type is Article and CreateArticle value is not defined, or Field is invisible.
             if (
                 !( $DynamicFieldConfig->{ObjectType} eq 'Article' && !$GetParam{CreateArticle} )
@@ -1542,16 +1526,6 @@ sub Run {
             next DYNAMICFIELD if !IsHashRefWithData($DynamicFieldConfig);
             next DYNAMICFIELD if !$Visibility{"DynamicField_$DynamicFieldConfig->{Name}"};
             next DYNAMICFIELD if $DynamicFieldConfig->{Readonly};
-# Rother OSS / MasterSlave
-            if (
-                !$Self->{MasterSlaveAdvancedEnabled}
-                && $DynamicFieldConfig->{Name} eq $Self->{MasterSlaveDynamicField}
-                )
-            {
-                next DYNAMICFIELD;
-            }
-
-# EO MasterSlave
 
             # set the object ID (TicketID or ArticleID) depending on the field configuration
             my $ObjectID = $DynamicFieldConfig->{ObjectType} eq 'Article'
@@ -2128,16 +2102,6 @@ sub Run {
         for my $DynamicFieldConfig ( values $Self->{DynamicField}->%* ) {
             next DYNAMICFIELD unless IsHashRefWithData($DynamicFieldConfig);
 
-# Rother OSS / MasterSlave
-            if (
-                !$Self->{MasterSlaveAdvancedEnabled}
-                && $DynamicFieldConfig->{Name} eq $Self->{MasterSlaveDynamicField}
-                )
-            {
-                next DYNAMICFIELD;
-            }
-
-# EO MasterSlave
             # This overwrites the values that might have been taken from the web request.
             # Note that there shouldn't be any values from the web request,
             # because submits, successful and unsuccessful have been handled already above.
@@ -2404,7 +2368,6 @@ sub Run {
             Ticket                  => \%Ticket,
             MasterSlaveDynamicField => $Self->{MasterSlaveDynamicField},
         );
-
 # EO MasterSlave
 
         # print form ...
@@ -4022,7 +3985,6 @@ sub _GetMasterSlaveData {
 
     return \%Data;
 }
-
 # EO MasterSlave
 
 1;

@@ -19,7 +19,13 @@ package Kernel::Output::HTML::TicketBulk::MasterSlave;
 use strict;
 use warnings;
 
-use Kernel::Language qw(Translatable);
+# core modules
+
+# CPAN modules
+
+# OTOBO modules
+use Kernel::Language              qw(Translatable);
+use Kernel::System::VariableCheck qw(IsHashRefWithData);
 
 our @ObjectDependencies = (
     'Kernel::Config',
@@ -40,10 +46,10 @@ sub new {
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
     # get master/slave dynamic field
-    $Self->{MasterSlaveDynamicField}    = $ConfigObject->Get('MasterSlave::DynamicField')    || '';
-    $Self->{MasterSlaveAdvancedEnabled} = $ConfigObject->Get('MasterSlave::AdvancedEnabled') || 0;
+    $Self->{MasterSlaveDynamicField} = $ConfigObject->Get('MasterSlave::DynamicField')                                || '';
+    $Self->{DynamicField}            = $ConfigObject->Get('Ticket::Frontend::AgentTicketMasterSlave')->{DynamicField} || {};
 
-    if ( $Self->{MasterSlaveDynamicField} ) {
+    if ( $Self->{MasterSlaveDynamicField} && $Self->{DynamicField}{ $Self->{MasterSlaveDynamicField} } ) {
         $Self->{DynamicFieldConfig} = $Kernel::OM->Get('Kernel::System::DynamicField')->DynamicFieldGet(
             Name => $Self->{MasterSlaveDynamicField},
         );
@@ -56,8 +62,8 @@ sub Display {
     my ( $Self, %Param ) = @_;
 
     # if there is no configured dynamic field or if advanced mode is not enable, there is nothing to do
-    return if !$Self->{MasterSlaveDynamicField};
-    return if !$Self->{MasterSlaveAdvancedEnabled};
+    return unless $Self->{DynamicFieldConfig};
+    return unless IsHashRefWithData( $Self->{DynamicFieldConfig} );
 
     my $ServerError;
     my $ErrorMessage;
@@ -98,8 +104,8 @@ sub Validate {
     my ( $Self, %Param ) = @_;
 
     # if there is no configured dynamic field or if advanced mode is not enable, there is nothing to do
-    return if !$Self->{MasterSlaveDynamicField};
-    return if !$Self->{MasterSlaveAdvancedEnabled};
+    return unless $Self->{DynamicFieldConfig};
+    return unless IsHashRefWithData( $Self->{DynamicFieldConfig} );
 
     my $PossibleValuesFilter = $Self->_GetMasterSlaveData(
         %Param,
@@ -129,8 +135,8 @@ sub Store {
     my ( $Self, %Param ) = @_;
 
     # if there is no configured dynamic field or if advanced mode is not enable, there is nothing to do
-    return 1 if !$Self->{MasterSlaveDynamicField};
-    return 1 if !$Self->{MasterSlaveAdvancedEnabled};
+    return 1 unless $Self->{DynamicFieldConfig};
+    return 1 unless IsHashRefWithData( $Self->{DynamicFieldConfig} );
 
     # get needed objects
     my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
