@@ -54,10 +54,6 @@ Registration of the ticket event module.
 Core::MasterSlave
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-MasterSlave::AdvancedEnabled
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Enables the advanced MasterSlave part of the feature.
-
 MasterSlave::DynamicField
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines dynamic field name for master ticket feature.
@@ -172,6 +168,10 @@ Ticket::Frontend::AgentTicketMasterSlave###Body
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.
 
+Ticket::Frontend::AgentTicketMasterSlave###DynamicField
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic fields shown in the ticket master slave screen of the agent interface.
+
 Ticket::Frontend::AgentTicketMasterSlave###HistoryComment
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines the history comment for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface.
@@ -191,10 +191,6 @@ Shows a list of all the involved agents on this ticket, in the ticket MasterSlav
 Ticket::Frontend::AgentTicketMasterSlave###IsVisibleForCustomerDefault
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Defines if the MasterSlave note is visible for the customer by default.
-
-Ticket::Frontend::AgentTicketMasterSlave###MasterSlaveMandatory
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Sets if Master / Slave field must be selected by the agent.
 
 Ticket::Frontend::AgentTicketMasterSlave###Note
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -282,6 +278,17 @@ Frontend::Agent::View::TicketZoom::MenuModule
 Ticket::Frontend::MenuModule###480-MasterSlave
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Shows a link in the menu to change the MasterSlave status of a ticket in the ticket zoom view of the agent interface.
+
+Frontend::Base::DynamicFieldScreens
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+DynamicFieldScreens###MasterSlave
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+This configuration defines all possible screens to enable or disable dynamic fields.
+
+DynamicFieldScreens::ObjectTypes###MasterSlave
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 Frontend::Base::OutputFilter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
