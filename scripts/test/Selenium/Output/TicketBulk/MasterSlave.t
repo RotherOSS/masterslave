@@ -18,9 +18,12 @@ use strict;
 use warnings;
 use utf8;
 
+use Kernel::System::UnitTest::RegisterDriver;    # Set up $Self and $Kernel::OM
+
 our $Self;
 
-my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
+use Kernel::System::UnitTest::Selenium;
+my $Selenium = Kernel::System::UnitTest::Selenium->new( LogExecuteCommandActive => 1 );
 
 $Selenium->RunTest(
     sub {
@@ -28,10 +31,13 @@ $Selenium->RunTest(
         my $Helper       = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
         my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
 
-        # Enable the advanced MasterSlave.
+        # add the MasterSlave field to the relevant screen
         $Helper->ConfigSettingChange(
-            Key   => 'MasterSlave::AdvancedEnabled',
-            Value => 1,
+            Valid => 1,
+            Key   => 'Ticket::Frontend::AgentTicketMasterSlave###DynamicField',
+            Value => {
+                $Kernel::OM->Get('Kernel::Config')->Get('MasterSlave::DynamicField') => 1,
+            }
         );
 
         # Enable change the MasterSlave state of a ticket.
@@ -60,7 +66,7 @@ $Selenium->RunTest(
         my @TicketIDs;
         my @TicketNumbers;
         my $TicketTitle = 'MasterSlave ' . $Helper->GetRandomID();
-        for my $TicketCreate ( 1 .. 3 ) {
+        for ( 1 .. 3 ) {
             my $TicketNumber = $TicketObject->TicketCreateNumber();
             my $TicketID     = $TicketObject->TicketCreate(
                 TN           => $TicketNumber,
@@ -222,4 +228,4 @@ $Selenium->RunTest(
     }
 );
 
-1;
+$Self->DoneTesting();

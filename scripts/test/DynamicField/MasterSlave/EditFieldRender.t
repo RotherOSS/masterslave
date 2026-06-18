@@ -18,6 +18,8 @@ use strict;
 use warnings;
 use utf8;
 
+use Kernel::System::UnitTest::RegisterDriver;    # Set up $Self and $Kernel::OM
+
 our $Self;
 
 use Kernel::System::VariableCheck qw(:all);
@@ -40,7 +42,6 @@ $Kernel::OM->ObjectParamAdd(
         RestoreDatabase => 1,
     },
 );
-my $HelperObject = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
 # ------------------------------------------------------------ #
 # make preparations
@@ -97,9 +98,13 @@ my @Tests = (
         },
         ExpectedResults => {
             Field =>
-                '<select class="DynamicFieldText Modernize" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
+                '
+<select class="DynamicFieldText Modernize" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
   <option value="Master">New Master Ticket</option>
 </select>
+
+
+
 ',
             Label => '<label id="LabelDynamicField_MasterSlave" for="DynamicField_MasterSlave">
 Master Ticket:
@@ -121,11 +126,15 @@ Master Ticket:
         },
         ExpectedResults => {
             Field =>
-                '<select class="DynamicFieldText Modernize" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
+                '
+<select class="DynamicFieldText Modernize" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
   <option value="Master">New Master Ticket</option>
   <option value="UnsetMaster">Unset Master Tickets</option>
   <option value="UnsetSlave">Unset Slave Tickets</option>
 </select>
+
+
+
 ',
             Label => '<label id="LabelDynamicField_MasterSlave" for="DynamicField_MasterSlave">
 Master Ticket:
@@ -143,10 +152,15 @@ Master Ticket:
             UseDefaultValue    => 0,
         },
         ExpectedResults => {
-            Field => <<"EOF" . '</select>',
+            Field => <<"EOF",
+
 <select class="DynamicFieldText Modernize MyClass" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
   <option value="">-</option>
   <option value="Master">New Master Ticket</option>
+</select>
+
+
+
 EOF
             Label => '<label id="LabelDynamicField_MasterSlave" for="DynamicField_MasterSlave">
 Master Ticket:
@@ -163,10 +177,15 @@ Master Ticket:
             Class              => 'MyClass',
         },
         ExpectedResults => {
-            Field => <<"EOF" . '</select>',
+            Field => <<"EOF",
+
 <select class="DynamicFieldText Modernize MyClass" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
-  <option value="" selected="selected">-</option>
+  <option value="" selected>-</option>
   <option value="Master">New Master Ticket</option>
+</select>
+
+
+
 EOF
             Label => '<label id="LabelDynamicField_MasterSlave" for="DynamicField_MasterSlave">
 Master Ticket:
@@ -185,10 +204,15 @@ Master Ticket:
             UseDefaultValue    => 0,
         },
         ExpectedResults => {
-            Field => <<"EOF" . '</select>',
+            Field => <<"EOF",
+
 <select class="DynamicFieldText Modernize MyClass" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
   <option value="">-</option>
-  <option value="Master" selected="selected">New Master Ticket</option>
+  <option value="Master" selected>New Master Ticket</option>
+</select>
+
+
+
 EOF
             Label => '<label id="LabelDynamicField_MasterSlave" for="DynamicField_MasterSlave">
 Master Ticket:
@@ -209,15 +233,20 @@ Master Ticket:
         },
         ExpectedResults => {
             Field =>
-                '<select class="DynamicFieldText Modernize MyClass Validate_Required" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
+                '
+<select class="DynamicFieldText Modernize MyClass Validate_Required" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
   <option value="">-</option>
-  <option value="Master" selected="selected">New Master Ticket</option>
+  <option value="Master" selected>New Master Ticket</option>
 </select>
+
+
 <div id="DynamicField_MasterSlaveError" class="TooltipErrorMessage">
     <p>
         This field is required.
     </p>
 </div>
+
+
 ',
             Label => '<label id="LabelDynamicField_MasterSlave" for="DynamicField_MasterSlave" class="Mandatory">
     <span class="Marker">*</span>
@@ -240,15 +269,20 @@ Master Ticket:
         },
         ExpectedResults => {
             Field =>
-                '<select class="DynamicFieldText Modernize MyClass ServerError" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
+                '
+<select class="DynamicFieldText Modernize MyClass ServerError" id="DynamicField_MasterSlave" name="DynamicField_MasterSlave" size="1">
   <option value="">-</option>
-  <option value="Master" selected="selected">New Master Ticket</option>
+  <option value="Master" selected>New Master Ticket</option>
 </select>
+
+
+
 <div id="DynamicField_MasterSlaveServerError" class="TooltipErrorMessage">
     <p>
         This is an error.
     </p>
 </div>
+
 ',
             Label => '<label id="LabelDynamicField_MasterSlave" for="DynamicField_MasterSlave">
 Master Ticket:
@@ -281,4 +315,4 @@ for my $Test (@Tests) {
 
 # Cleanup is done by RestoreDatabase.
 
-1;
+$Self->DoneTesting();

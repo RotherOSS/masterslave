@@ -20,9 +20,12 @@ use utf8;
 
 use Kernel::System::VariableCheck qw(:all);
 
+use Kernel::System::UnitTest::RegisterDriver;    # Set up $Self and $Kernel::OM
+
 our $Self;
 
-my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
+use Kernel::System::UnitTest::Selenium;
+my $Selenium = Kernel::System::UnitTest::Selenium->new( LogExecuteCommandActive => 1 );
 
 $Selenium->RunTest(
     sub {
@@ -30,10 +33,13 @@ $Selenium->RunTest(
         my $Helper       = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
         my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
 
-        # Enable the advanced MasterSlave.
+        # add the MasterSlave field to the relevant screen
         $Helper->ConfigSettingChange(
-            Key   => 'MasterSlave::AdvancedEnabled',
-            Value => 1,
+            Valid => 1,
+            Key   => 'Ticket::Frontend::AgentTicketMasterSlave###DynamicField',
+            Value => {
+                $Kernel::OM->Get('Kernel::Config')->Get('MasterSlave::DynamicField') => 1,
+            }
         );
 
         # Enable change the MasterSlave state of a ticket.
@@ -61,7 +67,7 @@ $Selenium->RunTest(
             Value => 0,
         );
 
-        # Make sure InvovedAgent and InformAgent are disabled, otherwise it uses part of the visible
+        # Make sure InvolvedAgent and InformAgent are disabled, otherwise it uses part of the visible
         # Screen making the submit button not visible and then not click-able.
         $Helper->ConfigSettingChange(
             Key   => 'Ticket::Frontend::AgentTicketMasterSlave###InvolvedAgent',
@@ -91,7 +97,7 @@ $Selenium->RunTest(
         # Create two test tickets.
         my @TicketIDs;
         my @TicketNumbers;
-        for my $TicketCreate ( 1 .. 2 ) {
+        for ( 1 .. 2 ) {
             my $TicketNumber = $TicketObject->TicketCreateNumber();
             my $TicketID     = $TicketObject->TicketCreate(
                 TN           => $TicketNumber,
@@ -126,6 +132,14 @@ $Selenium->RunTest(
 
         # Navigate to ticket zoom page of first created test ticket.
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentTicketZoom;TicketID=$TicketIDs[0]");
+
+        # Force sub menus to be visible in order to be able to click one of the links.
+        $Selenium->execute_script("\$('#nav-Miscellaneous ul').css('height', 'auto');");
+        $Selenium->execute_script("\$('#nav-Miscellaneous ul').css('opacity', '1');");
+        $Selenium->WaitFor(
+            JavaScript =>
+                "return \$('#nav-Miscellaneous ul').css('height') !== '0px' && \$('#nav-Miscellaneous ul').css('opacity') == '1';"
+        );
 
         # Click on MasterSlave and switch window.
         $Selenium->find_element("//a[contains(\@href, \'Action=AgentTicketMasterSlave;TicketID=$TicketIDs[0]' )]")
@@ -196,6 +210,14 @@ $Selenium->RunTest(
         # Navigate to ticket zoom page of second created test ticket.
         $Selenium->VerifiedGet("${ScriptAlias}index.pl?Action=AgentTicketZoom;TicketID=$TicketIDs[1]");
 
+        # Force sub menus to be visible in order to be able to click one of the links.
+        $Selenium->execute_script("\$('#nav-Miscellaneous ul').css('height', 'auto');");
+        $Selenium->execute_script("\$('#nav-Miscellaneous ul').css('opacity', '1');");
+        $Selenium->WaitFor(
+            JavaScript =>
+                "return \$('#nav-Miscellaneous ul').css('height') !== '0px' && \$('#nav-Miscellaneous ul').css('opacity') == '1';"
+        );
+
         # Click on MasterSlave and switch window.
         $Selenium->find_element("//a[contains(\@href, \'Action=AgentTicketMasterSlave;TicketID=$TicketIDs[1]' )]")
             ->click();
@@ -265,7 +287,7 @@ $Selenium->RunTest(
         );
 
         # Create two more test tickets.
-        for my $TicketCreate ( 1 .. 2 ) {
+        for ( 1 .. 2 ) {
             my $TicketNumber = $TicketObject->TicketCreateNumber();
             my $TicketID     = $TicketObject->TicketCreate(
                 TN           => $TicketNumber,
@@ -471,4 +493,4 @@ $Selenium->RunTest(
     }
 );
 
-1;
+$Self->DoneTesting();

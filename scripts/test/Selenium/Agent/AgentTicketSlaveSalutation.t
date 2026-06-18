@@ -20,9 +20,12 @@ use utf8;
 
 use Kernel::System::VariableCheck qw(:all);
 
+use Kernel::System::UnitTest::RegisterDriver;    # Set up $Self and $Kernel::OM
+
 our $Self;
 
-my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
+use Kernel::System::UnitTest::Selenium;
+my $Selenium = Kernel::System::UnitTest::Selenium->new( LogExecuteCommandActive => 1 );
 
 $Selenium->RunTest(
     sub {
@@ -201,11 +204,6 @@ $Selenium->RunTest(
             Groups => [ 'admin', 'users' ],
         );
 
-        # Get test user ID.
-        my $TestUserID = $Kernel::OM->Get('Kernel::System::User')->UserLookup(
-            UserLogin => $TestUserLogin,
-        );
-
         # Login as test user.
         $Selenium->Login(
             Type     => 'Agent',
@@ -240,8 +238,11 @@ $Selenium->RunTest(
         );
 
         # Check if slave ticket article hes salutation in rich text format. See bug#14983.
+        # adapt comparison text to end with non-breaking space
+        my $SalutationCompare = $SalutationText;
+        $SalutationCompare =~ s/ </&nbsp;</;
         $Self->True(
-            index( $Selenium->get_page_source(), $SalutationText ) > -1,
+            index( $Selenium->get_page_source(), $SalutationCompare ) > -1,
             "Slave article contains rich text '$SalutationText'. ",
         );
 
@@ -301,4 +302,4 @@ $Selenium->RunTest(
     }
 );
 
-1;
+$Self->DoneTesting();

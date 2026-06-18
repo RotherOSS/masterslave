@@ -18,6 +18,9 @@ use strict;
 use warnings;
 use utf8;
 
+use Kernel::System::UnitTest::RegisterDriver;    # Set up $Self and $Kernel::OM
+use Kernel::System::UnitTest::Selenium;
+
 our $Self;
 
 # start RestoreDatabse
@@ -243,4 +246,4 @@ for my $Test (@Tests) {
     );
 }
 
-1;
+$Self->DoneTesting();

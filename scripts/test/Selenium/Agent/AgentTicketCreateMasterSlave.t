@@ -18,9 +18,12 @@ use strict;
 use warnings;
 use utf8;
 
+use Kernel::System::UnitTest::RegisterDriver;    # Set up $Self and $Kernel::OM
+
 our $Self;
 
-my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');
+use Kernel::System::UnitTest::Selenium;
+my $Selenium = Kernel::System::UnitTest::Selenium->new( LogExecuteCommandActive => 1 );
 
 # Create local function for wait on AJAX update.
 my $WaitForAJAX = sub {
@@ -38,10 +41,13 @@ $Selenium->RunTest(
 
         my $Helper = $Kernel::OM->Get('Kernel::System::UnitTest::Helper');
 
-        # Enable the advanced MasterSlave.
+        # add the MasterSlave field to the relevant screen
         $Helper->ConfigSettingChange(
-            Key   => 'MasterSlave::AdvancedEnabled',
-            Value => 1,
+            Valid => 1,
+            Key   => 'Ticket::Frontend::AgentTicketMasterSlave###DynamicField',
+            Value => {
+                $Kernel::OM->Get('Kernel::Config')->Get('MasterSlave::DynamicField') => 1,
+            }
         );
 
         # Do not check RichText.
@@ -278,4 +284,4 @@ $Selenium->RunTest(
     }
 );
 
-1;
+$Self->DoneTesting();

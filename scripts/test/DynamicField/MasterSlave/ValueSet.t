@@ -18,6 +18,8 @@ use strict;
 use warnings;
 use utf8;
 
+use Kernel::System::UnitTest::RegisterDriver;    # Set up $Self and $Kernel::OM
+
 our $Self;
 use Kernel::System::VariableCheck qw(IsHashRefWithData);
 
@@ -404,4 +406,4 @@ $Self->True(
 
 # Cleanup is done by RestoreDatabase.
 
-1;
+$Self->DoneTesting();

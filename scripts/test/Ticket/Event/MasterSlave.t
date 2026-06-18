@@ -18,18 +18,17 @@ use strict;
 use warnings;
 use utf8;
 
+use Kernel::System::UnitTest::RegisterDriver;    # Set up $Self and $Kernel::OM
+
 our $Self;
 
 # get needed objects
 my $TicketObject              = $Kernel::OM->Get('Kernel::System::Ticket');
 my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
-my $LinkObject                = $Kernel::OM->Get('Kernel::System::LinkObject');
 my $DynamicFieldObject        = $Kernel::OM->Get('Kernel::System::DynamicField');
-my $UserObject                = $Kernel::OM->Get('Kernel::System::User');
-my $CustomerUserObject        = $Kernel::OM->Get('Kernel::System::CustomerUser');
 my $ConfigObject              = $Kernel::OM->Get('Kernel::Config');
 
-# start RestoreDatabse
+# start RestoreDatabase
 $Kernel::OM->ObjectParamAdd(
     'Kernel::System::UnitTest::Helper' => {
         RestoreDatabase => 1,
@@ -526,4 +525,4 @@ $Self->IsDeeply(
 
 # cleanup is done by RestoreDatabase
 
-1;
+$Self->DoneTesting();
