@@ -197,7 +197,27 @@ sub CodeUpgradeFromLowerThan_4_0_91 {    ## no critic qw(OTOBO::RequireCamelCase
     return 1;
 }
 
-=item CodeUninstall()
+=head2 CodeUpgradeFromLowerThan_11_1_0()
+
+This function is only executed if the installed module version is smaller than 11.1.0.
+
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_11_1_0();
+
+=cut
+
+sub CodeUpgradeFromLowerThan_11_1_0 {    ## no critic qw(OTOBO::RequireCamelCase)
+    my ( $Self, %Param ) = @_;
+
+    # migrate
+    #   - MasterSlave::AdvancedEnabled
+    #   - Ticket::Frontend::AgentTicketMasterSlave###MasterSlaveMandatory
+    # to new dynamic field sysconfig
+    $Self->_MigrateDynamicFieldConfigs();
+
+    return 1;
+}
+
+=head2 CodeUninstall()
 
 run the code uninstall part
 
@@ -859,6 +879,104 @@ sub _MigrateConfigs {
 
     return 1;
 }
+
+sub _MigrateDynamicFieldConfigs {
+
+    my $CacheObject     = $Kernel::OM->Get('Kernel::System::Cache');
+    my $ConfigObject    = $Kernel::OM->Get('Kernel::Config');
+    my $SysConfigObject = $Kernel::OM->Get('Kernel::System::SysConfig');
+
+    my $MasterSlaveDynamicField = $ConfigObject->Get('MasterSlave::DynamicField');
+
+    # fetch old setting for checks and retrieving old value
+    my $Cache = $CacheObject->Get(
+        Type => 'MasterSlave',
+        Key  => 'StoredDynamicFieldConfig',
+    );
+    my $MasterSlaveAdvancedEnabled = $Cache->{AdvancedEnabled};
+    my $MasterSlaveMandatory       = $Cache->{Mandatory};
+
+    # clean up cache after usage
+    $CacheObject->CleanUp(
+        Type => 'MasterSlave',
+    );
+
+    return unless $MasterSlaveAdvancedEnabled;
+
+    # fetch new setting for updating and storing
+    my %MasterSlaveDynamicFieldSetting = $SysConfigObject->SettingGet(
+        Name => 'Ticket::Frontend::AgentTicketMasterSlave###DynamicField',
+    );
+    if ( !%MasterSlaveDynamicFieldSetting ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Could not fetch setting 'Ticket::Frontend::AgentTicketMasterSlave###DynamicField' - aborting."
+        );
+
+        return;
+    }
+
+    my %SettingValue = (
+        $MasterSlaveDynamicField => $MasterSlaveMandatory ? 2 : 1,
+    );
+
+    my $ExclusiveLockGUID = $SysConfigObject->SettingLock(
+        UserID    => 1,
+        Force     => 1,
+        DefaultID => $MasterSlaveDynamicFieldSetting{DefaultID},
+    );
+
+    # Update setting with modified data
+    my %Result = $SysConfigObject->SettingUpdate(
+        Name              => 'Ticket::Frontend::AgentTicketMasterSlave###DynamicField',
+        IsValid           => 1,
+        EffectiveValue    => \%SettingValue,
+        ExclusiveLockGUID => $ExclusiveLockGUID,
+        UserID            => 1,
+    );
+
+    if ( !$Result{Success} ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Could not update setting 'Ticket::Frontend::AgentTicketMasterSlave###DynamicField'.",
+        );
+
+        return;
+    }
+
+    my $Success = $SysConfigObject->SettingUnlock(
+        UserID    => 1,
+        DefaultID => $MasterSlaveDynamicFieldSetting{DefaultID},
+    );
+
+    if ( !$Success ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Could not unlock setting 'Ticket::Frontend::AgentTicketMasterSlave###DynamicField'.",
+        );
+
+        return;
+    }
+
+    my %DeploymentResult = $SysConfigObject->ConfigurationDeploy(
+        Comments      => "",
+        UserID        => 1,
+        Force         => 1,
+        DirtySettings => ['Ticket::Frontend::AgentTicketMasterSlave###DynamicField'],
+    );
+
+    if ( !$DeploymentResult{Success} ) {
+        $Kernel::OM->Get('Kernel::System::Log')->Log(
+            Priority => 'error',
+            Message  => "Deployment failed.",
+        );
+
+        return;
+    }
+
+    return 1;
+}
+
 1;
 
 =back
