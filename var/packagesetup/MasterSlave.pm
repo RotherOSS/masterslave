@@ -38,17 +38,13 @@ our @ObjectDependencies = (
 
 var::packagesetup::MasterSlave - code to execute during package installation
 
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Functions for installing the MasterSlave package.
 
 =head1 PUBLIC INTERFACE
 
-=over 4
-
-=cut
-
-=item new()
+=head2 new()
 
 create an object. Do not use it directly, instead use:
 
@@ -98,7 +94,7 @@ sub new {
     return $Self;
 }
 
-=item CodeInstall()
+=head2 CodeInstall()
 
 run the code install part
 
@@ -129,7 +125,7 @@ sub CodeInstall {
     return 1;
 }
 
-=item CodeReinstall()
+=head2 CodeReinstall()
 
 run the code reinstall part
 
@@ -143,7 +139,7 @@ sub CodeReinstall {
     return 1;
 }
 
-=item CodeUpgrade()
+=head2 CodeUpgrade()
 
 run the code upgrade part
 
@@ -162,7 +158,7 @@ sub CodeUpgrade {
     return 1;
 }
 
-=item CodeUpgrade125()
+=head2 CodeUpgrade125()
 
 run the code upgrade part for versions prior to 1.2.5
 
@@ -180,11 +176,11 @@ sub CodeUpgrade125 {
     return 1;
 }
 
-=item CodeUpgradeFromLowerThan_4_0_91()
+=head2 CodeUpgradeFromLowerThan_4_0_91()
 
 This function is only executed if the installed module version is smaller than 4.0.91.
 
-my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_91();
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_4_0_91();
 
 =cut
 
@@ -287,7 +283,6 @@ sub _SetDynamicFields {
 
             # update field configuration if it was other than MasterSlave (e.g. Dropdown)
             if ( $DynamicFieldConfig->{FieldType} ne 'MasterSlave' ) {
-                my $ID = $DynamicFieldConfig->{ID};
                 %{$DynamicFieldConfig} = ( %{$DynamicFieldConfig}, %{ $NewDynamicFields{$NewFieldName} } );
                 $Update = 1;
             }
@@ -556,7 +551,6 @@ sub _MigrateMasterSlaveData {
     return if !IsHashRefWithData($DynamicFieldConfig);
 
     # loop over the ticket ids we have to update
-    OLDSLAVESTYLE:
     for my $TicketID (@DynamicFieldData) {
 
         # get linked objects
@@ -978,15 +972,3 @@ sub _MigrateDynamicFieldConfigs {
 }
 
 1;
-
-=back
-
-=head1 TERMS AND CONDITIONS
-
-This software is part of the OTOBO project (L<https://otobo.org/>).
-
-This software comes with ABSOLUTELY NO WARRANTY. For details, see
-the enclosed file COPYING for license information (GPL). If you
-did not receive this file, see L<https://www.gnu.org/licenses/gpl-3.0.txt>.
-
-=cut
