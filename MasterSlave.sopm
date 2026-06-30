@@ -98,29 +98,24 @@
     <!-- intended to run when upgrading package from 11.0.x to 11.1.x -->
     <CodeUpgrade Type="pre" Version="11.1.0"><![CDATA[
 
-        # create the package name
-        my $CodeModule = 'var::packagesetup::' . $Param{Structure}->{Name}->{Content};
-
         # store the old config in the cache to persist during the upgrade process
         #   NOTE necessary to do here because the updated var/packagesetup is not present at this point
-        {
-            my $CacheObject  = $Kernel::OM->Get('Kernel::System::Cache');
-            my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+        my $CacheObject  = $Kernel::OM->Get('Kernel::System::Cache');
+        my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
 
-            # fetch old setting for checks and retrieving old value
-            my $MasterSlaveAdvancedEnabled = $ConfigObject->Get('MasterSlave::AdvancedEnabled');
-            my $MasterSlaveMandatory       = $ConfigObject->Get('Ticket::Frontend::AgentTicketMasterSlave')->{MasterSlaveMandatory};
+        # retrieve value of old settings
+        my $MasterSlaveAdvancedEnabled = $ConfigObject->Get('MasterSlave::AdvancedEnabled');
+        my $MasterSlaveMandatory       = $ConfigObject->Get('Ticket::Frontend::AgentTicketMasterSlave')->{MasterSlaveMandatory};
 
-            $CacheObject->Set(
-                Type  => 'MasterSlave',
-                Key   => 'StoredDynamicFieldConfig',
-                Value => {
-                    AdvancedEnabled => $MasterSlaveAdvancedEnabled,
-                    Mandatory       => $MasterSlaveMandatory,
-                },
-                TTL            => 60 * 60,
-            );
-        }
+        $CacheObject->Set(
+            Type  => 'MasterSlave',
+            Key   => 'StoredDynamicFieldConfig',
+            Value => {
+                AdvancedEnabled => $MasterSlaveAdvancedEnabled,
+                Mandatory       => $MasterSlaveMandatory,
+            },
+            TTL            => 60 * 60,
+        );
     ]]></CodeUpgrade>
     <CodeUpgrade Type="post" Version="11.1.0"><![CDATA[
 

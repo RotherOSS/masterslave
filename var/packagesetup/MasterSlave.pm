@@ -207,8 +207,8 @@ sub CodeUpgradeFromLowerThan_11_1_0 {    ## no critic qw(OTOBO::RequireCamelCase
     # migrate
     #   - MasterSlave::AdvancedEnabled
     #   - Ticket::Frontend::AgentTicketMasterSlave###MasterSlaveMandatory
-    # to new dynamic field sysconfig
-    $Self->_MigrateDynamicFieldConfigs();
+    # to new dynamic field system configuration setting
+    $Self->_MigrateToDynamicFieldScreens();
 
     return 1;
 }
@@ -874,7 +874,7 @@ sub _MigrateConfigs {
     return 1;
 }
 
-sub _MigrateDynamicFieldConfigs {
+sub _MigrateToDynamicFieldScreens {
 
     my $CacheObject     = $Kernel::OM->Get('Kernel::System::Cache');
     my $ConfigObject    = $Kernel::OM->Get('Kernel::Config');
@@ -895,7 +895,7 @@ sub _MigrateDynamicFieldConfigs {
         Type => 'MasterSlave',
     );
 
-    return unless $MasterSlaveAdvancedEnabled;
+    return 1 unless $MasterSlaveAdvancedEnabled;
 
     # fetch new setting for updating and storing
     my %MasterSlaveDynamicFieldSetting = $SysConfigObject->SettingGet(
