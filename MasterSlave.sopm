@@ -107,7 +107,7 @@
         my $MasterSlaveAdvancedEnabled = $ConfigObject->Get('MasterSlave::AdvancedEnabled');
         my $MasterSlaveMandatory       = $ConfigObject->Get('Ticket::Frontend::AgentTicketMasterSlave')->{MasterSlaveMandatory};
 
-        $CacheObject->Set(
+        my $CacheSetSucces = $CacheObject->Set(
             Type  => 'MasterSlave',
             Key   => 'StoredDynamicFieldConfig',
             Value => {
@@ -116,6 +116,13 @@
             },
             TTL            => 60 * 60,
         );
+
+        if ( !$CacheSetSucces ) {
+            $Kernel::OM->Get('Kernel::System::Log')->Log(
+                Priority => 'error',
+                Message  => "Failed to preserve dynamic field system configuration settings in cache. Please review the setting 'Ticket::Frontend::AgentTicketMasterSlave###DynamicField'!",
+            );
+        }
     ]]></CodeUpgrade>
     <CodeUpgrade Type="post" Version="11.1.0"><![CDATA[
 
