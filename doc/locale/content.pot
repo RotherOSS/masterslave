@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Documentation dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-21 08:18+0000\n"
+"POT-Creation-Date: 2026-07-07 15:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "Framework"
 msgstr ""
 
 #: ../content/index.rst:18
-msgid "OTOBO 11.0.x"
+msgid "OTOBO 11.1.x"
 msgstr ""
 
 #: ../content/index.rst:21
@@ -94,51 +94,51 @@ msgid "Core::MasterSlave"
 msgstr ""
 
 #: ../content/index.rst:55
-msgid "PreApplicationModule###AgentPreMasterSlave"
-msgstr ""
-
-#: ../content/index.rst:56
-msgid "This module activates Master/Slave field in new email and phone ticket screens."
-msgstr ""
-
-#: ../content/index.rst:59
-msgid "MasterSlave::AdvancedEnabled"
-msgstr ""
-
-#: ../content/index.rst:60
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr ""
-
-#: ../content/index.rst:63
-msgid "MasterSlave::KeepParentChildAfterUnset"
-msgstr ""
-
-#: ../content/index.rst:64
-msgid "Enables the feature to keep parent-child link after unset of the MasterSlave state in the advanced MasterSlave mode."
-msgstr ""
-
-#: ../content/index.rst:67
 msgid "MasterSlave::DynamicField"
 msgstr ""
 
-#: ../content/index.rst:68
+#: ../content/index.rst:56
 msgid "Defines dynamic field name for master ticket feature."
 msgstr ""
 
-#: ../content/index.rst:71
-msgid "MasterSlave::ForwardSlaves"
-msgstr ""
-
-#: ../content/index.rst:72
-msgid "Enables the feature to forward articles from type 'forward' of a master ticket to the customers of the slave tickets. By default (disabled) it will not forward articles from type 'forward' to the slave tickets."
-msgstr ""
-
-#: ../content/index.rst:75
+#: ../content/index.rst:59
 msgid "MasterSlave::FollowUpdatedMaster"
 msgstr ""
 
-#: ../content/index.rst:76
+#: ../content/index.rst:60
 msgid "Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode."
+msgstr ""
+
+#: ../content/index.rst:63
+msgid "MasterSlave::ForwardSlaves"
+msgstr ""
+
+#: ../content/index.rst:64
+msgid "Enables the feature to forward articles from type 'forward' of a master ticket to the customers of the slave tickets. By default (disabled) it will not forward articles from type 'forward' to the slave tickets."
+msgstr ""
+
+#: ../content/index.rst:67
+msgid "MasterSlave::KeepParentChildAfterUnset"
+msgstr ""
+
+#: ../content/index.rst:68
+msgid "Enables the feature to keep parent-child link after unset of the MasterSlave state in the advanced MasterSlave mode."
+msgstr ""
+
+#: ../content/index.rst:71
+msgid "MasterSlave::KeepParentChildAfterUpdate"
+msgstr ""
+
+#: ../content/index.rst:72
+msgid "Enables the feature to keep parent-child link after change of the MasterSlave state in the advanced MasterSlave mode."
+msgstr ""
+
+#: ../content/index.rst:75
+msgid "MasterSlave::UnsetMasterSlave"
+msgstr ""
+
+#: ../content/index.rst:76
+msgid "Enables the feature to unset the MasterSlave state of a ticket in the advanced MasterSlave mode."
 msgstr ""
 
 #: ../content/index.rst:79
@@ -150,354 +150,354 @@ msgid "Enables the feature to change the MasterSlave state of a ticket in the ad
 msgstr ""
 
 #: ../content/index.rst:83
-msgid "MasterSlave::UnsetMasterSlave"
+msgid "PreApplicationModule###AgentPreMasterSlave"
 msgstr ""
 
 #: ../content/index.rst:84
-msgid "Enables the feature to unset the MasterSlave state of a ticket in the advanced MasterSlave mode."
+msgid "This module activates Master/Slave field in new email and phone ticket screens."
 msgstr ""
 
 #: ../content/index.rst:87
-msgid "MasterSlave::KeepParentChildAfterUpdate"
-msgstr ""
-
-#: ../content/index.rst:88
-msgid "Enables the feature to keep parent-child link after change of the MasterSlave state in the advanced MasterSlave mode."
-msgstr ""
-
-#: ../content/index.rst:91
 msgid "Core::Ticket::ACL"
 msgstr ""
 
-#: ../content/index.rst:94
+#: ../content/index.rst:90
 msgid "ACLKeysLevel3::Actions###888-MasterSlave"
 msgstr ""
 
-#: ../content/index.rst:95
+#: ../content/index.rst:91
 msgid "Defines which items are available for 'Action' in third level of the ACL structure."
 msgstr ""
 
-#: ../content/index.rst:98
+#: ../content/index.rst:94
 msgid "Frontend::Admin::ModuleRegistration"
 msgstr ""
 
-#: ../content/index.rst:101
+#: ../content/index.rst:97
 msgid "Frontend::Module###AdminDynamicFieldMasterSlave"
 msgstr ""
 
-#: ../content/index.rst:102
-#: ../content/index.rst:123
+#: ../content/index.rst:98
+#: ../content/index.rst:119
 msgid "Frontend module registration for the agent interface."
 msgstr ""
 
-#: ../content/index.rst:105
+#: ../content/index.rst:101
 msgid "Frontend::Admin::ModuleRegistration::Loader"
 msgstr ""
 
-#: ../content/index.rst:108
+#: ../content/index.rst:104
 msgid "Loader::Module::AdminDynamicFieldMasterSlave###004-MasterSlave"
 msgstr ""
 
-#: ../content/index.rst:109
-#: ../content/index.rst:130
+#: ../content/index.rst:105
+#: ../content/index.rst:126
 msgid "Loader module registration for the agent interface."
 msgstr ""
 
-#: ../content/index.rst:112
+#: ../content/index.rst:108
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
 msgstr ""
 
-#: ../content/index.rst:115
+#: ../content/index.rst:111
 msgid "Frontend::Navigation###AdminDynamicFieldMasterSlave###004-MasterSlave"
 msgstr ""
 
-#: ../content/index.rst:116
-#: ../content/index.rst:137
+#: ../content/index.rst:112
+#: ../content/index.rst:133
 msgid "Main menu item registration."
 msgstr ""
 
-#: ../content/index.rst:119
+#: ../content/index.rst:115
 msgid "Frontend::Agent::ModuleRegistration"
 msgstr ""
 
-#: ../content/index.rst:122
+#: ../content/index.rst:118
 msgid "Frontend::Module###AgentTicketMasterSlave"
 msgstr ""
 
-#: ../content/index.rst:126
+#: ../content/index.rst:122
 msgid "Frontend::Agent::ModuleRegistration::Loader"
 msgstr ""
 
-#: ../content/index.rst:129
+#: ../content/index.rst:125
 msgid "Loader::Module::AgentTicketMasterSlave###004-MasterSlave"
 msgstr ""
 
-#: ../content/index.rst:133
+#: ../content/index.rst:129
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
 msgstr ""
 
-#: ../content/index.rst:136
+#: ../content/index.rst:132
 msgid "Frontend::Navigation###AgentTicketMasterSlave###004-MasterSlave"
 msgstr ""
 
-#: ../content/index.rst:140
+#: ../content/index.rst:136
 msgid "Frontend::Agent::View::Dashboard"
 msgstr ""
 
-#: ../content/index.rst:143
+#: ../content/index.rst:139
 msgid "DashboardBackend###0900-TicketMaster"
 msgstr ""
 
-#: ../content/index.rst:144
+#: ../content/index.rst:140
 msgid "Parameters for the dashboard backend of the master tickets overview of the agent interface. \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin."
 msgstr ""
 
-#: ../content/index.rst:147
+#: ../content/index.rst:143
 msgid "DashboardBackend###0910-TicketSlave"
 msgstr ""
 
-#: ../content/index.rst:148
+#: ../content/index.rst:144
 msgid "Parameters for the dashboard backend of the slave tickets overview of the agent interface. \"Limit\" is the number of entries shown by default. \"Group\" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). \"Default\" determines if the plugin is enabled by default or if the user needs to enable it manually. \"CacheTTLLocal\" is the cache time in minutes for the plugin."
 msgstr ""
 
-#: ../content/index.rst:151
+#: ../content/index.rst:147
 msgid "Frontend::Agent::View::TicketBulk::Module"
 msgstr ""
 
-#: ../content/index.rst:154
+#: ../content/index.rst:150
 msgid "Ticket::Frontend::BulkModule###010-MasterSlave"
 msgstr ""
 
-#: ../content/index.rst:155
+#: ../content/index.rst:151
 msgid "MasterSlave module for Ticket Bulk feature."
 msgstr ""
 
-#: ../content/index.rst:158
+#: ../content/index.rst:154
 msgid "Frontend::Agent::View::TicketMasterSlave"
 msgstr ""
 
-#: ../content/index.rst:161
-msgid "Ticket::Frontend::AgentTicketMasterSlave###Permission"
-msgstr ""
-
-#: ../content/index.rst:162
-msgid "Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:165
-msgid "Ticket::Frontend::AgentTicketMasterSlave###RequiredLock"
-msgstr ""
-
-#: ../content/index.rst:166
-msgid "Defines if a ticket lock is required in the ticket MasterSlave screen of a zoomed ticket in the agent interface (if the ticket isn't locked yet, the ticket gets locked and the current agent will be set automatically as its owner)."
-msgstr ""
-
-#: ../content/index.rst:169
-msgid "Ticket::Frontend::AgentTicketMasterSlave###TicketType"
-msgstr ""
-
-#: ../content/index.rst:170
-msgid "Sets the ticket type in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Type needs to be activated)."
-msgstr ""
-
-#: ../content/index.rst:173
-msgid "Ticket::Frontend::AgentTicketMasterSlave###Service"
-msgstr ""
-
-#: ../content/index.rst:174
-msgid "Sets the service in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Service needs to be activated)."
-msgstr ""
-
-#: ../content/index.rst:177
-msgid "Ticket::Frontend::AgentTicketMasterSlave###Owner"
-msgstr ""
-
-#: ../content/index.rst:178
-msgid "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:181
-msgid "Ticket::Frontend::AgentTicketMasterSlave###OwnerMandatory"
-msgstr ""
-
-#: ../content/index.rst:182
-msgid "Sets if ticket owner must be selected by the agent."
-msgstr ""
-
-#: ../content/index.rst:185
-msgid "Ticket::Frontend::AgentTicketMasterSlave###Responsible"
-msgstr ""
-
-#: ../content/index.rst:186
-msgid "Sets the responsible agent of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:189
-msgid "Ticket::Frontend::AgentTicketMasterSlave###ResponsibleMandatory"
-msgstr ""
-
-#: ../content/index.rst:190
-msgid "Sets if ticket responsible must be selected by the agent."
-msgstr ""
-
-#: ../content/index.rst:193
-msgid "Ticket::Frontend::AgentTicketMasterSlave###State"
-msgstr ""
-
-#: ../content/index.rst:194
-msgid "If a note is added by an agent, sets the state of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:197
-msgid "Ticket::Frontend::AgentTicketMasterSlave###StateType"
-msgstr ""
-
-#: ../content/index.rst:198
-msgid "Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:201
-msgid "Ticket::Frontend::AgentTicketMasterSlave###StateDefault"
-msgstr ""
-
-#: ../content/index.rst:202
-msgid "Defines the default next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:205
-msgid "Ticket::Frontend::AgentTicketMasterSlave###Note"
-msgstr ""
-
-#: ../content/index.rst:206
-msgid "Allows adding notes in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:209
-msgid "Ticket::Frontend::AgentTicketMasterSlave###NoteMandatory"
-msgstr ""
-
-#: ../content/index.rst:210
-msgid "Sets if note must be filled in by the agent. Can be overwritten by Ticket::Frontend::NeedAccountedTime."
-msgstr ""
-
-#: ../content/index.rst:213
-msgid "Ticket::Frontend::AgentTicketMasterSlave###Subject"
-msgstr ""
-
-#: ../content/index.rst:214
-msgid "Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:217
-msgid "Ticket::Frontend::AgentTicketMasterSlave###Body"
-msgstr ""
-
-#: ../content/index.rst:218
-msgid "Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:221
-msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextWidth"
-msgstr ""
-
-#: ../content/index.rst:222
-msgid "Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr ""
-
-#: ../content/index.rst:225
-msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextHeight"
-msgstr ""
-
-#: ../content/index.rst:226
-msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr ""
-
-#: ../content/index.rst:229
-msgid "Ticket::Frontend::AgentTicketMasterSlave###InvolvedAgent"
-msgstr ""
-
-#: ../content/index.rst:230
-msgid "Shows a list of all the involved agents on this ticket, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:233
-msgid "Ticket::Frontend::AgentTicketMasterSlave###InformAgent"
-msgstr ""
-
-#: ../content/index.rst:234
-msgid "Shows a list of all the possible agents (all agents with note permissions on the queue/ticket) to determine who should be informed about this note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:237
-msgid "Ticket::Frontend::AgentTicketMasterSlave###IsVisibleForCustomerDefault"
-msgstr ""
-
-#: ../content/index.rst:238
-msgid "Defines if the MasterSlave note is visible for the customer by default."
-msgstr ""
-
-#: ../content/index.rst:241
-msgid "Ticket::Frontend::AgentTicketMasterSlave###Priority"
-msgstr ""
-
-#: ../content/index.rst:242
-msgid "Shows the ticket priority options in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:245
-msgid "Ticket::Frontend::AgentTicketMasterSlave###PriorityDefault"
-msgstr ""
-
-#: ../content/index.rst:246
-msgid "Defines the default ticket priority in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:249
-msgid "Ticket::Frontend::AgentTicketMasterSlave###Title"
-msgstr ""
-
-#: ../content/index.rst:250
-msgid "Shows the title field in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:253
-msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryType"
-msgstr ""
-
-#: ../content/index.rst:254
-msgid "Defines the history type for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:257
-msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryComment"
-msgstr ""
-
-#: ../content/index.rst:258
-msgid "Defines the history comment for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface."
-msgstr ""
-
-#: ../content/index.rst:261
-msgid "Ticket::Frontend::AgentTicketMasterSlave###MasterSlaveMandatory"
-msgstr ""
-
-#: ../content/index.rst:262
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
-
-#: ../content/index.rst:265
-msgid "ReplaceCustomerRealNameOnSlaveArticleTypes"
-msgstr ""
-
-#: ../content/index.rst:266
-msgid "This setting is deprecated and will be removed in further versions of MasterSlave."
-msgstr ""
-
-#: ../content/index.rst:269
+#: ../content/index.rst:157
 msgid "ReplaceCustomerRealNameOnSlaveArticleCommunicationChannels"
 msgstr ""
 
-#: ../content/index.rst:270
+#: ../content/index.rst:158
 msgid "Specifies the different article communication channels where the real name from Master ticket will be replaced with the one in the Slave ticket."
+msgstr ""
+
+#: ../content/index.rst:161
+msgid "ReplaceCustomerRealNameOnSlaveArticleTypes"
+msgstr ""
+
+#: ../content/index.rst:162
+msgid "This setting is deprecated and will be removed in further versions of MasterSlave."
+msgstr ""
+
+#: ../content/index.rst:165
+msgid "Ticket::Frontend::AgentTicketMasterSlave###Body"
+msgstr ""
+
+#: ../content/index.rst:166
+msgid "Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:169
+msgid "Ticket::Frontend::AgentTicketMasterSlave###DynamicField"
+msgstr ""
+
+#: ../content/index.rst:170
+msgid "Dynamic fields shown in the ticket master slave screen of the agent interface."
+msgstr ""
+
+#: ../content/index.rst:173
+msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryComment"
+msgstr ""
+
+#: ../content/index.rst:174
+msgid "Defines the history comment for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:177
+msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryType"
+msgstr ""
+
+#: ../content/index.rst:178
+msgid "Defines the history type for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:181
+msgid "Ticket::Frontend::AgentTicketMasterSlave###InformAgent"
+msgstr ""
+
+#: ../content/index.rst:182
+msgid "Shows a list of all the possible agents (all agents with note permissions on the queue/ticket) to determine who should be informed about this note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:185
+msgid "Ticket::Frontend::AgentTicketMasterSlave###InvolvedAgent"
+msgstr ""
+
+#: ../content/index.rst:186
+msgid "Shows a list of all the involved agents on this ticket, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:189
+msgid "Ticket::Frontend::AgentTicketMasterSlave###IsVisibleForCustomerDefault"
+msgstr ""
+
+#: ../content/index.rst:190
+msgid "Defines if the MasterSlave note is visible for the customer by default."
+msgstr ""
+
+#: ../content/index.rst:193
+msgid "Ticket::Frontend::AgentTicketMasterSlave###Note"
+msgstr ""
+
+#: ../content/index.rst:194
+msgid "Allows adding notes in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:197
+msgid "Ticket::Frontend::AgentTicketMasterSlave###NoteMandatory"
+msgstr ""
+
+#: ../content/index.rst:198
+msgid "Sets if note must be filled in by the agent. Can be overwritten by Ticket::Frontend::NeedAccountedTime."
+msgstr ""
+
+#: ../content/index.rst:201
+msgid "Ticket::Frontend::AgentTicketMasterSlave###Owner"
+msgstr ""
+
+#: ../content/index.rst:202
+msgid "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:205
+msgid "Ticket::Frontend::AgentTicketMasterSlave###OwnerMandatory"
+msgstr ""
+
+#: ../content/index.rst:206
+msgid "Sets if ticket owner must be selected by the agent."
+msgstr ""
+
+#: ../content/index.rst:209
+msgid "Ticket::Frontend::AgentTicketMasterSlave###Permission"
+msgstr ""
+
+#: ../content/index.rst:210
+msgid "Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:213
+msgid "Ticket::Frontend::AgentTicketMasterSlave###Priority"
+msgstr ""
+
+#: ../content/index.rst:214
+msgid "Shows the ticket priority options in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:217
+msgid "Ticket::Frontend::AgentTicketMasterSlave###PriorityDefault"
+msgstr ""
+
+#: ../content/index.rst:218
+msgid "Defines the default ticket priority in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:221
+msgid "Ticket::Frontend::AgentTicketMasterSlave###QuickDateButtons"
+msgstr ""
+
+#: ../content/index.rst:222
+msgid "This option sets additional quick date buttons to pending dates. For ordering purposes one hash entry per array segment has to be set. The key is the button name, value is the value, where a single number n sets the date to n days from now, +n adds n days to the currently set date, and -n subtracts them."
+msgstr ""
+
+#: ../content/index.rst:225
+msgid "Ticket::Frontend::AgentTicketMasterSlave###RequiredLock"
+msgstr ""
+
+#: ../content/index.rst:226
+msgid "Defines if a ticket lock is required in the ticket MasterSlave screen of a zoomed ticket in the agent interface (if the ticket isn't locked yet, the ticket gets locked and the current agent will be set automatically as its owner)."
+msgstr ""
+
+#: ../content/index.rst:229
+msgid "Ticket::Frontend::AgentTicketMasterSlave###Responsible"
+msgstr ""
+
+#: ../content/index.rst:230
+msgid "Sets the responsible agent of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:233
+msgid "Ticket::Frontend::AgentTicketMasterSlave###ResponsibleMandatory"
+msgstr ""
+
+#: ../content/index.rst:234
+msgid "Sets if ticket responsible must be selected by the agent."
+msgstr ""
+
+#: ../content/index.rst:237
+msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextHeight"
+msgstr ""
+
+#: ../content/index.rst:238
+msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
+msgstr ""
+
+#: ../content/index.rst:241
+msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextWidth"
+msgstr ""
+
+#: ../content/index.rst:242
+msgid "Defines the width for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
+msgstr ""
+
+#: ../content/index.rst:245
+msgid "Ticket::Frontend::AgentTicketMasterSlave###Service"
+msgstr ""
+
+#: ../content/index.rst:246
+msgid "Sets the service in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Service needs to be activated)."
+msgstr ""
+
+#: ../content/index.rst:249
+msgid "Ticket::Frontend::AgentTicketMasterSlave###State"
+msgstr ""
+
+#: ../content/index.rst:250
+msgid "If a note is added by an agent, sets the state of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:253
+msgid "Ticket::Frontend::AgentTicketMasterSlave###StateDefault"
+msgstr ""
+
+#: ../content/index.rst:254
+msgid "Defines the default next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:257
+msgid "Ticket::Frontend::AgentTicketMasterSlave###StateType"
+msgstr ""
+
+#: ../content/index.rst:258
+msgid "Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:261
+msgid "Ticket::Frontend::AgentTicketMasterSlave###Subject"
+msgstr ""
+
+#: ../content/index.rst:262
+msgid "Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
+msgstr ""
+
+#: ../content/index.rst:265
+msgid "Ticket::Frontend::AgentTicketMasterSlave###TicketType"
+msgstr ""
+
+#: ../content/index.rst:266
+msgid "Sets the ticket type in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Type needs to be activated)."
+msgstr ""
+
+#: ../content/index.rst:269
+msgid "Ticket::Frontend::AgentTicketMasterSlave###Title"
+msgstr ""
+
+#: ../content/index.rst:270
+msgid "Shows the title field in the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
 
 #: ../content/index.rst:273
@@ -513,29 +513,57 @@ msgid "Shows a link in the menu to change the MasterSlave status of a ticket in 
 msgstr ""
 
 #: ../content/index.rst:280
-msgid "About"
+msgid "Frontend::Base::DynamicFieldScreens"
 msgstr ""
 
 #: ../content/index.rst:283
-msgid "Contact"
+msgid "DynamicFieldScreens###MasterSlave"
 msgstr ""
 
 #: ../content/index.rst:284
-msgid "Rother OSS GmbH"
+msgid "This configuration defines all possible screens to enable or disable dynamic fields."
 msgstr ""
 
-#: ../content/index.rst:285
-msgid "Email: hello@otobo.de"
-msgstr ""
-
-#: ../content/index.rst:286
-msgid "Web: https://otobo.de"
-msgstr ""
-
-#: ../content/index.rst:289
-msgid "Version"
+#: ../content/index.rst:287
+msgid "DynamicFieldScreens::ObjectTypes###MasterSlave"
 msgstr ""
 
 #: ../content/index.rst:290
+msgid "Frontend::Base::OutputFilter"
+msgstr ""
+
+#: ../content/index.rst:293
+msgid "Frontend::Output::FilterElementPost###MasterSlaveShowPendingTimeIfNeeded"
+msgstr ""
+
+#: ../content/index.rst:294
+msgid "This configuration registers an OutputFilter module that injects the javascript functionality to remove PendingTime."
+msgstr ""
+
+#: ../content/index.rst:297
+msgid "About"
+msgstr ""
+
+#: ../content/index.rst:300
+msgid "Contact"
+msgstr ""
+
+#: ../content/index.rst:301
+msgid "Rother OSS GmbH"
+msgstr ""
+
+#: ../content/index.rst:302
+msgid "Email: hello@otobo.io"
+msgstr ""
+
+#: ../content/index.rst:303
+msgid "Web: https://otobo.io"
+msgstr ""
+
+#: ../content/index.rst:306
+msgid "Version"
+msgstr ""
+
+#: ../content/index.rst:307
 msgid "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-datestamp|"
 msgstr ""
