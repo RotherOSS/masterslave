@@ -64,7 +64,8 @@ sub Data {
         'Azt az előzmény típust határozza meg a jegy mester-alárendelt képernyő műveleténél, amelyet a jegy előzményeinél szoktak használni az ügyintézői felületen.';
     $Self->{Translation}->{'Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Meghatározza egy jegy következő állapotát egy jegyzet hozzáadása után egy nagyított jegynek a jegy mester-alárendelt képernyőjén az ügyintézői felületen.';
-    $Self->{Translation}->{'Enables the advanced MasterSlave part of the feature.'} = 'Engedélyezi a funkció speciális mester-alárendelt részét.';
+    $Self->{Translation}->{'Dynamic fields shown in the ticket master slave screen of the agent interface.'} =
+        '';
     $Self->{Translation}->{'Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode.'} =
         'Engedélyezi azt a funkciót, hogy az alárendelt jegyek a mesterjegyet kövessék egy új mesterhez a speciális mester-alárendelt módban.';
     $Self->{Translation}->{'Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
@@ -90,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'Registration of the ticket event module.'} = 'A jegy esemény modul regisztrációja.';
     $Self->{Translation}->{'Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'A szükséges jogosultságok egy nagyított jegynek a jegy mester-alárendelt képernyőjének használatához az ügyintézői felületen.';
-    $Self->{Translation}->{'Sets if Master / Slave field must be selected by the agent.'} = 'Beállítja, hogy az ügyintézőnek ki kell választania a mester/alárendelt mezőt.';
     $Self->{Translation}->{'Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Beállítja az alapértelmezett törzsszöveget egy nagyított jegynek a jegy mester-alárendelt képernyőjén hozzáadott jegyzeteknél az ügyintézői felületen.';
     $Self->{Translation}->{'Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =

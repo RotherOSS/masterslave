@@ -64,7 +64,8 @@ sub Data {
         'Mentakrifkan jenis sejarah bagi tindakan skrin tiket MasterSlave, yang akan digunakan untuk sejarah tiket dalam antara muka ejen.';
     $Self->{Translation}->{'Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Mentakrifkan keadaan seterusnya bagi tiket selepas menambah nota, dalam skrin MasterSlave tiket tiket dizum dalam antara muka ejen.';
-    $Self->{Translation}->{'Enables the advanced MasterSlave part of the feature.'} = '';
+    $Self->{Translation}->{'Dynamic fields shown in the ticket master slave screen of the agent interface.'} =
+        '';
     $Self->{Translation}->{'Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode.'} =
         '';
     $Self->{Translation}->{'Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
@@ -90,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'Registration of the ticket event module.'} = 'Pendaftaran tiket modul acara.';
     $Self->{Translation}->{'Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Kebenaran yang diperlukan untuk menggunakan skrin MasterSlave tiket tiket dizum dalam antara muka ejen.';
-    $Self->{Translation}->{'Sets if Master / Slave field must be selected by the agent.'} = '';
     $Self->{Translation}->{'Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Menetapkan teks badan default untuk nota ditambah dalam skrin MasterSlave tiket tiket dizum dalam antara muka ejen.';
     $Self->{Translation}->{'Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =

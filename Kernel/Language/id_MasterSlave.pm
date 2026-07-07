@@ -64,7 +64,8 @@ sub Data {
         'Mendefinisikan jenis sejarah untuk tindakan tiket master slave di layar, yang akan digunakan untuk sejarah tiket di antarmuka agen.';
     $Self->{Translation}->{'Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Mendefinisikan state berikutnya tiket setelah menambahkan catatan, dalam layar tiket Master Slave dari tiket yang diperbesar di antarmuka agen.';
-    $Self->{Translation}->{'Enables the advanced MasterSlave part of the feature.'} = 'Memungkinkan Master slave bagian dari fitur tersebut.';
+    $Self->{Translation}->{'Dynamic fields shown in the ticket master slave screen of the agent interface.'} =
+        '';
     $Self->{Translation}->{'Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode.'} =
         'Mengaktifkan fitur tiket slave untuk mengikuti tiket master baru dalam modus Master Slave canggih.';
     $Self->{Translation}->{'Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
@@ -90,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'Registration of the ticket event module.'} = 'Pendaftaran modul acara tiket.';
     $Self->{Translation}->{'Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'izin yang diperlukan untuk menggunakan laya tiket MasterSlave dari tiket yang diperbesar di antarmuka agen.';
-    $Self->{Translation}->{'Sets if Master / Slave field must be selected by the agent.'} = '';
     $Self->{Translation}->{'Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Mengatur teks tubuh default untuk catatan ditambahkan dalam layar tiket Master Slave dari tiket yang diperbesar di antarmuka agen.';
     $Self->{Translation}->{'Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =

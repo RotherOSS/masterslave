@@ -64,7 +64,8 @@ sub Data {
         'Określa typ historii dla akcji zgłoszenia na ekranie Nadrzędny/Podrzędny który zostanie użyty w historii zgłoszenia interfejsu agenta.';
     $Self->{Translation}->{'Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Określa następny stan zgłoszenia po dodaniu notatki na ekranie Nadrzędny/Podrzędny w oknie szczegółów zgłoszenia interfejsu agenta.';
-    $Self->{Translation}->{'Enables the advanced MasterSlave part of the feature.'} = 'Włącza zaawansowaną część funkcjonalności Nadrzędny/Podrzędny.';
+    $Self->{Translation}->{'Dynamic fields shown in the ticket master slave screen of the agent interface.'} =
+        '';
     $Self->{Translation}->{'Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode.'} =
         'Włącza funkcjonalność trybu zaawansowanego Nadrzędny/Podrzędny, w której zgłoszenia podrzędne podążają za zgłoszeniem nadrzędnym do nowego zgłoszenia nadrzędnego.';
     $Self->{Translation}->{'Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
@@ -90,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'Registration of the ticket event module.'} = 'Rejestracja modułu zdarzeń zgłoszenia,';
     $Self->{Translation}->{'Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Uprawnienia wymagane do używania ekranu Nadrzędny/Podrzędny w oknie szczegółów zgłoszenia interfejsu agenta.';
-    $Self->{Translation}->{'Sets if Master / Slave field must be selected by the agent.'} = 'Określa, czy pole Nadrzędny/Podrzędny musi być wybrane przez agenta.';
     $Self->{Translation}->{'Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Ustawia domyślną treść notatki dodawanej do zgłoszenia na ekranie Nadrzędny/Podrzędny w oknie szczegółów zgłoszenia interfejsu agenta.';
     $Self->{Translation}->{'Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =

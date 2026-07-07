@@ -64,7 +64,8 @@ sub Data {
         'Definisce il tipo di cronologia per l\'azione della schermata MasterSlave del ticket, che viene utilizzata per la cronologia dei ticket nell\'interfaccia agenti.';
     $Self->{Translation}->{'Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Definisce lo stato successivo di un ticket dopo aver aggiunto una nota, nella schermata MasterSlave del ticket di un ticket ingrandito nell\'interfaccia dell\'interfaccia agenti.';
-    $Self->{Translation}->{'Enables the advanced MasterSlave part of the feature.'} = 'Abilita la parte avanzata di MasterSlave della funzione.';
+    $Self->{Translation}->{'Dynamic fields shown in the ticket master slave screen of the agent interface.'} =
+        '';
     $Self->{Translation}->{'Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode.'} =
         'Abilita la funzione che i ticket slave seguono il ticket master verso un nuovo master in modalità MasterSlave avanzata.';
     $Self->{Translation}->{'Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
@@ -90,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'Registration of the ticket event module.'} = 'Registrazione del modulo di evento del ticket.';
     $Self->{Translation}->{'Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Permessi necessari per utilizzare la schermata MasterSlave del ticket di un ticket ingrandito nell\'interfaccia agenti.';
-    $Self->{Translation}->{'Sets if Master / Slave field must be selected by the agent.'} = 'Imposta se il campo Master / Slave deve essere selezionato dall\'agente.';
     $Self->{Translation}->{'Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Imposta il corpo del testo predefinito per le note aggiunte nella schermata MasterSlave del ticket di un ticket ingrandito nell\'interfaccia dell\'interfaccia agenti.';
     $Self->{Translation}->{'Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =

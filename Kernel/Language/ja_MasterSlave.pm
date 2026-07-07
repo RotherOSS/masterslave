@@ -64,7 +64,8 @@ sub Data {
         '担当者インタフェースのチケット履歴で使用される、チケット・マスター・スレーブ画面アクションに関する履歴タイプを定義します。';
     $Self->{Translation}->{'Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         '担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面で、メモを追加した後のチケットの次の状態を定義します。';
-    $Self->{Translation}->{'Enables the advanced MasterSlave part of the feature.'} = '機能の高度なマスタースレーブ部分を有効にします。';
+    $Self->{Translation}->{'Dynamic fields shown in the ticket master slave screen of the agent interface.'} =
+        '';
     $Self->{Translation}->{'Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode.'} =
         '高度なマスタースレーブ モードで、スレーブ チケットがマスター チケットをたどって新しいマスターに到達する機能を有効にします。';
     $Self->{Translation}->{'Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
@@ -90,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'Registration of the ticket event module.'} = 'チケット登録のイベントモジュール';
     $Self->{Translation}->{'Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         '担当者インタフェースで、ズームされたチケットのマスター・スレーブ画面を使用するための必要な許可です。';
-    $Self->{Translation}->{'Sets if Master / Slave field must be selected by the agent.'} = 'マスター/スレーブフィールドを担当者が選択する必要があるかどうかを設定します。';
     $Self->{Translation}->{'Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         '担当者インタフェースのズームされたチケットのマスター・スレーブ画面で、追加されたメモのデフォルトの本文を設定します。';
     $Self->{Translation}->{'Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =

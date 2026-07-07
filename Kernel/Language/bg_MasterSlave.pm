@@ -64,7 +64,8 @@ sub Data {
         'Дефинира типа история за действието на екрана MasterSlave на билета, което се използва за хронология на билети в интерфейса на агента.';
     $Self->{Translation}->{'Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Дефинира следващото състояние на билет след добавяне на бележка в екрана MasterSlave на билета за ескалиран билет в интерфейса на агента.';
-    $Self->{Translation}->{'Enables the advanced MasterSlave part of the feature.'} = 'Активира разширената MasterSlave част от функцията.';
+    $Self->{Translation}->{'Dynamic fields shown in the ticket master slave screen of the agent interface.'} =
+        '';
     $Self->{Translation}->{'Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode.'} =
         'Активира функцията, че подчинените билети следват главния билет към нов главен в разширен режим MasterSlave.';
     $Self->{Translation}->{'Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
@@ -90,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'Registration of the ticket event module.'} = 'Регистрация на модул за събитие с билети.';
     $Self->{Translation}->{'Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Необходими права за използване на екрана MasterSlave билет, на ескалиран билет в интерфейса на агента.';
-    $Self->{Translation}->{'Sets if Master / Slave field must be selected by the agent.'} = 'Задава дали полето Master/Slave трябва да бъде избрано от агента.';
     $Self->{Translation}->{'Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Задава основния текст по подразбиране за бележки, добавени в екрана MasterSlave на билета, за ескалиран билет в интерфейса на агента.';
     $Self->{Translation}->{'Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =

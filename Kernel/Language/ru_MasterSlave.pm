@@ -64,7 +64,8 @@ sub Data {
         'Задает тип записи истории при вызове MasterSlave экрана , в интерфейсе агента.';
     $Self->{Translation}->{'Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Задает следующее состояние для заявки после добавления заметки на экране MasterSlave заявки при ее просмотре в интерфейсе агента.';
-    $Self->{Translation}->{'Enables the advanced MasterSlave part of the feature.'} = 'Включает расширенные возможности для MasterSlave.';
+    $Self->{Translation}->{'Dynamic fields shown in the ticket master slave screen of the agent interface.'} =
+        '';
     $Self->{Translation}->{'Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode.'} =
         'Включает возможность передачи ведомых заявок главной заявки к новой главной в расширенном режиме MasterSlave .';
     $Self->{Translation}->{'Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
@@ -90,7 +91,6 @@ sub Data {
     $Self->{Translation}->{'Registration of the ticket event module.'} = 'Регистрация модуля обработки событий заявки.';
     $Self->{Translation}->{'Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Права, требуемые для использования функции MasterSlave заявок в интерфейсе агента.';
-    $Self->{Translation}->{'Sets if Master / Slave field must be selected by the agent.'} = 'Устанавливает, должно ли поле Master / Slave быть выбрано агентом.';
     $Self->{Translation}->{'Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
         'Устанавливает текст сообщения по умолчанию при добавлении сообщения на экране MasterSlave заявки в интерфейсе агента.';
     $Self->{Translation}->{'Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
