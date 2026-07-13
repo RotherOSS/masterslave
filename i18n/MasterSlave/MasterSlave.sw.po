@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,8 +138,16 @@ msgstr ""
 "ya mkuumtumwa ya tiketi ya tiketi iliyokuzwa katika kiolesura cha wakala."
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
+#, fuzzy
+#| msgid ""
+#| "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
 msgstr ""
+"Inaweka mmiliki wa tiketi katika skrini ya mkuumtumwa ya tiketi ya tiketi "
+"iliyokuzwa katika kiolesura cha wakala."
 
 #. SysConfig
 msgid ""
@@ -247,10 +255,6 @@ msgid ""
 msgstr ""
 "Inahitaji ruhusa kutumia skrini ya mkuumtumwa ya tiketi ya tiketi iliyokuzwa "
 "katika kioesura cha wakala."
-
-#. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
 
 #. SysConfig
 msgid ""

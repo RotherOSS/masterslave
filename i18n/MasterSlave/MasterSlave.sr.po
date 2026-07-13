@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,8 +139,16 @@ msgstr ""
 "екрану детаљног приказа тикета у интерфејсу оператера."
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr "Активира напредни део функције главни/зависни."
+#, fuzzy
+#| msgid ""
+#| "Shows the title field in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
+msgstr ""
+"Приказује насловна поља на екрану главни/зависни тикета у интерфејсу "
+"оператера."
 
 #. SysConfig
 msgid ""
@@ -259,11 +267,6 @@ msgid ""
 msgstr ""
 "Неопходна дозвола за употребу главни/зависни екрана детаљног приказа тикета "
 "у интерфејсу оператера."
-
-#. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
-"Дефинише да ли поље Главни / Зависни мора бити подешено од стране оператера."
 
 #. SysConfig
 msgid ""
@@ -387,3 +390,11 @@ msgstr ""
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "Тикет главни/зависни."
+
+#~ msgid "Enables the advanced MasterSlave part of the feature."
+#~ msgstr "Активира напредни део функције главни/зависни."
+
+#~ msgid "Sets if Master / Slave field must be selected by the agent."
+#~ msgstr ""
+#~ "Дефинише да ли поље Главни / Зависни мора бити подешено од стране "
+#~ "оператера."

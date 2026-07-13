@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,8 +144,16 @@ msgstr ""
 "nell'interfaccia dell'interfaccia agenti."
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr "Abilita la parte avanzata di MasterSlave della funzione."
+#, fuzzy
+#| msgid ""
+#| "Shows the title field in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
+msgstr ""
+"Mostra il campo del titolo nella schermata MasterSlave del ticket di un "
+"ticket ingrandito nell'interfaccia agenti."
 
 #. SysConfig
 msgid ""
@@ -267,11 +275,6 @@ msgid ""
 msgstr ""
 "Permessi necessari per utilizzare la schermata MasterSlave del ticket di un "
 "ticket ingrandito nell'interfaccia agenti."
-
-#. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
-"Imposta se il campo Master / Slave deve essere selezionato dall'agente."
 
 #. SysConfig
 msgid ""
@@ -399,3 +402,10 @@ msgstr ""
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "Ticket MasterSlave."
+
+#~ msgid "Enables the advanced MasterSlave part of the feature."
+#~ msgstr "Abilita la parte avanzata di MasterSlave della funzione."
+
+#~ msgid "Sets if Master / Slave field must be selected by the agent."
+#~ msgstr ""
+#~ "Imposta se il campo Master / Slave deve essere selezionato dall'agente."

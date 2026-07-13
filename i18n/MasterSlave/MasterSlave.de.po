@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: 2026-06-24 13:52+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
@@ -143,8 +143,16 @@ msgstr ""
 "Agenten-Interface eine Notiz hinzugefügt wurde."
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr "Das erweiterte Verhalten des MasterSlave-Features aktivieren."
+#, fuzzy
+#| msgid ""
+#| "Shows the title field in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
+msgstr ""
+"Zeigt das Titel-Feld in der MasterSlave-Oberfläche eines aufgerufenen "
+"Tickets im Agenten-Interface an."
 
 #. SysConfig
 msgid ""
@@ -267,11 +275,6 @@ msgstr ""
 "Zoom-Dialog des Agenteninterface."
 
 #. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
-"Legt fest, ob Master / Slave Feld durch einen Agenten ausgewählt sein muss."
-
-#. SysConfig
 msgid ""
 "Sets the default body text for notes added in the ticket MasterSlave screen "
 "of a zoomed ticket in the agent interface."
@@ -392,3 +395,11 @@ msgstr ""
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "Ticket MasterSlave."
+
+#~ msgid "Enables the advanced MasterSlave part of the feature."
+#~ msgstr "Das erweiterte Verhalten des MasterSlave-Features aktivieren."
+
+#~ msgid "Sets if Master / Slave field must be selected by the agent."
+#~ msgstr ""
+#~ "Legt fest, ob Master / Slave Feld durch einen Agenten ausgewählt sein "
+#~ "muss."

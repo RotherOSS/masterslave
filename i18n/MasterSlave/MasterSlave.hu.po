@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: 2026-07-13 16:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
@@ -148,8 +148,16 @@ msgstr ""
 "felületen."
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr "Engedélyezi a funkció speciális mester-alárendelt részét."
+#, fuzzy
+#| msgid ""
+#| "Shows the title field in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
+msgstr ""
+"Megjeleníti a címmezőt egy nagyított jegynek a jegy mester-alárendelt "
+"képernyőjén az ügyintézői felületen."
 
 #. SysConfig
 msgid ""
@@ -272,12 +280,6 @@ msgid ""
 msgstr ""
 "A szükséges jogosultságok egy nagyított jegynek a jegy mester-alárendelt "
 "képernyőjének használatához az ügyintézői felületen."
-
-#. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
-"Beállítja, hogy az ügyintézőnek ki kell választania a mester/alárendelt "
-"mezőt."
 
 #. SysConfig
 msgid ""
@@ -404,3 +406,11 @@ msgstr ""
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "Jegy mester-alárendelt."
+
+#~ msgid "Enables the advanced MasterSlave part of the feature."
+#~ msgstr "Engedélyezi a funkció speciális mester-alárendelt részét."
+
+#~ msgid "Sets if Master / Slave field must be selected by the agent."
+#~ msgstr ""
+#~ "Beállítja, hogy az ügyintézőnek ki kell választania a mester/alárendelt "
+#~ "mezőt."

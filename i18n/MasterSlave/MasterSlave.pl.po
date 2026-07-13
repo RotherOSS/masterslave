@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,8 +138,16 @@ msgstr ""
 "Podrzędny w oknie szczegółów zgłoszenia interfejsu agenta."
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr "Włącza zaawansowaną część funkcjonalności Nadrzędny/Podrzędny."
+#, fuzzy
+#| msgid ""
+#| "Shows the title field in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
+msgstr ""
+"Pokazuje pole tytułu na ekranie Nadrzędny/Podrzędny w szczegółach zgłoszenia "
+"w intefejsie agenta."
 
 #. SysConfig
 msgid ""
@@ -263,10 +271,6 @@ msgstr ""
 "szczegółów zgłoszenia interfejsu agenta."
 
 #. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr "Określa, czy pole Nadrzędny/Podrzędny musi być wybrane przez agenta."
-
-#. SysConfig
 msgid ""
 "Sets the default body text for notes added in the ticket MasterSlave screen "
 "of a zoomed ticket in the agent interface."
@@ -387,3 +391,10 @@ msgstr ""
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "Zgłoszenie Nadrzędne/Podrzędne"
+
+#~ msgid "Enables the advanced MasterSlave part of the feature."
+#~ msgstr "Włącza zaawansowaną część funkcjonalności Nadrzędny/Podrzędny."
+
+#~ msgid "Sets if Master / Slave field must be selected by the agent."
+#~ msgstr ""
+#~ "Określa, czy pole Nadrzędny/Podrzędny musi być wybrane przez agenta."

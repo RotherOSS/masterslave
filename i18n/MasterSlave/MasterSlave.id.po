@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,8 +137,16 @@ msgstr ""
 "layar tiket Master Slave dari tiket yang diperbesar di antarmuka agen."
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr "Memungkinkan Master slave bagian dari fitur tersebut."
+#, fuzzy
+#| msgid ""
+#| "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
+msgstr ""
+"Menetapkan pemilik tiket di layar tiket Master Slave dari tiket yang "
+"diperbesar di antarmuka agen."
 
 #. SysConfig
 msgid ""
@@ -259,10 +267,6 @@ msgstr ""
 "yang diperbesar di antarmuka agen."
 
 #. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
-
-#. SysConfig
 msgid ""
 "Sets the default body text for notes added in the ticket MasterSlave screen "
 "of a zoomed ticket in the agent interface."
@@ -378,3 +382,6 @@ msgstr ""
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "Tiket MasterSlave."
+
+#~ msgid "Enables the advanced MasterSlave part of the feature."
+#~ msgstr "Memungkinkan Master slave bagian dari fitur tersebut."

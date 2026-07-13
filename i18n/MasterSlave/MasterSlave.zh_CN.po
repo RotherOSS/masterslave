@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,8 +123,14 @@ msgid ""
 msgstr "定义服务人员界面在工单主从设置窗口添加备注后的下一个工单状态。"
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr "启用主从功能的高级模式。"
+#, fuzzy
+#| msgid ""
+#| "Shows the title field in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
+msgstr "在服务人员界面主从工单详情窗口显示工单标题字段。"
 
 #. SysConfig
 msgid ""
@@ -227,10 +233,6 @@ msgid ""
 msgstr "服务人员界面使用主从工单详情窗口必需的权限。"
 
 #. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr "设置服务人员是否必须选择主从字段。"
-
-#. SysConfig
 msgid ""
 "Sets the default body text for notes added in the ticket MasterSlave screen "
 "of a zoomed ticket in the agent interface."
@@ -325,3 +327,9 @@ msgstr "此设置已弃用，会在将来版本的 MasterSlave 中移除。"
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "主从工单。"
+
+#~ msgid "Enables the advanced MasterSlave part of the feature."
+#~ msgstr "启用主从功能的高级模式。"
+
+#~ msgid "Sets if Master / Slave field must be selected by the agent."
+#~ msgstr "设置服务人员是否必须选择主从字段。"

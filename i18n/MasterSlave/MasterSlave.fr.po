@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,8 +123,16 @@ msgid ""
 msgstr ""
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
+#, fuzzy
+#| msgid ""
+#| "Allows adding notes in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
 msgstr ""
+"Autorise l'ajout de notes d'un ticket maître / esclave depuis la vue "
+"détaillée de l'interface opérateur."
 
 #. SysConfig
 msgid ""
@@ -213,10 +221,6 @@ msgstr ""
 msgid ""
 "Required permissions to use the ticket MasterSlave screen of a zoomed ticket "
 "in the agent interface."
-msgstr ""
-
-#. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
 msgstr ""
 
 #. SysConfig

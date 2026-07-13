@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,8 +139,16 @@ msgstr ""
 "で、メモを追加した後のチケットの次の状態を定義します。"
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr "機能の高度なマスタースレーブ部分を有効にします。"
+#, fuzzy
+#| msgid ""
+#| "Shows the title field in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
+msgstr ""
+"担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面に"
+"タイトルフィールドを表示します。"
 
 #. SysConfig
 msgid ""
@@ -259,11 +267,6 @@ msgid ""
 msgstr ""
 "担当者インタフェースで、ズームされたチケットのマスター・スレーブ画面を使用す"
 "るための必要な許可です。"
-
-#. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
-"マスター/スレーブフィールドを担当者が選択する必要があるかどうかを設定します。"
 
 #. SysConfig
 msgid ""
@@ -387,3 +390,11 @@ msgstr ""
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "マスター・スレーブチケット"
+
+#~ msgid "Enables the advanced MasterSlave part of the feature."
+#~ msgstr "機能の高度なマスタースレーブ部分を有効にします。"
+
+#~ msgid "Sets if Master / Slave field must be selected by the agent."
+#~ msgstr ""
+#~ "マスター/スレーブフィールドを担当者が選択する必要があるかどうかを設定しま"
+#~ "す。"

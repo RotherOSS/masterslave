@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
-"POT-Creation-Date: 2024-08-02 03:24+0000\n"
+"POT-Creation-Date: 2026-07-07 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,8 +132,14 @@ msgstr ""
 "ของตั๋วซูมในอินเตอร์เฟซเอเย่นต์"
 
 #. SysConfig
-msgid "Enables the advanced MasterSlave part of the feature."
-msgstr ""
+#, fuzzy
+#| msgid ""
+#| "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket "
+#| "in the agent interface."
+msgid ""
+"Dynamic fields shown in the ticket master slave screen of the agent "
+"interface."
+msgstr "กำหนดเจ้าของตั๋วในหน้าจอตั๋ว MasterSlave ของตั๋วซูมในอินเตอร์เฟซเอเย่นต์"
 
 #. SysConfig
 msgid ""
@@ -234,10 +240,6 @@ msgid ""
 "in the agent interface."
 msgstr ""
 "จำเป็นต้องมีการอนุญาติในการใช้งานในหน้าจอตั๋ว MasterSlave ในตั๋วซูมในอินเตอร์เฟซของเอเย่นต์"
-
-#. SysConfig
-msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
 
 #. SysConfig
 msgid ""
