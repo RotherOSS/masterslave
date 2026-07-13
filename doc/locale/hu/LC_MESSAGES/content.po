@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-07 15:15+0000\n"
-"PO-Revision-Date: 2026-07-13 12:00+0000\n"
+"PO-Revision-Date: 2026-07-13 16:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/masterslave-documentation/hu/>\n"
@@ -44,10 +44,8 @@ msgid "Framework"
 msgstr "Keretrendszer"
 
 #: ../content/index.rst:18
-#, fuzzy
-#| msgid "OTOBO 11.0.x"
 msgid "OTOBO 11.1.x"
-msgstr "OTOBO 11.0.x"
+msgstr "OTOBO 11.1.x"
 
 #: ../content/index.rst:21
 msgid "Packages"
@@ -739,7 +737,7 @@ msgstr "DynamicFields::Driver###MasterSlave"
 
 #: ../content/index.rst:290
 msgid "Frontend::Base::OutputFilter"
-msgstr ""
+msgstr "Frontend::Base::OutputFilter"
 
 #: ../content/index.rst:293
 msgid "Frontend::Output::FilterElementPost###MasterSlaveShowPendingTimeIfNeeded"
@@ -764,16 +762,12 @@ msgid "Rother OSS GmbH"
 msgstr "Rother OSS GmbH"
 
 #: ../content/index.rst:302
-#, fuzzy
-#| msgid "Email: hello@otobo.de"
 msgid "Email: hello@otobo.io"
-msgstr "E-mail: hello@otobo.de"
+msgstr "E-mail: hello@otobo.io"
 
 #: ../content/index.rst:303
-#, fuzzy
-#| msgid "Web: https://otobo.de"
 msgid "Web: https://otobo.io"
-msgstr "Web: https://otobo.de"
+msgstr "Web: https://otobo.io"
 
 #: ../content/index.rst:306
 msgid "Version"
