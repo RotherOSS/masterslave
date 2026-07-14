@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-07 15:15+0000\n"
-"PO-Revision-Date: 2026-07-14 12:21+0000\n"
+"PO-Revision-Date: 2026-07-14 13:26+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/masterslave-documentation/hu/>\n"
@@ -22,10 +22,8 @@ msgstr ""
 "Generated-By: Babel 2.4.0\n"
 
 #: ../content/index.rst:5
-#, fuzzy
-#| msgid "Contact"
 msgid "Contents"
-msgstr "Kapcsolat"
+msgstr "Tartalom"
 
 #: ../content/index.rst:10
 msgid "Description"
@@ -129,8 +127,8 @@ msgid ""
 "ticket to the customers of the slave tickets. By default (disabled) it will "
 "not forward articles from type 'forward' to the slave tickets."
 msgstr ""
-"Engedélyezi a funkciót a bejegyzések továbbításához egy mesterjegy "
-"„továbbítás” típusából az alárendelt jegyek ügyfeleihez. Alapértelmezetten "
+"Engedélyezi a funkciót a bejegyzések továbbításához egy mesterjegy „"
+"továbbítás” típusából az alárendelt jegyek ügyfeleihez. Alapértelmezetten "
 "(letiltva) nem fog bejegyzéseket továbbítani a „továbbítás” típusból az "
 "alárendelt jegyekhez."
 
@@ -370,22 +368,16 @@ msgstr ""
 "felületen."
 
 #: ../content/index.rst:169
-#, fuzzy
-#| msgid "Ticket::Frontend::AgentTicketMasterSlave###Service"
 msgid "Ticket::Frontend::AgentTicketMasterSlave###DynamicField"
-msgstr "Ticket::Frontend::AgentTicketMasterSlave###Service"
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###DynamicField"
 
 #: ../content/index.rst:170
-#, fuzzy
-#| msgid ""
-#| "Shows the title field in the ticket MasterSlave screen of a zoomed ticket "
-#| "in the agent interface."
 msgid ""
 "Dynamic fields shown in the ticket master slave screen of the agent "
 "interface."
 msgstr ""
-"Megjeleníti a címmezőt egy nagyított jegynek a jegy mester-alárendelt "
-"képernyőjén az ügyintézői felületen."
+"Az ügyintézői felület jegy mester-alárendelt képernyőjén megjelenített "
+"dinamikus mezők."
 
 #: ../content/index.rst:173
 msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryComment"
@@ -532,10 +524,8 @@ msgstr ""
 "mester-alárendelt képernyőjén az ügyintézői felületen."
 
 #: ../content/index.rst:221
-#, fuzzy
-#| msgid "Ticket::Frontend::AgentTicketMasterSlave###State"
 msgid "Ticket::Frontend::AgentTicketMasterSlave###QuickDateButtons"
-msgstr "Ticket::Frontend::AgentTicketMasterSlave###State"
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###QuickDateButtons"
 
 #: ../content/index.rst:222
 msgid ""
@@ -545,6 +535,11 @@ msgid ""
 "to n days from now, +n adds n days to the currently set date, and -n "
 "subtracts them."
 msgstr ""
+"Ez a beállítás további gyors dátumgombokat állít be a függőben lévő "
+"dátumokhoz. Rendezési célokból tömbszakaszonként egy kivonatbejegyzést kell "
+"beállítani. A kulcs a gomb neve, az érték pedig az érték, ahol egy önálló n "
+"szám n napra állítja be a dátumot mostantól számítva, a +n hozzáad n napot a "
+"jelenleg beállított dátumhoz, a -n pedig levonja azokat."
 
 #: ../content/index.rst:225
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RequiredLock"
@@ -716,10 +711,8 @@ msgid "Frontend::Base::DynamicFieldScreens"
 msgstr "Frontend::Base::DynamicFieldScreens"
 
 #: ../content/index.rst:283
-#, fuzzy
-#| msgid "DynamicFields::Driver###MasterSlave"
 msgid "DynamicFieldScreens###MasterSlave"
-msgstr "DynamicFields::Driver###MasterSlave"
+msgstr "DynamicFieldScreens###MasterSlave"
 
 #: ../content/index.rst:284
 msgid ""
@@ -730,10 +723,8 @@ msgstr ""
 "mezők engedélyezéséhez vagy letiltásához."
 
 #: ../content/index.rst:287
-#, fuzzy
-#| msgid "DynamicFields::Driver###MasterSlave"
 msgid "DynamicFieldScreens::ObjectTypes###MasterSlave"
-msgstr "DynamicFields::Driver###MasterSlave"
+msgstr "DynamicFieldScreens::ObjectTypes###MasterSlave"
 
 #: ../content/index.rst:290
 msgid "Frontend::Base::OutputFilter"
@@ -742,12 +733,15 @@ msgstr "Frontend::Base::OutputFilter"
 #: ../content/index.rst:293
 msgid "Frontend::Output::FilterElementPost###MasterSlaveShowPendingTimeIfNeeded"
 msgstr ""
+"Frontend::Output::FilterElementPost###MasterSlaveShowPendingTimeIfNeeded"
 
 #: ../content/index.rst:294
 msgid ""
 "This configuration registers an OutputFilter module that injects the "
 "javascript functionality to remove PendingTime."
 msgstr ""
+"Ez a beállítás egy olyan kimenetszűrő-modult regisztrál, amely beszúrja a "
+"JavaScript funkcionalitást a függőben lévő idő eltávolításához."
 
 #: ../content/index.rst:297
 msgid "About"
