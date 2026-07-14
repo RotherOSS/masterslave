@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-07 15:15+0000\n"
-"PO-Revision-Date: 2026-07-13 16:00+0000\n"
+"PO-Revision-Date: 2026-07-14 12:21+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/masterslave-documentation/hu/>\n"
@@ -712,10 +712,8 @@ msgstr ""
 "megváltoztatásához az ügyintézői felület jegynagyítás nézetében."
 
 #: ../content/index.rst:280
-#, fuzzy
-#| msgid "Frontend::Module###AdminDynamicFieldMasterSlave"
 msgid "Frontend::Base::DynamicFieldScreens"
-msgstr "Frontend::Module###AdminDynamicFieldMasterSlave"
+msgstr "Frontend::Base::DynamicFieldScreens"
 
 #: ../content/index.rst:283
 #, fuzzy
@@ -728,6 +726,8 @@ msgid ""
 "This configuration defines all possible screens to enable or disable dynamic "
 "fields."
 msgstr ""
+"Ez a beállítás határozza meg az összes lehetséges képernyőt a dinamikus "
+"mezők engedélyezéséhez vagy letiltásához."
 
 #: ../content/index.rst:287
 #, fuzzy
