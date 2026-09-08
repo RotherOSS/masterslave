@@ -26,11 +26,6 @@
     <input type="hidden" name="Subaction" value="Store"/>
     <input type="hidden" name="TicketID" value="[% Data.TicketID | html %]"/>
     <input type="hidden" name="ArticleID" value="[% Data.ArticleID | html %]"/>
-
-    [% IF Data.ArticleID != "" %]
-        <input type="hidden" name="IsEdited" value="1"/>
-    [% END %]
-
     <input type="hidden" name="ReplyToArticle" value="[% Data.ReplyToArticle | html %]"/>
     <input type="hidden" name="Expand" id="Expand" value=""/>
     <input type="hidden" name="FormID" value="[% Data.FormID | html %]"/>
@@ -91,6 +86,12 @@
             </ul>
         </div>
         <div class="Content">
+[% RenderBlockStart("AsteriskExplanation") %]
+            <div class="Field">
+                <p class="AsteriskExplanation" id="AsteriskExplanationHeader">[% Translate("All fields marked with an asterisk (*) are mandatory.") | html %]</p>
+            </div>
+            <div class="Clear"></div>
+[% RenderBlockEnd("AsteriskExplanation") %]
             [% INCLUDE "FormElements/DraftNotifications.tt" %]
 [% RenderBlockStart("WidgetTicketActions") %]
             <div class="WidgetSimple Expanded">
