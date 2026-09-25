@@ -679,7 +679,7 @@ sub _ShowScreen {
             PossibleNone  => 1,
             Translation   => 0,
             Sort          => 'AlphanumericValue',
-            Class         => 'Modernize W50pc',
+            Class         => 'Modernize W75pc',
         );
 
         $LayoutObject->Block(
