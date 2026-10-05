@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
 "POT-Creation-Date: 2024-08-02 03:24+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-10-05 06:41+0000\n"
+"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
+"Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-0/"
+"addons/masterslave/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. Template: AgentTicketMasterSlave
 msgid "Manage Master/Slave status for %s%s%s"
@@ -88,7 +91,9 @@ msgstr "担当者インターフェイス のズームされたチケットの�
 
 #. SysConfig
 msgid "Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative)."
-msgstr "この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 (ピクセル) またはパーセント値 (相対) を入力します。"
+msgstr ""
+"この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）または"
+"パーセント値（相対値）を入力してください。"
 
 #. SysConfig
 msgid "Defines the history comment for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface."
@@ -233,4 +238,3 @@ msgstr "この設定は非推奨であり、MasterSlave の今後のバージョ
 #. SysConfig
 msgid "Ticket MasterSlave."
 msgstr "マスター・スレーブチケット"
-
