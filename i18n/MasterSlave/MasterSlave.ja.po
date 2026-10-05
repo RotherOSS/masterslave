@@ -2,13 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MasterSlave\n"
 "POT-Creation-Date: 2026-07-07 15:14+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-10-05 06:42+0000\n"
+"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
+"Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/"
+"addons/masterslave/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. Template: AgentTicketMasterSlave
 msgid "Manage Master/Slave status for %s%s%s"
@@ -63,8 +66,8 @@ msgid ""
 "Allows adding notes in the ticket MasterSlave screen of a zoomed ticket in "
 "the agent interface."
 msgstr ""
-"エージェントインタフェースのズームされたチケットのマスタースレイブ画面で、注"
-"釈の追加を許可します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、メモを追加できるようにします。"
 
 #. SysConfig
 msgid "Change the MasterSlave state of the ticket."
@@ -72,7 +75,7 @@ msgstr "チケットのマスター・スレーブのステータスを変更す
 
 #. SysConfig
 msgid "Defines dynamic field name for master ticket feature."
-msgstr "マスター・スレーブのダイナミック・フィールド名を設定する。"
+msgstr "マスターチケット機能用のダイナミックフィールド名を定義します。"
 
 #. SysConfig
 msgid ""
@@ -81,90 +84,86 @@ msgid ""
 "ticket gets locked and the current agent will be set automatically as its "
 "owner)."
 msgstr ""
-"担当者インターフェイスのズームされたチケットのチケット マスタースレーブ画面で"
-"チケット ロックが必要かどうかを定義します。 (チケットがまだロックされていない"
-"場合、チケットはロックされ、現在の担当者が所有者として自動的に設定されます。)"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットロックが必要かどうかを定義します（チケットがまだロックされていない"
+"場合、チケットはロックされ、現在の担当者が自動的に所有者として設定されます）"
+"。"
 
 #. SysConfig
 msgid "Defines if the MasterSlave note is visible for the customer by default."
-msgstr ""
-"マスタースレーブのメモがデフォルトで顧客に表示されるかどうかを定義します。"
+msgstr "マスタースレーブのメモをデフォルトで顧客に公開するかどうかを定義します。"
 
 #. SysConfig
 msgid ""
 "Defines the default next state of a ticket after adding a note, in the "
 "ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
-"担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面"
-"で、メモを追加した後のチケットのデフォルトの次の状態を定義します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、メモ追加後のチケットのデフォルトの次のステータスを定義します。"
 
 #. SysConfig
 msgid ""
 "Defines the default ticket priority in the ticket MasterSlave screen of a "
 "zoomed ticket in the agent interface."
 msgstr ""
-"担当者インターフェイス のズームされたチケットのマスター・スレーブ画面で、デ"
-"フォルトの チケット 優先度を定義します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、デフォルトのチケットの優先度を定義します。"
 
 #. SysConfig
 msgid ""
 "Defines the height for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
-"この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 "
-"(ピクセル) またはパーセント値 (相対) を入力します。"
+"この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）または"
+"パーセント値（相対値）を入力してください。"
 
 #. SysConfig
 msgid ""
 "Defines the history comment for the ticket MasterSlave screen action, which "
 "gets used for ticket history in the agent interface."
 msgstr ""
-"担当者インタフェースのチケット履歴で使用される、チケット・マスター・スレーブ"
-"画面アクションに関する履歴コメントを定義します。"
+"担当者インタフェースのチケット履歴で使用される、チケット・マスタースレーブ画"
+"面アクションの履歴コメントを定義します。"
 
 #. SysConfig
 msgid ""
 "Defines the history type for the ticket MasterSlave screen action, which "
 "gets used for ticket history in the agent interface."
 msgstr ""
-"担当者インタフェースのチケット履歴で使用される、チケット・マスター・スレーブ"
-"画面アクションに関する履歴タイプを定義します。"
+"担当者インタフェースのチケット履歴で使用される、チケット・マスタースレーブ画"
+"面アクションの履歴タイプを定義します。"
 
 #. SysConfig
 msgid ""
 "Defines the next state of a ticket after adding a note, in the ticket "
 "MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
-"担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面"
-"で、メモを追加した後のチケットの次の状態を定義します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、メモ追加後のチケットの次のステータスを定義します。"
 
 #. SysConfig
-#, fuzzy
-#| msgid ""
-#| "Shows the title field in the ticket MasterSlave screen of a zoomed ticket "
-#| "in the agent interface."
 msgid ""
 "Dynamic fields shown in the ticket master slave screen of the agent "
 "interface."
 msgstr ""
-"担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面に"
-"タイトルフィールドを表示します。"
+"担当者インタフェースのチケット・マスタースレーブ画面に表示する"
+"ダイナミックフィールド。"
 
 #. SysConfig
 msgid ""
 "Enables the feature that slave tickets follow the master ticket to a new "
 "master in the advanced MasterSlave mode."
 msgstr ""
-"高度なマスタースレーブ モードで、スレーブ チケットがマスター チケットをたどっ"
-"て新しいマスターに到達する機能を有効にします。"
+"高度なマスタースレーブ・モードで、スレーブチケットがマスターチケットに従って"
+"新しいマスターに移る機能を有効にします。"
 
 #. SysConfig
 msgid ""
 "Enables the feature to change the MasterSlave state of a ticket in the "
 "advanced MasterSlave mode."
 msgstr ""
-"高度なマスター スレーブ モードでチケットのマスター スレーブ状態を変更する機能"
-"を有効にします。"
+"高度なマスタースレーブ・モードで、チケットのマスタースレーブ状態を変更する機"
+"能を有効にします。"
 
 #. SysConfig
 msgid ""
@@ -172,32 +171,32 @@ msgid ""
 "ticket to the customers of the slave tickets. By default (disabled) it will "
 "not forward articles from type 'forward' to the slave tickets."
 msgstr ""
-"マスターチケットの「転送」タイプからスレーブチケットの顧客に記事を転送する機"
-"能を有効にします。 デフォルト (無効) では、「forward」タイプの記事はスレーブ "
-"チケットに転送されません。"
+"マスターチケットのタイプ 'forward' の記事を、スレーブチケットの顧客に転送する"
+"機能を有効にします。デフォルト（無効）では、タイプ 'forward' の記事は"
+"スレーブチケットに転送されません。"
 
 #. SysConfig
 msgid ""
 "Enables the feature to keep parent-child link after change of the "
 "MasterSlave state in the advanced MasterSlave mode."
 msgstr ""
-"アドバンスト マスタースレーブ モードでマスタースレーブ状態の変更後に親子リン"
-"クを維持する機能を有効にします。"
+"高度なマスタースレーブ・モードで、マスタースレーブ状態の変更後も親子リンクを"
+"維持する機能を有効にします。"
 
 #. SysConfig
 msgid ""
 "Enables the feature to keep parent-child link after unset of the MasterSlave "
 "state in the advanced MasterSlave mode."
 msgstr ""
-"アドバンスト マスタースレーブ モードでマスタースレーブ状態の設定を解除した後"
-"も親子リンクを維持する機能を有効にします。"
+"高度なマスタースレーブ・モードで、マスタースレーブ状態の解除後も親子リンクを"
+"維持する機能を有効にします。"
 
 #. SysConfig
 msgid ""
 "Enables the feature to unset the MasterSlave state of a ticket in the "
 "advanced MasterSlave mode."
 msgstr ""
-"高度なマスタースレーブ モードでチケットのマスタースレーブ状態を設定解除する機"
+"高度なマスタースレーブ・モードで、チケットのマスタースレーブ状態を解除する機"
 "能を有効にします。"
 
 #. SysConfig
@@ -205,8 +204,8 @@ msgid ""
 "If a note is added by an agent, sets the state of the ticket in the ticket "
 "MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
-"担当者によってメモが追加された場合、担当者インターフェイスのズームされたチ"
-"ケットのチケット マスタースレーブ画面でチケットの状態を設定します。"
+"担当者がメモを追加した場合に、担当者インタフェースのズーム表示中チケットの"
+"チケット・マスタースレーブ画面ででチケットのステータスを設定します。"
 
 #. SysConfig
 msgid "Master / Slave"
@@ -222,7 +221,7 @@ msgstr "マスター・スレーブ"
 
 #. SysConfig
 msgid "MasterSlave module for Ticket Bulk feature."
-msgstr "MasterSlave モジュールのチケット一括処理機能"
+msgstr "チケット一括処理機能用のマスタースレーブ・モジュール。"
 
 #. SysConfig
 msgid ""
@@ -233,12 +232,12 @@ msgid ""
 "default or if the user needs to enable it manually. \"CacheTTLLocal\" is the "
 "cache time in minutes for the plugin."
 msgstr ""
-"担当者インターフェイスのマスター チケット概要のダッシュボード バックエンドの"
-"パラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グルー"
-"プ」はプラグインへのアクセスを制限するために使用されます (例: グループ: "
-"admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっ"
-"ているか、ユーザーが手動で有効にする必要があるかを決定します。 "
-"「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。"
+"担当者インタフェースのマスターチケット一覧のダッシュボード・バックエンドの"
+"パラメータ。\"Limit\" はデフォルトで表示するエントリー数です。\"Group\" は"
+"プラグインへのアクセスを制限するために使用します（例: Group: "
+"admin;group1;group2;）。\"Default\" は、プラグインをデフォルトで有効にするか"
+"、ユーザーが手動で有効にする必要があるかを決定します。\"CacheTTLLocal\" は"
+"プラグインのキャッシュ時間（分）です。"
 
 #. SysConfig
 msgid ""
@@ -249,88 +248,88 @@ msgid ""
 "default or if the user needs to enable it manually. \"CacheTTLLocal\" is the "
 "cache time in minutes for the plugin."
 msgstr ""
-"担当者インターフェイスのスレーブ チケット概要のダッシュボード バックエンドの"
-"パラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グルー"
-"プ」はプラグインへのアクセスを制限するために使用されます (例: グループ: "
-"admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっ"
-"ているか、ユーザーが手動で有効にする必要があるかを決定します。 "
-"「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。"
+"担当者インタフェースのスレーブチケット一覧のダッシュボード・バックエンドの"
+"パラメータ。\"Limit\" はデフォルトで表示するエントリー数です。\"Group\" は"
+"プラグインへのアクセスを制限するために使用します（例: Group: "
+"admin;group1;group2;）。\"Default\" は、プラグインをデフォルトで有効にするか"
+"、ユーザーが手動で有効にする必要があるかを決定します。\"CacheTTLLocal\" は"
+"プラグインのキャッシュ時間（分）です。"
 
 #. SysConfig
 msgid "Registration of the ticket event module."
-msgstr "チケット登録のイベントモジュール"
+msgstr "チケットイベントモジュールの登録。"
 
 #. SysConfig
 msgid ""
 "Required permissions to use the ticket MasterSlave screen of a zoomed ticket "
 "in the agent interface."
 msgstr ""
-"担当者インタフェースで、ズームされたチケットのマスター・スレーブ画面を使用す"
-"るための必要な許可です。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面を"
+"使用するために必要な権限。"
 
 #. SysConfig
 msgid ""
 "Sets the default body text for notes added in the ticket MasterSlave screen "
 "of a zoomed ticket in the agent interface."
 msgstr ""
-"担当者インタフェースのズームされたチケットのマスター・スレーブ画面で、追加さ"
-"れたメモのデフォルトの本文を設定します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、追加するメモのデフォルトの本文を設定します。"
 
 #. SysConfig
 msgid ""
 "Sets the default subject for notes added in the ticket MasterSlave screen of "
 "a zoomed ticket in the agent interface."
 msgstr ""
-"担当者インタフェースのズームされたチケットのマスター・スレーブ画面で、追加さ"
-"れたメモのデフォルトの件名を設定します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、追加するメモのデフォルトの件名を設定します。"
 
 #. SysConfig
 msgid ""
 "Sets the responsible agent of the ticket in the ticket MasterSlave screen of "
 "a zoomed ticket in the agent interface."
 msgstr ""
-"担当者インタフェースのズームされたチケットのマスター・スレーブ画面で、チケッ"
-"トの責任を有する担当者を設定します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットの責任者を設定します。"
 
 #. SysConfig
 msgid ""
 "Sets the service in the ticket MasterSlave screen of a zoomed ticket in the "
 "agent interface (Ticket::Service needs to be activated)."
 msgstr ""
-"担当者インタフェースのズームされたチケットのチケットのマスター・スレーブ画面"
-"で、サービスを設定します (Ticket::Serviceを有効とする必要があります)。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、サービスを設定します（Ticket::Service が有効である必要があります）。"
 
 #. SysConfig
 msgid ""
 "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket in "
 "the agent interface."
 msgstr ""
-"担当者インタフェースのズームされたチケットのマスター・スレーブ画面で、チケッ"
-"ト所有者を設定します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットの所有者を設定します。"
 
 #. SysConfig
 msgid ""
 "Sets the ticket type in the ticket MasterSlave screen of a zoomed ticket in "
 "the agent interface (Ticket::Type needs to be activated)."
 msgstr ""
-"担当者インタフェースのズームされたチケットのチケットのマスター・スレーブ画面"
-"で、チケット・タイプを設定します(Ticket::Typeを有効とする必要があります)。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットタイプを設定します（Ticket::Type が有効である必要があります）。"
 
 #. SysConfig
 msgid ""
 "Shows a link in the menu to change the MasterSlave status of a ticket in the "
 "ticket zoom view of the agent interface."
 msgstr ""
-"担当者インターフェイスのチケット ズーム ビューでチケットのマスタースレーブ ス"
-"テータスを変更するためのリンクをメニューに表示します。"
+"担当者インタフェースのチケットズームビューで、チケットのマスタースレーブ状態"
+"を変更するためのリンクをメニューに表示します。"
 
 #. SysConfig
 msgid ""
 "Shows a list of all the involved agents on this ticket, in the ticket "
 "MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
-"担当者インターフェイスのズームされたチケットのチケット マスタースレーブ画面"
-"に、このチケットに関係する全ての担当者のリストが表示されます。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、このチケットに関与したすべての担当者の一覧を表示します。"
 
 #. SysConfig
 msgid ""
@@ -338,26 +337,25 @@ msgid ""
 "the queue/ticket) to determine who should be informed about this note, in "
 "the ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
-"担当者インターフェイスのズームされたチケットのチケット マスタースレーブ画面"
-"で、このメモについて誰に通知する必要があるかを決定するために、考えられる全て"
-"の担当者 (キュー/チケットに対してメモ権限を持つ全ての担当者) のリストを表示し"
-"ます。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、このメモについて通知する相手を決めるため、通知可能なすべての担当者（キュー"
+"／チケットに対するメモ権限を持つすべての担当者）の一覧を表示します。"
 
 #. SysConfig
 msgid ""
 "Shows the ticket priority options in the ticket MasterSlave screen of a "
 "zoomed ticket in the agent interface."
 msgstr ""
-"担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面に"
-"チケットの優先順位オプションを表示します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットの優先度の選択肢を表示します。"
 
 #. SysConfig
 msgid ""
 "Shows the title field in the ticket MasterSlave screen of a zoomed ticket in "
 "the agent interface."
 msgstr ""
-"担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面に"
-"タイトルフィールドを表示します。"
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、タイトル欄を表示します。"
 
 #. SysConfig
 msgid "Slave Tickets"
@@ -368,24 +366,22 @@ msgid ""
 "Specifies the different article communication channels where the real name "
 "from Master ticket will be replaced with the one in the Slave ticket."
 msgstr ""
-"マスターチケットの実名がスレーブチケットの実名に置き換えられる、さまざまな記"
-"事通信チャネルを指定します。"
+"マスターチケットの実名をスレーブチケットの実名に置き換える、記事の"
+"コミュニケーション・チャネルを指定します。"
 
 #. SysConfig
 msgid ""
 "This module activates Master/Slave field in new email and phone ticket "
 "screens."
 msgstr ""
-"このモジュールは、新規メール/電話チケットに、マスター/スレーブチケット欄を追"
-"加します。"
+"このモジュールは、新規メールチケットおよび新規電話チケット画面で"
+"マスタースレーブ欄を有効にします。"
 
 #. SysConfig
 msgid ""
 "This setting is deprecated and will be removed in further versions of "
 "MasterSlave."
-msgstr ""
-"この設定は非推奨であり、MasterSlave の今後のバージョンでは削除される予定で"
-"す。"
+msgstr "この設定は非推奨で、MasterSlave の今後のバージョンで削除されます。"
 
 #. SysConfig
 msgid "Ticket MasterSlave."
