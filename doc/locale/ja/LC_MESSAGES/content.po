@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-07 15:15+0000\n"
-"PO-Revision-Date: 2026-10-05 03:41+0000\n"
+"PO-Revision-Date: 2026-10-05 05:41+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/masterslave-documentation/ja/>\n"
@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../content/index.rst:5
 msgid "Contents"
-msgstr ""
+msgstr "目次"
 
 #: ../content/index.rst:10
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../content/index.rst:11
 msgid "Includes \"Ticket Master/Slave\" feature."
@@ -35,11 +35,11 @@ msgstr ""
 
 #: ../content/index.rst:14
 msgid "System requirements"
-msgstr ""
+msgstr "システム要件"
 
 #: ../content/index.rst:17
 msgid "Framework"
-msgstr ""
+msgstr "フレームワーク"
 
 #: ../content/index.rst:18
 msgid "OTOBO 11.1.x"
@@ -47,31 +47,31 @@ msgstr ""
 
 #: ../content/index.rst:21
 msgid "Packages"
-msgstr ""
+msgstr "パッケージ"
 
 #: ../content/index.rst:22 ../content/index.rst:26
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../content/index.rst:25
 msgid "Third-party software"
-msgstr ""
+msgstr "サードパーティ製ソフトウェア"
 
 #: ../content/index.rst:29
 msgid "Usage"
-msgstr ""
+msgstr "使い方"
 
 #: ../content/index.rst:32
 msgid "Setup"
-msgstr ""
+msgstr "セットアップ"
 
 #: ../content/index.rst:35
 msgid "Configuration Reference"
-msgstr ""
+msgstr "設定リファレンス"
 
 #: ../content/index.rst:38
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../content/index.rst:41
 msgid "DynamicFields::Driver###MasterSlave"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../content/index.rst:42
 msgid "DynamicField backend registration."
-msgstr ""
+msgstr "ダイナミックフィールドのバックエンドの登録。"
 
 #: ../content/index.rst:45
 msgid "Core::Event::MasterSlave"
@@ -185,7 +185,6 @@ msgid "ACLKeysLevel3::Actions###888-MasterSlave"
 msgstr ""
 
 #: ../content/index.rst:91
-#, fuzzy
 msgid ""
 "Defines which items are available for 'Action' in third level of the ACL "
 "structure."
@@ -193,7 +192,7 @@ msgstr "ACL 構造の第3階層で 'Action' に使用できる項目を定義し
 
 #: ../content/index.rst:94
 msgid "Frontend::Admin::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration"
 
 #: ../content/index.rst:97
 msgid "Frontend::Module###AdminDynamicFieldMasterSlave"
@@ -201,11 +200,11 @@ msgstr ""
 
 #: ../content/index.rst:98 ../content/index.rst:119
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のフロントエンドモジュールの登録。"
 
 #: ../content/index.rst:101
 msgid "Frontend::Admin::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::Loader"
 
 #: ../content/index.rst:104
 msgid "Loader::Module::AdminDynamicFieldMasterSlave###004-MasterSlave"
@@ -213,24 +212,23 @@ msgstr ""
 
 #: ../content/index.rst:105 ../content/index.rst:126
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のローダーモジュールの登録。"
 
 #: ../content/index.rst:108
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::MainMenu"
 
 #: ../content/index.rst:111
 msgid "Frontend::Navigation###AdminDynamicFieldMasterSlave###004-MasterSlave"
 msgstr ""
 
 #: ../content/index.rst:112 ../content/index.rst:133
-#, fuzzy
 msgid "Main menu item registration."
 msgstr "メインメニュー項目の登録。"
 
 #: ../content/index.rst:115
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../content/index.rst:118
 msgid "Frontend::Module###AgentTicketMasterSlave"
@@ -238,7 +236,7 @@ msgstr ""
 
 #: ../content/index.rst:122
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../content/index.rst:125
 msgid "Loader::Module::AgentTicketMasterSlave###004-MasterSlave"
@@ -246,7 +244,7 @@ msgstr ""
 
 #: ../content/index.rst:129
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../content/index.rst:132
 msgid "Frontend::Navigation###AgentTicketMasterSlave###004-MasterSlave"
@@ -254,7 +252,7 @@ msgstr ""
 
 #: ../content/index.rst:136
 msgid "Frontend::Agent::View::Dashboard"
-msgstr ""
+msgstr "Frontend::Agent::View::Dashboard"
 
 #: ../content/index.rst:139
 msgid "DashboardBackend###0900-TicketMaster"
@@ -404,7 +402,6 @@ msgid "Ticket::Frontend::AgentTicketMasterSlave###NoteMandatory"
 msgstr ""
 
 #: ../content/index.rst:198
-#, fuzzy
 msgid ""
 "Sets if note must be filled in by the agent. Can be overwritten by "
 "Ticket::Frontend::NeedAccountedTime."
@@ -429,6 +426,8 @@ msgstr ""
 #: ../content/index.rst:206
 msgid "Sets if ticket owner must be selected by the agent."
 msgstr ""
+"チケットの所有者が担当者によって必ず選択される必要があるかどうかを設定します"
+"。"
 
 #: ../content/index.rst:209
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Permission"
@@ -465,7 +464,6 @@ msgid "Ticket::Frontend::AgentTicketMasterSlave###QuickDateButtons"
 msgstr ""
 
 #: ../content/index.rst:222
-#, fuzzy
 msgid ""
 "This option sets additional quick date buttons to pending dates. For "
 "ordering purposes one hash entry per array segment has to be set. The key is "
@@ -505,7 +503,6 @@ msgid "Ticket::Frontend::AgentTicketMasterSlave###ResponsibleMandatory"
 msgstr ""
 
 #: ../content/index.rst:234
-#, fuzzy
 msgid "Sets if ticket responsible must be selected by the agent."
 msgstr "担当者がチケットの責任者を選択する必要があるかどうかを設定します。"
 
@@ -518,13 +515,14 @@ msgid ""
 "Defines the height for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
+"この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）または"
+"パーセント値（相対値）を入力してください。"
 
 #: ../content/index.rst:241
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextWidth"
 msgstr ""
 
 #: ../content/index.rst:242
-#, fuzzy
 msgid ""
 "Defines the width for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
@@ -618,7 +616,7 @@ msgstr ""
 
 #: ../content/index.rst:280
 msgid "Frontend::Base::DynamicFieldScreens"
-msgstr ""
+msgstr "Frontend::Base::DynamicFieldScreens"
 
 #: ../content/index.rst:283
 msgid "DynamicFieldScreens###MasterSlave"
@@ -629,6 +627,8 @@ msgid ""
 "This configuration defines all possible screens to enable or disable dynamic "
 "fields."
 msgstr ""
+"この設定は、ダイナミックフィールドを有効または無効にできるすべての画面を定義"
+"します。"
 
 #: ../content/index.rst:287
 msgid "DynamicFieldScreens::ObjectTypes###MasterSlave"
@@ -636,14 +636,13 @@ msgstr ""
 
 #: ../content/index.rst:290
 msgid "Frontend::Base::OutputFilter"
-msgstr ""
+msgstr "Frontend::Base::OutputFilter"
 
 #: ../content/index.rst:293
 msgid "Frontend::Output::FilterElementPost###MasterSlaveShowPendingTimeIfNeeded"
 msgstr ""
 
 #: ../content/index.rst:294
-#, fuzzy
 msgid ""
 "This configuration registers an OutputFilter module that injects the "
 "javascript functionality to remove PendingTime."
@@ -653,30 +652,32 @@ msgstr ""
 
 #: ../content/index.rst:297
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: ../content/index.rst:300
 msgid "Contact"
-msgstr ""
+msgstr "連絡先"
 
 #: ../content/index.rst:301
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../content/index.rst:302
 msgid "Email: hello@otobo.io"
-msgstr ""
+msgstr "メール: hello@otobo.io"
 
 #: ../content/index.rst:303
 msgid "Web: https://otobo.io"
-msgstr ""
+msgstr "Web: https://otobo.io"
 
 #: ../content/index.rst:306
 msgid "Version"
-msgstr ""
+msgstr "バージョン"
 
 #: ../content/index.rst:307
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
+"作成者: |doc-vendor| / バージョン: |doc-version| / リリース日: |doc-"
+"datestamp|"
