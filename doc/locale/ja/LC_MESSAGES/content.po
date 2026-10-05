@@ -4,20 +4,22 @@
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-07 15:15+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-10-05 03:41+0000\n"
+"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
+"Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/"
+"addons/manuals/masterslave-documentation/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.9\n"
 
 #: ../content/index.rst:5
 msgid "Contents"
@@ -183,10 +185,11 @@ msgid "ACLKeysLevel3::Actions###888-MasterSlave"
 msgstr ""
 
 #: ../content/index.rst:91
+#, fuzzy
 msgid ""
 "Defines which items are available for 'Action' in third level of the ACL "
 "structure."
-msgstr ""
+msgstr "ACL 構造の第3階層で 'Action' に使用できる項目を定義します。"
 
 #: ../content/index.rst:94
 msgid "Frontend::Admin::ModuleRegistration"
@@ -221,8 +224,9 @@ msgid "Frontend::Navigation###AdminDynamicFieldMasterSlave###004-MasterSlave"
 msgstr ""
 
 #: ../content/index.rst:112 ../content/index.rst:133
+#, fuzzy
 msgid "Main menu item registration."
-msgstr ""
+msgstr "メインメニュー項目の登録。"
 
 #: ../content/index.rst:115
 msgid "Frontend::Agent::ModuleRegistration"
@@ -400,10 +404,13 @@ msgid "Ticket::Frontend::AgentTicketMasterSlave###NoteMandatory"
 msgstr ""
 
 #: ../content/index.rst:198
+#, fuzzy
 msgid ""
 "Sets if note must be filled in by the agent. Can be overwritten by "
 "Ticket::Frontend::NeedAccountedTime."
 msgstr ""
+"担当者がメモを入力する必要があるかどうかを設定します。"
+"Ticket::Frontend::NeedAccountedTime によって上書きできます。"
 
 #: ../content/index.rst:201
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Owner"
@@ -458,6 +465,7 @@ msgid "Ticket::Frontend::AgentTicketMasterSlave###QuickDateButtons"
 msgstr ""
 
 #: ../content/index.rst:222
+#, fuzzy
 msgid ""
 "This option sets additional quick date buttons to pending dates. For "
 "ordering purposes one hash entry per array segment has to be set. The key is "
@@ -465,6 +473,10 @@ msgid ""
 "to n days from now, +n adds n days to the currently set date, and -n "
 "subtracts them."
 msgstr ""
+"このオプションは、保留日時に追加のクイック日付ボタンを設定します。並び順を指"
+"定するため、配列の各要素に1つのハッシュエントリーを設定する必要があります。"
+"キーはボタン名、値は設定値で、単独の数値 n は日付を今日から n 日後に、+n は現"
+"在設定されている日付に n 日を加算し、-n は n 日を減算します。"
 
 #: ../content/index.rst:225
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RequiredLock"
@@ -493,8 +505,9 @@ msgid "Ticket::Frontend::AgentTicketMasterSlave###ResponsibleMandatory"
 msgstr ""
 
 #: ../content/index.rst:234
+#, fuzzy
 msgid "Sets if ticket responsible must be selected by the agent."
-msgstr ""
+msgstr "担当者がチケットの責任者を選択する必要があるかどうかを設定します。"
 
 #: ../content/index.rst:237
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextHeight"
@@ -511,10 +524,13 @@ msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextWidth"
 msgstr ""
 
 #: ../content/index.rst:242
+#, fuzzy
 msgid ""
 "Defines the width for the rich text editor component for this screen. Enter "
 "number (pixels) or percent value (relative)."
 msgstr ""
+"この画面のリッチテキストエディターの幅を定義します。数値（ピクセル）または"
+"パーセント値（相対値）を入力してください。"
 
 #: ../content/index.rst:245
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Service"
@@ -627,10 +643,13 @@ msgid "Frontend::Output::FilterElementPost###MasterSlaveShowPendingTimeIfNeeded"
 msgstr ""
 
 #: ../content/index.rst:294
+#, fuzzy
 msgid ""
 "This configuration registers an OutputFilter module that injects the "
 "javascript functionality to remove PendingTime."
 msgstr ""
+"この設定は、PendingTime を削除する JavaScript 機能を埋め込む OutputFilter "
+"モジュールを登録します。"
 
 #: ../content/index.rst:297
 msgid "About"
