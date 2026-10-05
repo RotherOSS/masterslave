@@ -4,19 +4,22 @@
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-10.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-16 10:19+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-10-05 07:41+0000\n"
+"Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
+"Language-Team: Japanese <http://translate.otobo.org/projects/otobo-10-1/"
+"addons/manuals/masterslave-documentation/ja/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.4.0\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.9\n"
 
 #: ../../content/index.rst:16
 msgid "Sacrifice to Sphinx"
@@ -24,125 +27,131 @@ msgstr ""
 
 #: ../../content/index.rst:19
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../content/index.rst:20
 msgid "Includes \"Ticket Master/Slave\" feature."
-msgstr ""
+msgstr "「チケット・マスタースレーブ（Ticket Master/Slave）」機能を含みます。"
 
 #: ../../content/index.rst:23
 msgid "System requirements"
-msgstr ""
+msgstr "システム要件"
 
 #: ../../content/index.rst:26
 msgid "Framework"
-msgstr ""
+msgstr "フレームワーク"
 
 #: ../../content/index.rst:27
 msgid "OTOBO 10.1.x"
-msgstr ""
+msgstr "OTOBO 10.1.x"
 
 #: ../../content/index.rst:30
 msgid "Packages"
-msgstr ""
+msgstr "パッケージ"
 
 #: ../../content/index.rst:31 ../../content/index.rst:35
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../../content/index.rst:34
 msgid "Third-party software"
-msgstr ""
+msgstr "サードパーティ製ソフトウェア"
 
 #: ../../content/index.rst:38
 msgid "Usage"
-msgstr ""
+msgstr "使い方"
 
 #: ../../content/index.rst:41
 msgid "Setup"
-msgstr ""
+msgstr "セットアップ"
 
 #: ../../content/index.rst:44
 msgid "Configuration Reference"
-msgstr ""
+msgstr "設定リファレンス"
 
 #: ../../content/index.rst:47
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../../content/index.rst:50
 msgid "DynamicFields::Driver###MasterSlave"
-msgstr ""
+msgstr "DynamicFields::Driver###MasterSlave"
 
 #: ../../content/index.rst:51
 msgid "DynamicField backend registration."
-msgstr ""
+msgstr "ダイナミックフィールドのバックエンドの登録。"
 
 #: ../../content/index.rst:54
 msgid "Core::Event::MasterSlave"
-msgstr ""
+msgstr "Core::Event::MasterSlave"
 
 #: ../../content/index.rst:57
 msgid "Ticket::EventModulePost###MasterSlave"
-msgstr ""
+msgstr "Ticket::EventModulePost###MasterSlave"
 
 #: ../../content/index.rst:58
 msgid "Registration of the ticket event module."
-msgstr ""
+msgstr "チケットイベントモジュールの登録。"
 
 #: ../../content/index.rst:61
 msgid "Core::MasterSlave"
-msgstr ""
+msgstr "Core::MasterSlave"
 
 #: ../../content/index.rst:64
 msgid "PreApplicationModule###AgentPreMasterSlave"
-msgstr ""
+msgstr "PreApplicationModule###AgentPreMasterSlave"
 
 #: ../../content/index.rst:65
 msgid ""
 "This module activates Master/Slave field in new email and phone ticket "
 "screens."
 msgstr ""
+"このモジュールは、新規メールチケットおよび新規電話チケット画面で"
+"マスタースレーブ欄を有効にします。"
 
 #: ../../content/index.rst:68
 msgid "MasterSlave::DynamicField"
-msgstr ""
+msgstr "MasterSlave::DynamicField"
 
 #: ../../content/index.rst:69
 msgid "Defines dynamic field name for master ticket feature."
-msgstr ""
+msgstr "マスターチケット機能用のダイナミックフィールド名を定義します。"
 
 #: ../../content/index.rst:72
 msgid "MasterSlave::AdvancedEnabled"
-msgstr ""
+msgstr "MasterSlave::AdvancedEnabled"
 
 #: ../../content/index.rst:73
 msgid "Enables the advanced MasterSlave part of the feature."
-msgstr ""
+msgstr "マスタースレーブ機能の高度なモードを有効にします。"
 
 #: ../../content/index.rst:76
 msgid "MasterSlave::KeepParentChildAfterUnset"
-msgstr ""
+msgstr "MasterSlave::KeepParentChildAfterUnset"
 
 #: ../../content/index.rst:77
 msgid ""
 "Enables the feature to keep parent-child link after unset of the "
 "MasterSlave state in the advanced MasterSlave mode."
 msgstr ""
+"高度なマスタースレーブ・モードで、マスタースレーブ状態の解除後も親子リンクを"
+"維持する機能を有効にします。"
 
 #: ../../content/index.rst:80
 msgid "MasterSlave::FollowUpdatedMaster"
-msgstr ""
+msgstr "MasterSlave::FollowUpdatedMaster"
 
 #: ../../content/index.rst:81
 msgid ""
 "Enables the feature that slave tickets follow the master ticket to a new "
 "master in the advanced MasterSlave mode."
 msgstr ""
+"高度なマスタースレーブ・モードで、スレーブチケットがマスターチケットに従って"
+"新しいマスターに移る機能を有効にします。"
 
 #: ../../content/index.rst:84
 msgid "MasterSlave::ForwardSlaves"
-msgstr ""
+msgstr "MasterSlave::ForwardSlaves"
 
 #: ../../content/index.rst:85
 msgid ""
@@ -150,118 +159,127 @@ msgid ""
 "ticket to the customers of the slave tickets. By default (disabled) it "
 "will not forward articles from type 'forward' to the slave tickets."
 msgstr ""
+"マスターチケットのタイプ 'forward' の記事を、スレーブチケットの顧客に転送する"
+"機能を有効にします。デフォルト（無効）では、タイプ 'forward' の記事は"
+"スレーブチケットに転送されません。"
 
 #: ../../content/index.rst:88
 msgid "MasterSlave::UpdateMasterSlave"
-msgstr ""
+msgstr "MasterSlave::UpdateMasterSlave"
 
 #: ../../content/index.rst:89
 msgid ""
 "Enables the feature to change the MasterSlave state of a ticket in the "
 "advanced MasterSlave mode."
 msgstr ""
+"高度なマスタースレーブ・モードで、チケットのマスタースレーブ状態を変更する機"
+"能を有効にします。"
 
 #: ../../content/index.rst:92
 msgid "MasterSlave::UnsetMasterSlave"
-msgstr ""
+msgstr "MasterSlave::UnsetMasterSlave"
 
 #: ../../content/index.rst:93
 msgid ""
 "Enables the feature to unset the MasterSlave state of a ticket in the "
 "advanced MasterSlave mode."
 msgstr ""
+"高度なマスタースレーブ・モードで、チケットのマスタースレーブ状態を解除する機"
+"能を有効にします。"
 
 #: ../../content/index.rst:96
 msgid "MasterSlave::KeepParentChildAfterUpdate"
-msgstr ""
+msgstr "MasterSlave::KeepParentChildAfterUpdate"
 
 #: ../../content/index.rst:97
 msgid ""
 "Enables the feature to keep parent-child link after change of the "
 "MasterSlave state in the advanced MasterSlave mode."
 msgstr ""
+"高度なマスタースレーブ・モードで、マスタースレーブ状態の変更後も親子リンクを"
+"維持する機能を有効にします。"
 
 #: ../../content/index.rst:100
 msgid "Core::Ticket::ACL"
-msgstr ""
+msgstr "Core::Ticket::ACL"
 
 #: ../../content/index.rst:103
 msgid "ACLKeysLevel3::Actions###888-MasterSlave"
-msgstr ""
+msgstr "ACLKeysLevel3::Actions###888-MasterSlave"
 
 #: ../../content/index.rst:104
 msgid ""
 "Defines which items are available for 'Action' in third level of the ACL "
 "structure."
-msgstr ""
+msgstr "ACL 構造の第3階層で 'Action' に使用できる項目を定義します。"
 
 #: ../../content/index.rst:107
 msgid "Frontend::Admin::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration"
 
 #: ../../content/index.rst:110
 msgid "Frontend::Module###AdminDynamicFieldMasterSlave"
-msgstr ""
+msgstr "Frontend::Module###AdminDynamicFieldMasterSlave"
 
 #: ../../content/index.rst:111 ../../content/index.rst:132
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のフロントエンドモジュールの登録。"
 
 #: ../../content/index.rst:114
 msgid "Frontend::Admin::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::Loader"
 
 #: ../../content/index.rst:117
 msgid "Loader::Module::AdminDynamicFieldMasterSlave###004-MasterSlave"
-msgstr ""
+msgstr "Loader::Module::AdminDynamicFieldMasterSlave###004-MasterSlave"
 
 #: ../../content/index.rst:118 ../../content/index.rst:139
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のローダーモジュールの登録。"
 
 #: ../../content/index.rst:121
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::MainMenu"
 
 #: ../../content/index.rst:124
 msgid "Frontend::Navigation###AdminDynamicFieldMasterSlave###004-MasterSlave"
-msgstr ""
+msgstr "Frontend::Navigation###AdminDynamicFieldMasterSlave###004-MasterSlave"
 
 #: ../../content/index.rst:125 ../../content/index.rst:146
 msgid "Main menu item registration."
-msgstr ""
+msgstr "メインメニュー項目の登録。"
 
 #: ../../content/index.rst:128
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../../content/index.rst:131
 msgid "Frontend::Module###AgentTicketMasterSlave"
-msgstr ""
+msgstr "Frontend::Module###AgentTicketMasterSlave"
 
 #: ../../content/index.rst:135
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/index.rst:138
 msgid "Loader::Module::AgentTicketMasterSlave###004-MasterSlave"
-msgstr ""
+msgstr "Loader::Module::AgentTicketMasterSlave###004-MasterSlave"
 
 #: ../../content/index.rst:142
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../../content/index.rst:145
 msgid "Frontend::Navigation###AgentTicketMasterSlave###004-MasterSlave"
-msgstr ""
+msgstr "Frontend::Navigation###AgentTicketMasterSlave###004-MasterSlave"
 
 #: ../../content/index.rst:149
 msgid "Frontend::Agent::View::Dashboard"
-msgstr ""
+msgstr "Frontend::Agent::View::Dashboard"
 
 #: ../../content/index.rst:152
 msgid "DashboardBackend###0900-TicketMaster"
-msgstr ""
+msgstr "DashboardBackend###0900-TicketMaster"
 
 #: ../../content/index.rst:153
 msgid ""
@@ -272,10 +290,16 @@ msgid ""
 " default or if the user needs to enable it manually. \"CacheTTLLocal\" is"
 " the cache time in minutes for the plugin."
 msgstr ""
+"担当者インタフェースのマスターチケット一覧のダッシュボード・バックエンドの"
+"パラメータ。\"Limit\" はデフォルトで表示するエントリー数です。\"Group\" は"
+"プラグインへのアクセスを制限するために使用します（例: Group: "
+"admin;group1;group2;）。\"Default\" は、プラグインをデフォルトで有効にするか"
+"、ユーザーが手動で有効にする必要があるかを決定します。\"CacheTTLLocal\" は"
+"プラグインのキャッシュ時間（分）です。"
 
 #: ../../content/index.rst:156
 msgid "DashboardBackend###0910-TicketSlave"
-msgstr ""
+msgstr "DashboardBackend###0910-TicketSlave"
 
 #: ../../content/index.rst:157
 msgid ""
@@ -286,36 +310,44 @@ msgid ""
 " default or if the user needs to enable it manually. \"CacheTTLLocal\" is"
 " the cache time in minutes for the plugin."
 msgstr ""
+"担当者インタフェースのスレーブチケット一覧のダッシュボード・バックエンドの"
+"パラメータ。\"Limit\" はデフォルトで表示するエントリー数です。\"Group\" は"
+"プラグインへのアクセスを制限するために使用します（例: Group: "
+"admin;group1;group2;）。\"Default\" は、プラグインをデフォルトで有効にするか"
+"、ユーザーが手動で有効にする必要があるかを決定します。\"CacheTTLLocal\" は"
+"プラグインのキャッシュ時間（分）です。"
 
 #: ../../content/index.rst:160
 msgid "Frontend::Agent::View::TicketBulk::Module"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketBulk::Module"
 
 #: ../../content/index.rst:163
 msgid "Ticket::Frontend::BulkModule###010-MasterSlave"
-msgstr ""
+msgstr "Ticket::Frontend::BulkModule###010-MasterSlave"
 
 #: ../../content/index.rst:164
 msgid "MasterSlave module for Ticket Bulk feature."
-msgstr ""
+msgstr "チケット一括処理機能用のマスタースレーブ・モジュール。"
 
 #: ../../content/index.rst:167
 msgid "Frontend::Agent::View::TicketMasterSlave"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketMasterSlave"
 
 #: ../../content/index.rst:170
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Permission"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Permission"
 
 #: ../../content/index.rst:171
 msgid ""
 "Required permissions to use the ticket MasterSlave screen of a zoomed "
 "ticket in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面を"
+"使用するために必要な権限。"
 
 #: ../../content/index.rst:174
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RequiredLock"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###RequiredLock"
 
 #: ../../content/index.rst:175
 msgid ""
@@ -324,166 +356,200 @@ msgid ""
 "the ticket gets locked and the current agent will be set automatically as"
 " its owner)."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットロックが必要かどうかを定義します（チケットがまだロックされていない"
+"場合、チケットはロックされ、現在の担当者が自動的に所有者として設定されます）"
+"。"
 
 #: ../../content/index.rst:178
 msgid "Ticket::Frontend::AgentTicketMasterSlave###TicketType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###TicketType"
 
 #: ../../content/index.rst:179
 msgid ""
 "Sets the ticket type in the ticket MasterSlave screen of a zoomed ticket "
 "in the agent interface (Ticket::Type needs to be activated)."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットタイプを設定します（Ticket::Type が有効である必要があります）。"
 
 #: ../../content/index.rst:182
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Service"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Service"
 
 #: ../../content/index.rst:183
 msgid ""
 "Sets the service in the ticket MasterSlave screen of a zoomed ticket in "
 "the agent interface (Ticket::Service needs to be activated)."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、サービスを設定します（Ticket::Service が有効である必要があります）。"
 
 #: ../../content/index.rst:186
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Owner"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Owner"
 
 #: ../../content/index.rst:187
 msgid ""
 "Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket"
 " in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットの所有者を設定します。"
 
 #: ../../content/index.rst:190
 msgid "Ticket::Frontend::AgentTicketMasterSlave###OwnerMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###OwnerMandatory"
 
 #: ../../content/index.rst:191
 msgid "Sets if ticket owner must be selected by the agent."
 msgstr ""
+"チケットの所有者が担当者によって必ず選択される必要があるかどうかを設定します"
+"。"
 
 #: ../../content/index.rst:194
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Responsible"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Responsible"
 
 #: ../../content/index.rst:195
 msgid ""
 "Sets the responsible agent of the ticket in the ticket MasterSlave screen"
 " of a zoomed ticket in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットの責任者を設定します。"
 
 #: ../../content/index.rst:198
 msgid "Ticket::Frontend::AgentTicketMasterSlave###ResponsibleMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###ResponsibleMandatory"
 
 #: ../../content/index.rst:199
 msgid "Sets if ticket responsible must be selected by the agent."
-msgstr ""
+msgstr "担当者がチケットの責任者を選択する必要があるかどうかを設定します。"
 
 #: ../../content/index.rst:202
 msgid "Ticket::Frontend::AgentTicketMasterSlave###State"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###State"
 
 #: ../../content/index.rst:203
 msgid ""
 "If a note is added by an agent, sets the state of the ticket in the "
 "ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
+"担当者がメモを追加した場合に、担当者インタフェースのズーム表示中チケットの"
+"チケット・マスタースレーブ画面ででチケットのステータスを設定します。"
 
 #: ../../content/index.rst:206
 msgid "Ticket::Frontend::AgentTicketMasterSlave###StateType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###StateType"
 
 #: ../../content/index.rst:207
 msgid ""
 "Defines the next state of a ticket after adding a note, in the ticket "
 "MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、メモ追加後のチケットの次のステータスを定義します。"
 
 #: ../../content/index.rst:210
 msgid "Ticket::Frontend::AgentTicketMasterSlave###StateDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###StateDefault"
 
 #: ../../content/index.rst:211
 msgid ""
 "Defines the default next state of a ticket after adding a note, in the "
 "ticket MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、メモ追加後のチケットのデフォルトの次のステータスを定義します。"
 
 #: ../../content/index.rst:214
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Note"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Note"
 
 #: ../../content/index.rst:215
 msgid ""
 "Allows adding notes in the ticket MasterSlave screen of a zoomed ticket "
 "in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、メモを追加できるようにします。"
 
 #: ../../content/index.rst:218
 msgid "Ticket::Frontend::AgentTicketMasterSlave###NoteMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###NoteMandatory"
 
 #: ../../content/index.rst:219
 msgid ""
 "Sets if note must be filled in by the agent. Can be overwritten by "
 "Ticket::Frontend::NeedAccountedTime."
 msgstr ""
+"担当者がメモを入力する必要があるかどうかを設定します。"
+"Ticket::Frontend::NeedAccountedTime によって上書きできます。"
 
 #: ../../content/index.rst:222
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Subject"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Subject"
 
 #: ../../content/index.rst:223
 msgid ""
 "Sets the default subject for notes added in the ticket MasterSlave screen"
 " of a zoomed ticket in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、追加するメモのデフォルトの件名を設定します。"
 
 #: ../../content/index.rst:226
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Body"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Body"
 
 #: ../../content/index.rst:227
 msgid ""
 "Sets the default body text for notes added in the ticket MasterSlave "
 "screen of a zoomed ticket in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、追加するメモのデフォルトの本文を設定します。"
 
 #: ../../content/index.rst:230
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextWidth"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###RichTextWidth"
 
 #: ../../content/index.rst:231
 msgid ""
 "Defines the width for the rich text editor component for this screen. "
 "Enter number (pixels) or percent value (relative)."
 msgstr ""
+"この画面のリッチテキストエディターの幅を定義します。数値（ピクセル）または"
+"パーセント値（相対値）を入力してください。"
 
 #: ../../content/index.rst:234
 msgid "Ticket::Frontend::AgentTicketMasterSlave###RichTextHeight"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###RichTextHeight"
 
 #: ../../content/index.rst:235
 msgid ""
 "Defines the height for the rich text editor component for this screen. "
 "Enter number (pixels) or percent value (relative)."
 msgstr ""
+"この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）または"
+"パーセント値（相対値）を入力してください。"
 
 #: ../../content/index.rst:238
 msgid "Ticket::Frontend::AgentTicketMasterSlave###InvolvedAgent"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###InvolvedAgent"
 
 #: ../../content/index.rst:239
 msgid ""
 "Shows a list of all the involved agents on this ticket, in the ticket "
 "MasterSlave screen of a zoomed ticket in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、このチケットに関与したすべての担当者の一覧を表示します。"
 
 #: ../../content/index.rst:242
 msgid "Ticket::Frontend::AgentTicketMasterSlave###InformAgent"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###InformAgent"
 
 #: ../../content/index.rst:243
 msgid ""
@@ -492,86 +558,99 @@ msgid ""
 "note, in the ticket MasterSlave screen of a zoomed ticket in the agent "
 "interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、このメモについて通知する相手を決めるため、通知可能なすべての担当者（キュー"
+"／チケットに対するメモ権限を持つすべての担当者）の一覧を表示します。"
 
 #: ../../content/index.rst:246
 msgid "Ticket::Frontend::AgentTicketMasterSlave###IsVisibleForCustomerDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###IsVisibleForCustomerDefault"
 
 #: ../../content/index.rst:247
 msgid "Defines if the MasterSlave note is visible for the customer by default."
-msgstr ""
+msgstr "マスタースレーブのメモをデフォルトで顧客に公開するかどうかを定義します。"
 
 #: ../../content/index.rst:250
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Priority"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Priority"
 
 #: ../../content/index.rst:251
 msgid ""
 "Shows the ticket priority options in the ticket MasterSlave screen of a "
 "zoomed ticket in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、チケットの優先度の選択肢を表示します。"
 
 #: ../../content/index.rst:254
 msgid "Ticket::Frontend::AgentTicketMasterSlave###PriorityDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###PriorityDefault"
 
 #: ../../content/index.rst:255
 msgid ""
 "Defines the default ticket priority in the ticket MasterSlave screen of a"
 " zoomed ticket in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、デフォルトのチケットの優先度を定義します。"
 
 #: ../../content/index.rst:258
 msgid "Ticket::Frontend::AgentTicketMasterSlave###Title"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###Title"
 
 #: ../../content/index.rst:259
 msgid ""
 "Shows the title field in the ticket MasterSlave screen of a zoomed ticket"
 " in the agent interface."
 msgstr ""
+"担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で"
+"、タイトル欄を表示します。"
 
 #: ../../content/index.rst:262
 msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###HistoryType"
 
 #: ../../content/index.rst:263
 msgid ""
 "Defines the history type for the ticket MasterSlave screen action, which "
 "gets used for ticket history in the agent interface."
 msgstr ""
+"担当者インタフェースのチケット履歴で使用される、チケット・マスタースレーブ画"
+"面アクションの履歴タイプを定義します。"
 
 #: ../../content/index.rst:266
 msgid "Ticket::Frontend::AgentTicketMasterSlave###HistoryComment"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###HistoryComment"
 
 #: ../../content/index.rst:267
 msgid ""
 "Defines the history comment for the ticket MasterSlave screen action, "
 "which gets used for ticket history in the agent interface."
 msgstr ""
+"担当者インタフェースのチケット履歴で使用される、チケット・マスタースレーブ画"
+"面アクションの履歴コメントを定義します。"
 
 #: ../../content/index.rst:270
 msgid "Ticket::Frontend::AgentTicketMasterSlave###MasterSlaveMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentTicketMasterSlave###MasterSlaveMandatory"
 
 #: ../../content/index.rst:271
 msgid "Sets if Master / Slave field must be selected by the agent."
-msgstr ""
+msgstr "担当者がマスター／スレーブ欄を選択する必要があるかどうかを設定します。"
 
 #: ../../content/index.rst:274
 msgid "ReplaceCustomerRealNameOnSlaveArticleTypes"
-msgstr ""
+msgstr "ReplaceCustomerRealNameOnSlaveArticleTypes"
 
 #: ../../content/index.rst:275
 msgid ""
 "This setting is deprecated and will be removed in further versions of "
 "MasterSlave."
-msgstr ""
+msgstr "この設定は非推奨で、MasterSlave の今後のバージョンで削除されます。"
 
 #: ../../content/index.rst:278
 msgid "ReplaceCustomerRealNameOnSlaveArticleCommunicationChannels"
-msgstr ""
+msgstr "ReplaceCustomerRealNameOnSlaveArticleCommunicationChannels"
 
 #: ../../content/index.rst:279
 msgid ""
@@ -579,48 +658,53 @@ msgid ""
 "name from Master ticket will be replaced with the one in the Slave "
 "ticket."
 msgstr ""
+"マスターチケットの実名をスレーブチケットの実名に置き換える、記事の"
+"コミュニケーション・チャネルを指定します。"
 
 #: ../../content/index.rst:282
 msgid "Frontend::Agent::View::TicketZoom::MenuModule"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketZoom::MenuModule"
 
 #: ../../content/index.rst:285
 msgid "Ticket::Frontend::MenuModule###480-MasterSlave"
-msgstr ""
+msgstr "Ticket::Frontend::MenuModule###480-MasterSlave"
 
 #: ../../content/index.rst:286
 msgid ""
 "Shows a link in the menu to change the MasterSlave status of a ticket in "
 "the ticket zoom view of the agent interface."
 msgstr ""
+"担当者インタフェースのチケットズームビューで、チケットのマスタースレーブ状態"
+"を変更するためのリンクをメニューに表示します。"
 
 #: ../../content/index.rst:289
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: ../../content/index.rst:292
 msgid "Contact"
-msgstr ""
+msgstr "連絡先"
 
 #: ../../content/index.rst:293
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../../content/index.rst:294
 msgid "Email: hello@otobo.de"
-msgstr ""
+msgstr "メール: hello@otobo.de"
 
 #: ../../content/index.rst:295
 msgid "Web: https://otobo.de"
-msgstr ""
+msgstr "Web: https://otobo.de"
 
 #: ../../content/index.rst:298
 msgid "Version"
-msgstr ""
+msgstr "バージョン"
 
 #: ../../content/index.rst:299
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
-
+"作成者: |doc-vendor| / バージョン: |doc-version| / リリース日: |doc-"
+"datestamp|"
