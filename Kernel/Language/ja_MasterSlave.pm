@@ -45,81 +45,81 @@ sub Data {
     $Self->{Translation}->{'All master tickets'} = 'すべてのマスターチケット';
     $Self->{Translation}->{'All slave tickets'} = 'すべてのスレーブチケット';
     $Self->{Translation}->{'Allows adding notes in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        'エージェントインタフェースのズームされたチケットのマスタースレイブ画面で、注釈の追加を許可します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、メモを追加できるようにします。';
     $Self->{Translation}->{'Change the MasterSlave state of the ticket.'} = 'チケットのマスター・スレーブのステータスを変更する。';
-    $Self->{Translation}->{'Defines dynamic field name for master ticket feature.'} = 'マスター・スレーブのダイナミック・フィールド名を設定する。';
+    $Self->{Translation}->{'Defines dynamic field name for master ticket feature.'} = 'マスターチケット機能用のダイナミックフィールド名を定義します。';
     $Self->{Translation}->{'Defines if a ticket lock is required in the ticket MasterSlave screen of a zoomed ticket in the agent interface (if the ticket isn\'t locked yet, the ticket gets locked and the current agent will be set automatically as its owner).'} =
-        '担当者インターフェイスのズームされたチケットのチケット マスタースレーブ画面でチケット ロックが必要かどうかを定義します。 (チケットがまだロックされていない場合、チケットはロックされ、現在の担当者が所有者として自動的に設定されます。)';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、チケットロックが必要かどうかを定義します（チケットがまだロックされていない場合、チケットはロックされ、現在の担当者が自動的に所有者として設定されます）。';
     $Self->{Translation}->{'Defines if the MasterSlave note is visible for the customer by default.'} =
-        'マスタースレーブのメモがデフォルトで顧客に表示されるかどうかを定義します。';
+        'マスタースレーブのメモをデフォルトで顧客に公開するかどうかを定義します。';
     $Self->{Translation}->{'Defines the default next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面で、メモを追加した後のチケットのデフォルトの次の状態を定義します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、メモ追加後のチケットのデフォルトの次のステータスを定義します。';
     $Self->{Translation}->{'Defines the default ticket priority in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インターフェイス のズームされたチケットのマスター・スレーブ画面で、デフォルトの チケット 優先度を定義します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、デフォルトのチケットの優先度を定義します。';
     $Self->{Translation}->{'Defines the height for the rich text editor component for this screen. Enter number (pixels) or percent value (relative).'} =
-        'この画面のリッチ テキスト エディター コンポーネントの高さを定義します。数値 (ピクセル) またはパーセント値 (相対) を入力します。';
+        'この画面のリッチテキストエディターの高さを定義します。数値（ピクセル）またはパーセント値（相対値）を入力してください。';
     $Self->{Translation}->{'Defines the history comment for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface.'} =
-        '担当者インタフェースのチケット履歴で使用される、チケット・マスター・スレーブ画面アクションに関する履歴コメントを定義します。';
+        '担当者インタフェースのチケット履歴で使用される、チケット・マスタースレーブ画面アクションの履歴コメントを定義します。';
     $Self->{Translation}->{'Defines the history type for the ticket MasterSlave screen action, which gets used for ticket history in the agent interface.'} =
-        '担当者インタフェースのチケット履歴で使用される、チケット・マスター・スレーブ画面アクションに関する履歴タイプを定義します。';
+        '担当者インタフェースのチケット履歴で使用される、チケット・マスタースレーブ画面アクションの履歴タイプを定義します。';
     $Self->{Translation}->{'Defines the next state of a ticket after adding a note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面で、メモを追加した後のチケットの次の状態を定義します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、メモ追加後のチケットの次のステータスを定義します。';
     $Self->{Translation}->{'Dynamic fields shown in the ticket master slave screen of the agent interface.'} =
-        '';
+        '担当者インタフェースのチケット・マスタースレーブ画面に表示するダイナミックフィールド。';
     $Self->{Translation}->{'Enables the feature that slave tickets follow the master ticket to a new master in the advanced MasterSlave mode.'} =
-        '高度なマスタースレーブ モードで、スレーブ チケットがマスター チケットをたどって新しいマスターに到達する機能を有効にします。';
+        '高度なマスタースレーブ・モードで、スレーブチケットがマスターチケットに従って新しいマスターに移る機能を有効にします。';
     $Self->{Translation}->{'Enables the feature to change the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
-        '高度なマスター スレーブ モードでチケットのマスター スレーブ状態を変更する機能を有効にします。';
+        '高度なマスタースレーブ・モードで、チケットのマスタースレーブ状態を変更する機能を有効にします。';
     $Self->{Translation}->{'Enables the feature to forward articles from type \'forward\' of a master ticket to the customers of the slave tickets. By default (disabled) it will not forward articles from type \'forward\' to the slave tickets.'} =
-        'マスターチケットの「転送」タイプからスレーブチケットの顧客に記事を転送する機能を有効にします。 デフォルト (無効) では、「forward」タイプの記事はスレーブ チケットに転送されません。';
+        'マスターチケットのタイプ \'forward\' の記事を、スレーブチケットの顧客に転送する機能を有効にします。デフォルト（無効）では、タイプ \'forward\' の記事はスレーブチケットに転送されません。';
     $Self->{Translation}->{'Enables the feature to keep parent-child link after change of the MasterSlave state in the advanced MasterSlave mode.'} =
-        'アドバンスト マスタースレーブ モードでマスタースレーブ状態の変更後に親子リンクを維持する機能を有効にします。';
+        '高度なマスタースレーブ・モードで、マスタースレーブ状態の変更後も親子リンクを維持する機能を有効にします。';
     $Self->{Translation}->{'Enables the feature to keep parent-child link after unset of the MasterSlave state in the advanced MasterSlave mode.'} =
-        'アドバンスト マスタースレーブ モードでマスタースレーブ状態の設定を解除した後も親子リンクを維持する機能を有効にします。';
+        '高度なマスタースレーブ・モードで、マスタースレーブ状態の解除後も親子リンクを維持する機能を有効にします。';
     $Self->{Translation}->{'Enables the feature to unset the MasterSlave state of a ticket in the advanced MasterSlave mode.'} =
-        '高度なマスタースレーブ モードでチケットのマスタースレーブ状態を設定解除する機能を有効にします。';
+        '高度なマスタースレーブ・モードで、チケットのマスタースレーブ状態を解除する機能を有効にします。';
     $Self->{Translation}->{'If a note is added by an agent, sets the state of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者によってメモが追加された場合、担当者インターフェイスのズームされたチケットのチケット マスタースレーブ画面でチケットの状態を設定します。';
+        '担当者がメモを追加した場合に、担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面ででチケットのステータスを設定します。';
     $Self->{Translation}->{'Master / Slave'} = 'マスター / スレーブ';
     $Self->{Translation}->{'Master Tickets'} = 'マスターチケット';
     $Self->{Translation}->{'MasterSlave'} = 'マスター・スレーブ';
-    $Self->{Translation}->{'MasterSlave module for Ticket Bulk feature.'} = 'MasterSlave モジュールのチケット一括処理機能';
+    $Self->{Translation}->{'MasterSlave module for Ticket Bulk feature.'} = 'チケット一括処理機能用のマスタースレーブ・モジュール。';
     $Self->{Translation}->{'Parameters for the dashboard backend of the master tickets overview of the agent interface. "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin.'} =
-        '担当者インターフェイスのマスター チケット概要のダッシュボード バックエンドのパラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グループ」はプラグインへのアクセスを制限するために使用されます (例: グループ: admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっているか、ユーザーが手動で有効にする必要があるかを決定します。 「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。';
+        '担当者インタフェースのマスターチケット一覧のダッシュボード・バックエンドのパラメータ。"Limit" はデフォルトで表示するエントリー数です。"Group" はプラグインへのアクセスを制限するために使用します（例: Group: admin;group1;group2;）。"Default" は、プラグインをデフォルトで有効にするか、ユーザーが手動で有効にする必要があるかを決定します。"CacheTTLLocal" はプラグインのキャッシュ時間（分）です。';
     $Self->{Translation}->{'Parameters for the dashboard backend of the slave tickets overview of the agent interface. "Limit" is the number of entries shown by default. "Group" is used to restrict the access to the plugin (e. g. Group: admin;group1;group2;). "Default" determines if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTLLocal" is the cache time in minutes for the plugin.'} =
-        '担当者インターフェイスのスレーブ チケット概要のダッシュボード バックエンドのパラメーター。 「制限」は、デフォルトで表示されるエントリの数です。 「グループ」はプラグインへのアクセスを制限するために使用されます (例: グループ: admin;group1;group2;)。 「デフォルト」は、プラグインがデフォルトで有効になっているか、ユーザーが手動で有効にする必要があるかを決定します。 「CacheTTLLocal」は、プラグインのキャッシュ時間 (分単位) です。';
-    $Self->{Translation}->{'Registration of the ticket event module.'} = 'チケット登録のイベントモジュール';
+        '担当者インタフェースのスレーブチケット一覧のダッシュボード・バックエンドのパラメータ。"Limit" はデフォルトで表示するエントリー数です。"Group" はプラグインへのアクセスを制限するために使用します（例: Group: admin;group1;group2;）。"Default" は、プラグインをデフォルトで有効にするか、ユーザーが手動で有効にする必要があるかを決定します。"CacheTTLLocal" はプラグインのキャッシュ時間（分）です。';
+    $Self->{Translation}->{'Registration of the ticket event module.'} = 'チケットイベントモジュールの登録。';
     $Self->{Translation}->{'Required permissions to use the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インタフェースで、ズームされたチケットのマスター・スレーブ画面を使用するための必要な許可です。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面を使用するために必要な権限。';
     $Self->{Translation}->{'Sets the default body text for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インタフェースのズームされたチケットのマスター・スレーブ画面で、追加されたメモのデフォルトの本文を設定します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、追加するメモのデフォルトの本文を設定します。';
     $Self->{Translation}->{'Sets the default subject for notes added in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インタフェースのズームされたチケットのマスター・スレーブ画面で、追加されたメモのデフォルトの件名を設定します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、追加するメモのデフォルトの件名を設定します。';
     $Self->{Translation}->{'Sets the responsible agent of the ticket in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インタフェースのズームされたチケットのマスター・スレーブ画面で、チケットの責任を有する担当者を設定します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、チケットの責任者を設定します。';
     $Self->{Translation}->{'Sets the service in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Service needs to be activated).'} =
-        '担当者インタフェースのズームされたチケットのチケットのマスター・スレーブ画面で、サービスを設定します (Ticket::Serviceを有効とする必要があります)。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、サービスを設定します（Ticket::Service が有効である必要があります）。';
     $Self->{Translation}->{'Sets the ticket owner in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インタフェースのズームされたチケットのマスター・スレーブ画面で、チケット所有者を設定します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、チケットの所有者を設定します。';
     $Self->{Translation}->{'Sets the ticket type in the ticket MasterSlave screen of a zoomed ticket in the agent interface (Ticket::Type needs to be activated).'} =
-        '担当者インタフェースのズームされたチケットのチケットのマスター・スレーブ画面で、チケット・タイプを設定します(Ticket::Typeを有効とする必要があります)。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、チケットタイプを設定します（Ticket::Type が有効である必要があります）。';
     $Self->{Translation}->{'Shows a link in the menu to change the MasterSlave status of a ticket in the ticket zoom view of the agent interface.'} =
-        '担当者インターフェイスのチケット ズーム ビューでチケットのマスタースレーブ ステータスを変更するためのリンクをメニューに表示します。';
+        '担当者インタフェースのチケットズームビューで、チケットのマスタースレーブ状態を変更するためのリンクをメニューに表示します。';
     $Self->{Translation}->{'Shows a list of all the involved agents on this ticket, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インターフェイスのズームされたチケットのチケット マスタースレーブ画面に、このチケットに関係する全ての担当者のリストが表示されます。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、このチケットに関与したすべての担当者の一覧を表示します。';
     $Self->{Translation}->{'Shows a list of all the possible agents (all agents with note permissions on the queue/ticket) to determine who should be informed about this note, in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インターフェイスのズームされたチケットのチケット マスタースレーブ画面で、このメモについて誰に通知する必要があるかを決定するために、考えられる全ての担当者 (キュー/チケットに対してメモ権限を持つ全ての担当者) のリストを表示します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、このメモについて通知する相手を決めるため、通知可能なすべての担当者（キュー／チケットに対するメモ権限を持つすべての担当者）の一覧を表示します。';
     $Self->{Translation}->{'Shows the ticket priority options in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面にチケットの優先順位オプションを表示します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、チケットの優先度の選択肢を表示します。';
     $Self->{Translation}->{'Shows the title field in the ticket MasterSlave screen of a zoomed ticket in the agent interface.'} =
-        '担当者インターフェイスのズームされたチケットのチケットマスタースレーブ画面にタイトルフィールドを表示します。';
+        '担当者インタフェースのズーム表示中チケットのチケット・マスタースレーブ画面で、タイトル欄を表示します。';
     $Self->{Translation}->{'Slave Tickets'} = 'スレーブチケット';
     $Self->{Translation}->{'Specifies the different article communication channels where the real name from Master ticket will be replaced with the one in the Slave ticket.'} =
-        'マスターチケットの実名がスレーブチケットの実名に置き換えられる、さまざまな記事通信チャネルを指定します。';
+        'マスターチケットの実名をスレーブチケットの実名に置き換える、記事のコミュニケーション・チャネルを指定します。';
     $Self->{Translation}->{'This module activates Master/Slave field in new email and phone ticket screens.'} =
-        'このモジュールは、新規メール/電話チケットに、マスター/スレーブチケット欄を追加します。';
+        'このモジュールは、新規メールチケットおよび新規電話チケット画面でマスタースレーブ欄を有効にします。';
     $Self->{Translation}->{'This setting is deprecated and will be removed in further versions of MasterSlave.'} =
-        'この設定は非推奨であり、MasterSlave の今後のバージョンでは削除される予定です。';
+        'この設定は非推奨で、MasterSlave の今後のバージョンで削除されます。';
     $Self->{Translation}->{'Ticket MasterSlave.'} = 'マスター・スレーブチケット';
 
 
