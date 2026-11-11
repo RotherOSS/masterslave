@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-07 15:15+0000\n"
-"PO-Revision-Date: 2026-11-11 09:00+0000\n"
+"PO-Revision-Date: 2026-11-11 11:00+0000\n"
 "Last-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "manuals/masterslave-documentation/de/>\n"
@@ -73,7 +73,7 @@ msgstr "Konfigurations-Referenz"
 
 #: ../content/index.rst:38
 msgid "Core::DynamicFields::DriverRegistration"
-msgstr ""
+msgstr "Core::DynamicFields::DriverRegistration"
 
 #: ../content/index.rst:41
 msgid "DynamicFields::Driver###MasterSlave"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../content/index.rst:42
 msgid "DynamicField backend registration."
-msgstr ""
+msgstr "Backend-Registrierung der dynamischen Felder."
 
 #: ../content/index.rst:45
 msgid "Core::Event::MasterSlave"
@@ -194,7 +194,7 @@ msgstr ""
 
 #: ../content/index.rst:94
 msgid "Frontend::Admin::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration"
 
 #: ../content/index.rst:97
 msgid "Frontend::Module###AdminDynamicFieldMasterSlave"
@@ -202,11 +202,11 @@ msgstr ""
 
 #: ../content/index.rst:98 ../content/index.rst:119
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "Registrierung des Frontend-Moduls für die Agentenoberfläche."
 
 #: ../content/index.rst:101
 msgid "Frontend::Admin::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Admin::ModuleRegistration::Loader"
 
 #: ../content/index.rst:104
 msgid "Loader::Module::AdminDynamicFieldMasterSlave###004-MasterSlave"
@@ -214,7 +214,7 @@ msgstr ""
 
 #: ../content/index.rst:105 ../content/index.rst:126
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "Registrierung des Loader-Moduls für die Agentenoberfläche."
 
 #: ../content/index.rst:108
 msgid "Frontend::Admin::ModuleRegistration::MainMenu"
@@ -230,7 +230,7 @@ msgstr ""
 
 #: ../content/index.rst:115
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../content/index.rst:118
 msgid "Frontend::Module###AgentTicketMasterSlave"
@@ -238,7 +238,7 @@ msgstr ""
 
 #: ../content/index.rst:122
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../content/index.rst:125
 msgid "Loader::Module::AgentTicketMasterSlave###004-MasterSlave"
